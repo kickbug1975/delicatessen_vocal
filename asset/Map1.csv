@@ -1,0 +1,789 @@
+code,Nom,Handelsbenaming,Rue,Numero,Code postal,Localité,Pays,Téléphone,Verkort-nr,Fax-nr,Gsm,BTW-nr,Mail leveringsbon,Mail factuur,Familienaam contactpersoon,Voornaam Contactpersoon,Telefoonnr,E-mail,Functie,Afzetkanaal,Klantengroep,Datum laatste bestelling,Facturatieperiode,Max. toegestaan krediet,Datum aanmaak klant,Transporteur,Alfacode,Picking groep,Vertegenwoordiger,Naam
+2.0,PREVOT TRAITEUR,,RUE DU GRAND JOUR,16 BOX A,7050.0,JURBISE,BEL,,,,0488/37.17.17,BE1032.138.495,NEE,NEE,BOEKHOUDING,,,invoice.traiteurprevot@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-07,Klanten HTT,2500.0,2026-01-07,MONS,,,1.0,HTT
+46.0,TRAITEUR CHRISTIAN SA,MEY CHRISTIAN,CHAUSSEE DE WILLEMEAU,78,7500.0,TOURNAI,BEL,0495/37.60.38,,,0496/28.36.86,BE 0442.563.191,NEE,NEE,Boekhouding,,,nathaliemey78@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,08 TRAITEUR,2026-01-06,Extra controle,4000.0,,MONS,,,1.0,HTT
+531.0,FIERET VISCENTRALE HARELBEKE,,GENTSESTEENWEG 104,,8530.0,HARELBEKE,BEL,056/68.18.18,,,,BE 0477.731.334,JA,NEE,Boekhouding,,,facturen@viscentralefieret.be,,,04 FIERET,,Wekelijks,200000.0,,IEPER,,,1.0,HTT
+1936.0,MORIAUX VERONIQUE,AU FIN GOURMET SPRL,RUE CENTRALE,1,7110.0,MAURAGE,BEL,064/66.47.27,,,0471/27.85.58,BE0665.271.728,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,didierstradiot@gmail.com,,,09 HORECA,2026-01-07,Klanten HTT,2500.0,2022-09-15,MONS,,,1.0,HTT
+1937.0,LE BOUCHON DES AGAISES,,CHAUSSEE BRUNEHAULT,175,7120.0,ESTINNES,BEL,064/60.00.44,,,0493/51.24.28,BE0733.780.551,NEE,JA,BOEKHOUDING,,,babalouise@outlook.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,3500.0,2022-09-15,MONS,,,1.0,HTT
+1938.0,GUERET ERIC,,RUE DELMOTTE,62,7870.0,BAUFFE,BEL,068/65.72.94,,,0479/21.39.53,BE0717.262.639,NEE,NEE,boekhouding,,,info@traiteurgueret.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,5000.0,2022-09-15,MONS,,,1.0,HTT
+1939.0,RIZOM,PHAGE,RUE DE SAINT LAZARE,95,7000.0,MONS,BEL,,,,0495/74.20.63,BE0779.323.833,NEE,NEE,boekhouding,,,olivier@rizom.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-07,Klanten HTT,2500.0,2022-09-15,MONS,,,1.0,HTT
+1940.0,FARMERY STORE SCRL,,RUE DES ALLIES,116,7080.0,FRAMERIES,BEL,065/98.19.26,,,0495/23.10.24,BE0737.798.133,NEE,JA,boekhouding,,,didier@farmerystore.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,2023-02-16,Klanten HTT,0.0,2022-09-15,MONS,,,1.0,HTT
+1941.0,CARPENTIER MICHAEL,,RUE GERARD,6,7061.0,THIEUSIES,BEL,,,,0472/25.21.25,BE0701.741.352,NEE,NEE,boekhouding,,,michaelcarpentier@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,2500.0,2022-09-15,MONS,,,1.0,HTT
+1942.0,LE COMPTOIR DU CHERCHE MIDI SPRL C.C.M.,,GRAND LARGE,2A,7000.0,MONS,BEL,065/39.02.59,,,,BE0875.031.951,NEE,JA,boekhouding,,,resto.capitainerie@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,7500.0,2022-09-15,MONS,,,1.0,HTT
+1943.0,STEV-SERVICES SPRL,,CHAUSSEE DU ROI BAUDOUIN,117,7000.0,MONS,BEL,065/84.59.45,,,0497/45.67.80,BE0444.426.581,NEE,NEE,boekhouding,,,contact@maxens.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,2500.0,2022-09-15,MONS,,,1.0,HTT
+1944.0,LE SOLEIL DANS L'ASSIETTE,LE SOLEIL DANS L'ASSIETTE,SENTIER DE LA TOURELLE,7,7070.0,LE ROEULX,BEL,,,,0477/07.33.00,BE0671.682.735,NEE,JA,boekhouding,,,sabine.normand@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1500.0,2022-09-15,MONS,,,1.0,HTT
+1945.0,HALIOTIS SPRL,,RUE D'ARONDEAU,29,7601.0,ROUCOURT,BEL,069/34.30.70,,,,BE0647.680.480,NEE,NEE,boekhouding,,,limperatif@domainedarondeau.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-05,Klanten HTT,5000.0,2022-09-15,MONS,,,1.0,HTT
+1946.0,AUBERGE DES AULNES,,RUE WARECHAIX,12,7370.0,BLAUGIES,BEL,,,,0460/96.46.26,BE0507.819.249,NEE,NEE,boekhouding,,,arnaud.brulez@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,aubergedesaulnes@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-07,Klanten HTT,2500.0,2022-09-15,MONS,,,1.0,HTT
+1947.0,LE PRIEURE SPRL,,RUE LAMBOT,9,6500.0,SOLRE-SAINT-GERY,BEL,071/58.97.00,,,0494/23.08.35,BE0457.096.464,NEE,JA,boekhouding,,,leprieure@skynet.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,3000.0,2022-09-15,MONS,,,1.0,HTT
+1948.0,PICARDI,PICARDIE TRAITEUR SPRL,RUE DE FRAMERIES,19,7033.0,CUESMES,BEL,,,,0488/57.51.89,BE0633.721.982,NEE,NEE,boekhouding,,,andreas-pitropakis@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,2026-01-08,Klanten HTT,3500.0,2022-09-15,MONS,,,1.0,HTT
+1949.0,LE COQ WALLON BRASSERIE,,PLACE DE ST SYMPHORIEN,6,7030.0,SAINT-SYMPHORIEN,BEL,065/73.08.38,,,0476/91.44.88,BE0686.639.640,NEE,JA,boekhouding,,,dinunzio-norma@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,3500.0,2022-09-15,MONS,,,1.0,HTT
+1950.0,CENTRE PUBLIC D'ACTION SOCIALE DE TUBI,PARFUMS DU MONDE SPRL,RUE DES FRERES TAYMANS,32,1480.0,TUBIZE,BEL,02/355.96.42,,,,BE0212.228.872,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,2500.0,2022-09-15,MONS,,,1.0,HTT
+1952.0,LES GRIBAUMONTS SPRL,,RUE D'HAVRE,95,7000.0,MONS,BEL,065/75.04.55,,,,BE0715.947.397,NEE,JA,boekhouding,,,info@lesgribaumonts.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,2500.0,2022-09-15,MONS,,,1.0,HTT
+1953.0,CIP EVENEMENTS,PREVOT TRAITEUR,RUE DU GRAND JOUR,16 BOX A,7050.0,JURBISE,BEL,,,,0488/37.17.17,BE0866.595.030,NEE,NEE,BOEKHOUDING,,,invoice.traiteurprevot@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,2500.0,2022-09-15,MONS,,,1.0,HTT
+1954.0,HORECATH SA,,GRAND PLACE,1,7800.0,ATH,BEL,068/28.73.39,,,0474/52.01.87,BE0447.859.193,NEE,NEE,BOEKHOUDING,,,christine.remy@live.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1500.0,2022-09-15,MONS,,,1.0,HTT
+1955.0,LAPETITETOUR SA,LA TABLE D'AUGUSTE,RUE DU GENERAL LEMAN,23,7370.0,DOUR,BEL,065/66.68.12,,,0475/37.19.61,BE0401.821.906,NEE,NEE,BOEKHOUDING,,,info@latabledauguste.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,vinciane.lasensacion@gmail.com,,,09 HORECA,2026-01-03,Klanten HTT,2500.0,2022-09-15,MONS,,,1.0,HTT
+1956.0,HANNAEL JUSTINMBAR'A'KALY,,RUE DE LA COUPE,21,7000.0,MONS,BEL,,,,0470/61.26.69,BE0734.870.317,NEE,JA,BOEKHOUDING,,,mbarakaly.mons@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-09-15,MONS,,,1.0,HTT
+1957.0,COPILOT SPRL,,RUE DES CANADIENS,130,7022.0,HYON,BEL,,,,0484/34.81.76,BE0895.626.635,NEE,NEE,boekhouding,,,compta@labergerie-hyon.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-09-15,MONS,,,1.0,HTT
+1958.0,SAINT-PIERRE ET GENEPI SCRLPOISSONERIE SAINT-PIERRE,,RUE DE NAMUR,63,1400.0,NIVELLES,BEL,,,,0470/55.47.22,BE0758.955.714,NEE,NEE,boekhouding,,,pierreolemans@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,2026-01-07,Klanten HTT,15000.0,2022-09-15,MONS,,,1.0,HTT
+1959.0,PASSION ET SAVEURS SPRL,,RUE HECTOR TRIGALLEZ,93,7134.0,LEVAL-TRAHEGNIES,BEL,064/55.82.02,,,0479/43.97.55,BE0849.300.524,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-05,Klanten HTT,4000.0,2022-09-15,MONS,,,1.0,HTT
+1960.0,DDVA SPRLLA PORTE DE VIS TCHIAPIAS,,RUE DE LA STATION NEERH,32 BOX A,1357.0,HELECINE,BEL,,,,0475/57.00.23,BE0713.582.478,NEE,NEE,boekhouding,,,didier.mignacca@skynet.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-10-10,Klanten HTT,0.0,2022-09-15,MONS,,,1.0,HTT
+1961.0,LA BOURSE QUIEVRAIN,,RUE GRANDE,2,7380.0,QUIEVRAIN,BEL,,,,0479/20.09.11,BE0639.811.208,NEE,NEE,boekhouding,,,Labourse70@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-07,Klanten HTT,1000.0,2022-09-15,MONS,,,1.0,HTT
+1962.0,PIZZA A CASA,,RUE DE LA FONTAINE,159,7301.0,HORNU,BEL,,,,0471/92.97.61,BE0450.403.365,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,sabrina_felice@hotmail.com,,,09 HORECA,,Klanten HTT,2500.0,2022-09-15,MONS,,,1.0,HTT
+1963.0,G.G.B. SANTUS,,RUE BOURGOGNE,5A,4452.0,PAIFVE,BEL,,,,0477/65.78.28,BE0427.318.355,NEE,NEE,boekhouding,,,santus.alex@skynet.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-05,Klanten HTT,1000.0,2022-09-15,MONS,,,1.0,HTT
+1964.0,L'ATELIER DE MARIUS,,CHEMIN TINETTE,26,7063.0,NEUFVILLES,BEL,067/85.09.97,,,,BE0707.975.185,NEE,NEE,boekhouding,,,atelierdemarius6@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1500.0,2022-09-15,MONS,,,1.0,HTT
+1965.0,LE PETIT BAIGNEUR DE SENEFFE SPRL,,RUE DU RIVAGE,11,7180.0,SENEFFE,BEL,064/36.74.10,,,,BE0763.831.349,NEE,NEE,boekhouding,,,lepetitbaigneurdeseneffe@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2022-11-23,Klanten HTT,1500.0,2022-09-15,MONS,,,1.0,HTT
+1966.0,W.IN SPRL,,AV.DU BOURG. JEAN MATERNE,174,5100.0,JAMBES,BEL,,,,0479/39.82.45,BE0894.042.367,NEE,JA,boekhouding,,,laurent.lemineur@icloud.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-02-12,Klanten HTT,3000.0,2022-09-15,MONS,,,1.0,HTT
+1967.0,ROBIN'S & CO SPRL,,RUE DE L'ABBAYE D'AULNE,5,6142.0,LEERNES,BEL,071/56.04.32,,,0476/63.08.51,BE0721.776.307,NEE,JA,boekhouding,,,thierryrobinski@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-09-26,Klanten HTT,2500.0,2022-09-15,MONS,,,1.0,HTT
+1968.0,DRUGMAND SYLVIANE,,RUE DE BOLUS,37,7331.0,BAUDOUR,BEL,,,,0479/34.59.40,BE0539.843.404,NEE,NEE,boekhouding,,,syl-vous-plait@outlook.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-09-16,MONS,,,1.0,HTT
+1969.0,DUQUESNOY PIERRE,,RUE DE LA GARENNE,48A,7011.0,GHLIN,BEL,,,,0478/04.64.09,BE0829.578.543,NEE,JA,boekhouding,,,fldesel@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-12-27,Klanten HTT,1000.0,2022-09-16,MONS,,,1.0,HTT
+1970.0,COLFONTAINE-JURBISE EAFC,,RUE CLEMENCEAU 60/62,48A,7340.0,COLFONTAINE,BEL,065/67.26.88,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-09-16,MONS,,,1.0,HTT
+1971.0,TRA TE E IL MARE SPRLMATTHIAS & SEA,,ROUTE DE PHILIPPEVILLE,34,5651.0,TARCIENNE,BEL,,,,0497/47.65.48,BE0534.719.725,NEE,JA,boekhouding,,,mattiacollu@msn.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,2024-05-11,Klanten HTT,0.0,2022-09-16,MONS,,,1.0,HTT
+1973.0,LA SOLE GOURMANDE,,RUE GRANDE,84,7330.0,SAINT-GHISLAIN,BEL,,,,,BE0749.709.139,NEE,JA,boekhouding,,,lasolegourmande@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2022-10-10,Klanten HTT,0.0,2022-09-16,MONS,,,1.0,HTT
+1974.0,SOLE GEANTE,,RUE HAUTE,15,7800.0,ATH,BEL,,,,,BE0729.559.071,NEE,JA,boekhouding,,,lasolegeante@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2022-10-05,Klanten HTT,0.0,2022-09-16,MONS,,,1.0,HTT
+1976.0,GREGOIRE JEROMEJEUX DE GOUT,,RUE DE BOHAN,91,5550.0,ORCHIMONT,BEL,061/41.50.95,,,,BE0701.917.536,NEE,JA,boekhouding,,,admin@jeuxdegouts.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2025-03-26,Klanten HTT,1000.0,2022-09-16,MONS,,,1.0,HTT
+1977.0,BAVEV,POKEBOWL,WEVERSSTRAAT,4,2400.0,MOL,BEL,0492/85.09.52,,,0494/42.04.58,BE0735.823.687,NEE,NEE,boekhouding,,,info@surfsidepoke.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,2026-01-06,Klanten HTT,0.0,2022-09-16,MONS,,,1.0,HTT
+1978.0,LES SAVEURS D'AURELIE,,RUE DE BEHOGNE,34B,5580.0,ROCHEFORT,BEL,,,,0472/45.70.69,BE0750.990.628,NEE,JA,boekhouding,,,quentin-desclin@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,2500.0,2022-09-16,MONS,,,1.0,HTT
+1979.0,GX,,RUE DE LA BOURGOGNE,5,4452.0,PAIFVE,BEL,,,,0474/71.33.82,BE0476.779.348,NEE,NEE,boekhouding,,,santus.alex@skynet.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1500.0,2022-09-16,MONS,1500.0,,1.0,HTT
+1980.0,ORVI HORECA,PARADIS O,CHAUSSEE DE LA COUR,81,7340.0,COLFONTAINE,BEL,,,,0475/91.31.61,BE0478.739.441,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,davlej@msn.com,,,09 HORECA,2024-06-07,Klanten HTT,1000.0,2022-09-16,MONS,,,1.0,HTT
+1981.0,ADAM XAVIER TRAITEUR,,RUE DES ALLIES,105,7080.0,FRAMERIES,BEL,065/84.35.88,,,0476/97.69.86,BE0745.759.556,NEE,NEE,boekhouding,,,traiteur_adam@yahoo.fr,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-03-15,Klanten HTT,0.0,2022-09-16,MONS,,,1.0,HTT
+1982.0,COLAIANNI PIETRO,,RUE LOMBARD,42,5000.0,NAMUR,BEL,081/22.82.82,,,0488/82.07.40,BE0627.889.314,NEE,NEE,boekhouding,,,colaianni.pietro@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,3000.0,2022-09-16,MONS,,,1.0,HTT
+1983.0,TERRE ET MER GHLIN SPRL,,AVENUE DE LA LIBERATION,15/A,7011.0,GHLIN,BEL,,,,,BE0661.720.439,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-07-01,Klanten HTT,0.0,2022-09-16,MONS,,,1.0,HTT
+1984.0,MEGA GRILL CUESMES,,RUE VINCENT VAN GOGH,45,7033.0,CUESMES,BEL,,,,0486/48.26.26,BE0646.862.316,JA,JA,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-01-25,Klanten HTT,0.0,2022-09-16,MONS,,,1.0,HTT
+1985.0,MEZZO CONCEPT SPRL,DA LEANDRO,AVENUE FOCH,949,7012.0,JEMAPPES,BEL,065/31.13.28,,,0479/49.33.00,BE0836.677.656,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,JA,boekhouding,,,daleandro123@gmail.com,,,09 HORECA,,Klanten HTT,1000.0,2022-09-17,MONS,,,1.0,HTT
+1986.0,L'ORANGERIE SPRL,,ROUTE DE MONS,103,7301.0,HORNU,BEL,,,,0471/42.12.01,BE0518.888.731,NEE,JA,boekhouding,,,orangerie@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-08-09,Klanten HTT,1000.0,2022-09-17,MONS,,,1.0,HTT
+1987.0,HORECALAC SPRL,,RUE DU BOIS DU FOUR,9,6441.0,ERPION,BEL,,,,0472/99.53.56,BE0669.520.031,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-02-23,Klanten HTT,0.0,2022-09-17,MONS,,,1.0,HTT
+1988.0,LES RIPAILLEURS SPRL,,PLACE DE LA RESISTANCE,1,7331.0,BAUDOUR,BEL,,,,0470/10.60.33,BE0644.583.608,NEE,NEE,boekhouding,,,administration@fernez.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-07,Klanten HTT,3000.0,2022-09-17,MONS,,,1.0,HTT
+1991.0,POTES AU FEU SPRL,,CHAUSSEE DU ROEULX,273,7000.0,MONS,BEL,065/65.68.33,,,,BE0635.486.293,NEE,NEE,boekhouding,,,info@potesaufeu.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,2026-01-05,Klanten HTT,0.0,2022-09-19,MONS,,,1.0,HTT
+1992.0,PICCIN CEDRIC,LE VERTIGE DES SENS,RUE DU TORDOIR,10,7822.0,MESLIN L'EVEQUES,BEL,068/64.54.10,,,,BE0508.592.774,NEE,JA,boekhouding,,,cedric.piccin@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-04-27,Klanten HTT,0.0,2022-09-19,MONS,,,1.0,HTT
+1993.0,LE FOYA ANDERLUES ASBL,,RUE AUGUSTE GUERLEMENT,36,6150.0,ANDERLUES,BEL,071/52.79.95,,,,BE0421.741.944,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-09-19,MONS,,,1.0,HTT
+1994.0,SCALIM SPRL,,RUE DE LA VERRERIE,5,7330.0,SAINT-GHISLAIN,BEL,,0493/97.82.14,,0471/91.59.80,BE0682.869.211,NEE,JA,boekhouding,,,compta@scalim.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,2500.0,2022-09-19,MONS,,,1.0,HTT
+1995.0,FRAGOLA & CO SPRL,L'ETOILE,PLACE ALBERT-ELISABETH,12,7330.0,SAINT-GHISLAIN,BEL,,,,0488/60.99.55,BE0720.540.744,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-09-19,MONS,,,1.0,HTT
+1996.0,BLUE NOTE PROJECT SPRL,,RUE CONCEUR,83,7100.0,LA LOUVIERE,BEL,064/26.66.60,,,0471/83.15.10,BE0732.540.238,NEE,JA,boekhouding,,,info@bluenoteproject.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-07-02,Klanten HTT,500.0,2022-09-19,MONS,,,1.0,HTT
+1997.0,SIMONE SPRL,,RUE D'HAVRE,44,7000.0,MONS,BEL,065/22.60.32,,,,BE0847.986.668,NEE,NEE,boekhouding,,,lamarmitedesimone@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-09-19,MONS,,,1.0,HTT
+1998.0,DESSEIN ANNE-SOPHIE,CAFE DE LA PLACE SPRL,PLACE DE LA RABECQUE,1,7782.0,PLOEGSTEERT,BEL,,,,0625/17.86.58,BE0839.914.684,NEE,NEE,boekhouding,,,desseinannesophie@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-10-09,Klanten HTT,0.0,2022-09-19,WEVELGEM,,,1.0,HTT
+1999.0,LYCEE PROV D'ENS TECH DU HAINAUT,,AVENUE DE L'ENSEIGNEMENT,45,7330.0,SAINT-GHISLAIN,BEL,,,,0471/72.23.83,BE0207.656.610,NEE,NEE,boekhouding,,,factures.fournisseurs@hainaut.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-07,Klanten HTT,3000.0,2022-09-19,MONS,,,1.0,HTT
+2000.0,ZACCARIA SCRL,,RUE DE LA POUDRIERE,88,7390.0,QUAREGNON,BEL,,,,,BE0433.502.797,NEE,NEE,boekhouding,,,pino.zaccaria@skynet.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-02-20,Klanten HTT,0.0,2022-09-19,MONS,,,1.0,HTT
+2002.0,M.G.G. SPRL,,RUE DE LA VERRERIE,2,7050.0,JURBISE,BEL,,,,0475/25.11.02,BE0471.013.489,NEE,NEE,boekhouding,,,marcdeltenre64@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1500.0,2022-09-20,MONS,,,1.0,HTT
+2003.0,SMOKE CATERING SCRL,,MARCHE-AUX-TOILES,12,7800.0,ATH,BEL,,,,0471/09.38.90,BE0783.445.739,NEE,NEE,boekhouding,,,matth.borgies@smoke-athitude.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-09-20,MONS,,,1.0,HTT
+2005.0,LE SOLSTICE,V ET V DIFFUSION,RUE SAINT-VINCENT,78 BOX a,7062.0,NAAST,BEL,,,,0487/55.26.26,BE0860.040.897,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,b.watrin@skynet.be,,,09 HORECA,,Klanten HTT,0.0,2022-09-20,MONS,,,1.0,HTT
+2006.0,L'ATELIER TOKE SPRL,,RUE DE BRUXELLES,2,1400.0,NIVELLES,BEL,,,,0477/34.81.94,BE0533.872.063,NEE,NEE,boekhouding,,,compta@ateliertoke.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-07,Klanten HTT,1000.0,2022-09-20,MONS,,,1.0,HTT
+2007.0,CHEZ ROMANO SPRL,,RUE NEUVE,18,7300.0,BOUSSU,BEL,065/60.06.02,,,0477/23.49.68,BE0867.796.444,NEE,NEE,boekhouding,,,chezromanorestaurant@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-09-20,MONS,,,1.0,HTT
+2009.0,JIN LI,TRANI RISTAURANTE,RUE DU MOULIGNEAU,39,7011.0,GHLIN,BEL,,,,0484/68.32.56,BE0898.141.014,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,JA,Boekhouding,,,compta.megagrill@gmail.com,,,09 HORECA,2023-03-17,Klanten HTT,0.0,2022-09-20,MONS,,,1.0,HTT
+2010.0,GET SPRL,LA PIAZZETA,GRAND PLACE,32,7370.0,DOUR,BEL,065/78.56.67,,,0475/86.34.06,BE0882.098.697,NEE,JA,boekhouding,,,restopiazzetta@outlook.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-02-16,Klanten HTT,0.0,2022-09-20,MONS,,,1.0,HTT
+2011.0,ARTS2 SPRL,,RUE DE NIMY,7,7000.0,MONS,BEL,,,,0476/45.08.43,BE0259.393.044,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,service.finance@artsaucarre.be,,,09 HORECA,,Klanten HTT,1000.0,2022-09-20,MONS,,,1.0,HTT
+2012.0,LE PASSE-TEMPS,,RUE DE TOURNAI,10,7900.0,LEUZE-EN-HAINAUT,BEL,,,,0488/53.21.05,BE0888.255.031,NEE,JA,boekhouding,,,allart.brieuc@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,0.0,2022-09-20,MONS,,,1.0,HTT
+2013.0,AGML SPRL,,RUE DE LA ROQUETTE,36,6532.0,RAGNIES,BEL,071/40.49.59,,,,BE0737.447.349,NEE,JA,boekhouding,,,gilles@lagrangedeslegendes.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2022-12-21,Klanten HTT,1000.0,2022-09-20,MONS,,,1.0,HTT
+2014.0,LES GOURMANDS SPRL,,RUE DE SARS,15,7040.0,BLAREGNIES,BEL,,,,0476/28.85.12,BE0436.408.938,NEE,NEE,boekhouding,,,info@les-gourmands.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,2500.0,2022-09-20,MONS,,,1.0,HTT
+2015.0,DI PIAZZA GIUSEPPE,,PLACE DU PARC,31,7000.0,MONS,BEL,0498/46.80.70,,,472974589,BE0783.100.497,NEE,NEE,boekhouding,,,lafontaine.mons@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-09-20,MONS,,,1.0,HTT
+2016.0,MERLOT ALEXANDRE,,RUE DE JAUNAY-CLAN,23,7600.0,PERUWELZ,BEL,069/22.07.77,,,,BE0865.942.457,NEE,NEE,boekhouding,,,traiteur.alex@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,,Klanten HTT,2500.0,2022-09-21,MONS,,,1.0,HTT
+2018.0,A-MANI,,CHAUSSEE DE BRUXELLES,29,7061.0,CASTEAU,BEL,,,,0468/52.18.66,BE0433.421.932,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-04-03,Klanten HTT,1000.0,2022-09-21,MONS,,,1.0,HTT
+2019.0,MAJORELLE PATRICK,LES JOURS HEUREUX,CHAUSSEE DE MONS,343,7060.0,SOIGNIES,BEL,,,,0479/23.53.73,BE0644.733.858,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,JA,boekhouding,,,aulnees@gmail.com,,,09 HORECA,2025-12-12,Klanten HTT,1000.0,2022-09-21,MONS,,,1.0,HTT
+2020.0,AUDREL SPRL,LA PART DES ANGES,PLACE DE RAGNIES,6,6532.0,RAGNIES,BEL,071/33.00.03,,,0474/80.46.48,BE0821.067.782,NEE,JA,boekhouding,,,lapartdesanges@hotmail.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2022-10-05,Klanten HTT,0.0,2022-09-21,MONS,,,1.0,HTT
+2022.0,SCARLATA BRIGITTE,,RUE DU PETIT MARAIS,16,7011.0,GHLIN,BEL,,,,0479/95.96.96,BE0783.121.877,NEE,NEE,boekhouding,,,brigitte.001@live.fr,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-05,Klanten HTT,5000.0,2022-09-21,MONS,,,1.0,HTT
+2023.0,TUILE AU LOUP,CENSE DE L'ALOUETTE,RUE DE TOURNAI,188,7333.0,TERTRE,BEL,,,,0486/70.86.95,BE0825.475.443,NEE,NEE,boekhouding,,,info@censedelalouette.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,2500.0,2022-09-21,MONS,,,1.0,HTT
+2024.0,LE CASTELIN SPRL,,PLACE DE L'HOTEL DE VILLE,13,6200.0,CHATELET,BEL,071/39.06.04,,,,BE0881.920.535,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-09-21,MONS,,,1.0,HTT
+2025.0,FAIGNART MICHEL,,RUE DES PLACES,16,7191.0,ECAUSSINNES-LALAING,BEL,,,,,BE0669.229.526,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-04-06,Klanten HTT,0.0,2022-09-21,MONS,,,1.0,HTT
+2027.0,DEROUBAIX LOIC,,RUE DES FRIPIERS,16,7000.0,MONS,BEL,,,,,BE0727.541.471,NEE,JA,boekhouding,,,el.camerluche@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-04-12,Klanten HTT,0.0,2022-09-21,MONS,,,1.0,HTT
+2029.0,HENET ANN,,RUE DE SIERPONT,16,5340.0,GESVES,BEL,,,,0477/69.38.63,BE0689.879.341,NEE,NEE,boekhouding,,,latabledemalou@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2025-05-13,Klanten HTT,2500.0,2022-09-21,MONS,,,1.0,HTT
+2030.0,LE CODE BAR SPRL,,RUE DE CINEY,102,5350.0,OHEY,BEL,085/51.27.16,,,0485/46.96.55,BE0823.048.265,NEE,NEE,boekhouding,,,serge.urrutia@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-09-21,MONS,,,1.0,HTT
+2031.0,KONTANTE VERKOPEN - HTT PERSONEEL ,,,,,,BEL,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,05 VISHANDEL,2023-11-18,Extra controle,0.0,2022-09-22,MONS,,,1.0,HTT
+2033.0,LE WARECHE-JURBISE TRAVEL,LE WARECHE JURBISE TRAVEL SPRL,CHEMIN DE SAINT-GHISLAIN,1,7050.0,JURBISE,BEL,068/65.84.45,,,0488/98.53.98,BE0874.507.557,NEE,NEE,boekhouding,,,ludovic.dekyvere@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-09-22,MONS,,,1.0,HTT
+2034.0,J.I.L.A. SPRL,LA FLAMBE,RUE DU RAT D'EAU,45 BOX A,7387.0,HONNELLES,BEL,,,,0478/72.02.24,BE0899.367.865,NEE,JA,boekhouding,,,la_flambee@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,0.0,2022-09-22,MONS,,,1.0,HTT
+2035.0,TOCCO D'ITALIA SPRL,,RUE DE NIMY,114,7000.0,MONS,BEL,065/34.07.40,,,,BE0808.990.094,NEE,JA,boekhouding,,,toccoditalia@hotmail.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-09-22,MONS,,,1.0,HTT
+2036.0,VIOT DAVID,LA TABLE DE VIOT,RUE ANTOINE GOSSELIN,20,7973.0,ST-AMBRUGES,BEL,,,,0473/47.26.44,BE0656.333.177,NEE,NEE,boekhouding,,,lestablesdesviot@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-09-22,MONS,,,1.0,HTT
+2037.0,LANDERWYN THIERRY,THIERRY PRIMEUR,CHAUSSEE DU ROI BOUDOUIN,192,7030.0,SAINT-SYMPHORIEN,BEL,065/77.86.75,,,,BE0716.645.896,NEE,NEE,boekhouding,,,bienvenu@thierryenprimeur.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,2000.0,2022-09-22,MONS,,,1.0,HTT
+2038.0,REGIE MESS ET HEBERGEMENT D'HAVRE,,RUE SAINT-ANTOINE,1,7021.0,HAVRE,BEL,,,,,BE0207.656.610,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,factures.fournisseurs@hainaut.be,,,09 HORECA,2026-01-08,Klanten HTT,1500.0,2022-09-22,MONS,,,1.0,HTT
+2039.0,VIVADECO SPRL,LA GUINGUETTE,AVENUE D'HYON,69,7000.0,MONS,BEL,,,,,BE0879.624.407,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,0.0,2022-09-22,MONS,,,1.0,HTT
+2040.0,WB FOOD EVENT SPRL,,RUE HAMOIR,2,7100.0,LA LOUVIERE,BEL,,,,0477/21.67.12,BE0765.647.328,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-09-22,MONS,,,1.0,HTT
+2041.0,COLMAN PIERRE,,RUE DE L'EGLISE,15 BOX B,7034.0,OBOURG,BEL,065/97.57.96,,,0497/20.06.28,BE0870.752.568,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-09-23,MONS,,,1.0,HTT
+2043.0,LA COUR DES DAMES SPRL,,RUE DE SAINT-DENIS,202,7034.0,SAINT-DENIS,BEL,,,,0496/81.89.91,BE0750.990.727,NEE,NEE,boekhouding,,,info@courdesdames.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-06,Klanten HTT,3000.0,2022-09-23,MONS,,,1.0,HTT
+2044.0,BATRIMI SPRL,LE GRILLARDIN,RUE DE L'INDUSTRIE,180,7080.0,FRAMERIES,BEL,065/94.97.84,,,0484/73.18.24,BE0720.847.184,NEE,JA,boekhouding,,,niti.legrillardin@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,2500.0,2022-09-23,MONS,,,1.0,HTT
+2046.0,MOUSTIER CELINE,ORIGINES,RUE DE LA COUPE,25,7000.0,MONS,BEL,065/59.57.62,,,0471/51.81.79,BE0735.448.555,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,info@originesbyceline.be,,,09 HORECA,,Klanten HTT,1000.0,2022-09-26,MONS,,,1.0,HTT
+2047.0,WARNON ERIC,,RUE DE BRAIBANT,3,5360.0,HAMOIS,BEL,083/21.36.24,,,0475/69.29.54,BE0688.392.766,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,e-warnon@skynet.be,,,09 HORECA,2026-01-06,Klanten HTT,1000.0,2022-09-27,MONS,,,1.0,HTT
+2048.0,F&G BRASSERIES SRL,,RUE LA COUVINOISE,11,5660.0,COUVIN,BEL,,,,0478/88.63.28,BE0766.313.757,NEE,NEE,boekhouding,,,leloftcouvin13@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-11-07,Klanten HTT,1000.0,2022-09-28,MONS,,,1.0,HTT
+2050.0,CHAVEPEYER ROBIN,,QUAI NORD,56,7000.0,CUESMES,BEL,,,,0482/23.38.90,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,JA,boekhouding,,,robin.chavepeyer@gmail.com,,,09 HORECA,,Klanten HTT,1000.0,2022-09-28,MONS,,,1.0,HTT
+2051.0,LORCHIDEE.BE SPRL,,RUE DES RASPES,25,6043.0,RANSART,BEL,,,,0497/50.90.10,,NEE,JA,boekhouding,,,orchidee@proximedia.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2022-12-14,Klanten HTT,1000.0,2022-09-28,MONS,,,1.0,HTT
+2053.0,VAN DER EECKEN BLANCHE,AUX DEUX RONGEURS,PLACE DE THIEUSIES,12,7061.0,THIEUSIES,BEL,065/73.03.75,,,0494/32.44.68,BE0669.351.468,NEE,JA,boekhouding,,,deuxecureuilbrun@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-09-28,MONS,,,1.0,HTT
+2054.0,CHEZ TATANNE,,RUE DES COMMUNES,20,6181.0,GOUY-LEZ-PIETON,BEL,0474/01.34.34,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,JA,boekhouding,,,cheztatanne@gmail.com,,,09 HORECA,,Klanten HTT,1000.0,2022-09-28,MONS,,,1.0,HTT
+2055.0,MIKOZ,QUARE'TEMPS,GRAND-PLACE,25,7390.0,QUAREGNON,BEL,,,,0497/17.14.48,BE0770.332.428,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-05-28,Klanten HTT,500.0,2022-09-28,MONS,,,1.0,HTT
+2056.0,GIUSEPPE BRUNO,LE CHEBEC SPRL,RUE DE LA LIBERATION,23,7160.0,CHAPELLE-LEZ-HERLAIMONT,BEL,0499/08.79.96,,,0494/35.46.43,BE0808.331.682,NEE,NEE,boekhouding,,,lechebec@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-09-28,MONS,,,1.0,HTT
+2057.0,ULTEAM SPRL,,ROUTE DE MONS,637,7130.0,BINCHE,BEL,,,,0471/72.23.83,BE0736.575.141,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,info@ulteam.com,,,09 HORECA,,Klanten HTT,500.0,2022-09-28,MONS,,,1.0,HTT
+2058.0,MARTIA SPRL,,PLACE DES COMBATTANTS,7,7330.0,SAINT-GHISLAIN,BEL,,,,0478/08.80.68,BE0634.608.939,NEE,NEE,boekhouding,,,marloicloud@me.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-09-29,MONS,,,1.0,HTT
+2059.0,TEAMBAKER01,,RUE DE LA REMISE,5,6061.0,MONTIGNIES-SUR-SAMBRE,BEL,,,,0473/32.32.52,BE0773.497.103,NEE,JA,boekhouding,,,auxdixvinsquievrain@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-09-29,MONS,,,1.0,HTT
+2060.0,TRICOBERT SARL,DELIVERY PIZZA,ROUTE DE MONS,117,59600.0,MAUBEUGE,FRA,,,,0474/27.00.04,FR26531206860,NEE,JA,boekhouding,,,cristobal_01@live.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,2500.0,2022-09-29,MONS,,,1.0,HTT
+2061.0,PRADO Y RASERO PEDRO,,RUE DU CORON,51,7331.0,BAUDOUR,BEL,,,,0491/98.44.23,BE0899.573.446,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2025-04-17,Klanten HTT,1000.0,2022-09-29,MONS,,,1.0,HTT
+2063.0,LA CASTELLANA,,RUE DE LA COUPE,31,7000.0,MONS,BEL,,,,065/36.42.00,BE0881.298.844,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,massimodiprima66@gmail.com,,,09 HORECA,,Klanten HTT,1000.0,2022-09-29,MONS,,,1.0,HTT
+2064.0,JACQUES PIERRE SPRL,TAVERNE LE BOIS DU RENARD,CHAUSSEE DE BRUXELLES,346,7800.0,ATH,BEL,068/33.15.03,,,0485/278507,BE0717.438.229,NEE,NEE,boekhouding,,,leboisdurenard7800@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-09-29,MONS,,,1.0,HTT
+2065.0,DISIWIGAU SPRL,,RUE DU MOULIN-A-VENT,10,1460.0,ITTRE,BEL,,,,0474/28.11.95,BE0653.722.590,NEE,JA,boekhouding,,,disiwigausprl@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-03-17,Klanten HTT,500.0,2022-09-29,MONS,,,1.0,HTT
+2066.0,DELICES A TOI SPRL,,GRAND PLACE,8,7800.0,ATH,BEL,,,,0472/43.13.99,BE0432.775.594,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,valerie.aert@hotmail.fr,,,09 HORECA,,Klanten HTT,1000.0,2022-09-29,MONS,,,1.0,HTT
+2067.0,PROVINCE DU HAINAUT,IPES ATH,PLACE ERNEST CAMBIER,16,7800.0,ATH,BEL,068/26.41.32,,,,BE0207.656.610,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,factures.fournisseurs@hainaut.be,,,09 HORECA,2026-01-05,Klanten HTT,1000.0,2022-09-30,MONS,,,1.0,HTT
+2069.0,ALF RESTO SPRL,,ROUTE D'ATH,119,7020.0,NIMY,BEL,,,,0471/65.36.06,BE0480.530.773,NEE,NEE,boekhouding,,,reception.montecristo@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-05,Klanten HTT,2000.0,2022-10-03,MONS,,,1.0,HTT
+2070.0,LENS BERNHARD,,RUE SAINT-JACQUES,306,5500.0,DINANT,BEL,,,,0475/41.31.61,BE0692.682.245,NEE,NEE,boekhouding,,,lensbernhard@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-07,Klanten HTT,2500.0,2022-10-03,MONS,,,1.0,HTT
+2071.0,LA PETITE FUGUE,,RUE DE LA PREMIERE ARMEE,5,5100.0,JAMBES,BEL,,,,0475/71.21.05,BE0456.476.357,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,JA,boekhouding,,,lapetitefugue@yahoo.fr,,,09 HORECA,,Klanten HTT,1000.0,2022-10-04,MONS,,,1.0,HTT
+2073.0,PROVINCE DU HAINAUT,ROFP-MESS DELTA,AVENUE DU GENERAL DE GAULLE,102 B,7000.0,MONS,BEL,065/38.22.28,,,0474/92.07.20,BE0207.656.610,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,factures.fournisseurs@hainaut.be,,,09 HORECA,,Klanten HTT,1500.0,2022-10-04,MONS,,,1.0,HTT
+2074.0,SASPJ GTA SPRL,L'ABREUVOIR,"RUE D'OTREPPE, BIERW",45,5380.0,BIERWART,BEL,,,,0479/94.86.97,BE0545.942.724,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,JA,boekhouding,,,lempereurandgie@hotmail.com,,,09 HORECA,,Klanten HTT,1000.0,2022-10-04,MONS,,,1.0,HTT
+2076.0,LE MINARET SCRL,,CHASSE DE SAINT-GHISLAIN,4,7300.0,BOUSSU,BEL,,,,0477/27.21.16,BE0436.902.747,NEE,NEE,boekhouding,,,Minaret.factures@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-10-05,MONS,,,1.0,HTT
+2077.0,PROVINCE DU HAINAUT,REGIE PROVINCIALE ATH-LEUZE,RUE VERTE,13,7000.0,MONS,BEL,,,,,BE0207.656.610,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,factures.fournisseurs@hainaut.be,,,09 HORECA,2026-01-06,Klanten HTT,1500.0,2022-10-05,MONS,,,1.0,HTT
+2078.0,AMICALEMENT VOTRE,,PLACE PIERRE DELANNOY,40,7850.0,ENGHIEN,BEL,,,,0475/87.60.28,BE0825.438.326,NEE,JA,boekhouding,,,amivotre@voo.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-10-05,MONS,,,1.0,HTT
+2079.0,D.A.P. SPRL,LE CERF BLANC,CHAUSSEE DU ROEULX,551,7000.0,MONS,BEL,065/33.43.45,,,,BE0473.469.668,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-10-05,MONS,,,1.0,HTT
+2082.0,LE FUNAMBULE SPRL,,RUE EMILE LENOIR,52,7332.0,SIRAULT,BEL,065/66.70.07,,,,BE0656.853.514,NEE,JA,boekhouding,,,lefunambule@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-09-02,Klanten HTT,1000.0,2022-10-06,MONS,,,1.0,HTT
+2084.0,PESTIAUX ANDRE,,CHEMIN DU LAPIN,37,7900.0,LEUZE-EN-HAINAUT,BEL,,,,0496/90.05.03,BE0680.954.450,NEE,JA,boekhouding,,,act.traiteur@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-10-07,MONS,,,1.0,HTT
+2085.0,MEYERS PHILIPPE SPRL,,RUE DOYEN VAN BELLE,6,1420.0,BRAINE-L'ALLEUD,BEL,,,,0475/58.88.69,BE0863.421.942,NEE,NEE,boekhouding,,,philippe.meyers@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-10-10,MONS,,,1.0,HTT
+2086.0,KJS MICHEL SPRL,LE SUS SCROFA,RUE DES JUIFS,2,5680.0,DOISCHE,BEL,,,,0475/33.19.04,BE0784.296.270,NEE,NEE,boekhouding,,,info@lesusscrofa.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1500.0,2022-10-11,MONS,,,1.0,HTT
+2088.0,ASSOCIATION CHRETIENNE DES INSTITUTION,,AVENUE DE LA PAIRELLE,33,5000.0,NAMUR,BEL,,,,,BE0415.047.954,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-10-11,MONS,,,1.0,HTT
+2089.0,LE LA DU HAUTBOIS ASBL,,RUE DU HAUTBOIS,13,7000.0,MONS,BEL,065/59.51.42,,,,BE0644.517.884,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-10-13,MONS,,,1.0,HTT
+2090.0,CARDIPLAI SCRL,,GRAND-PLACE,9,7390.0,QUAREGNON,BEL,,,,,BE0787.550.819,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-02-13,Klanten HTT,0.0,2022-10-13,MONS,,,1.0,HTT
+2092.0,BOULE DE BLEU SPRL,,RUE DE LA COUPE,46,7000.0,MONS,BEL,065/84.58.19,,,0485/71.25.60,BE0648.635.634,NEE,NEE,boekhouding,,,bouledebleu@icloud.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-05,Klanten HTT,1500.0,2022-10-14,MONS,,,1.0,HTT
+2093.0,BAYOUDH SAHBI,LA MAISON DU COCHER,PLACE DE LOMBISE,12,7870.0,LOMBISE,BEL,068/45.52.23,,,,BE0717.384.977,NEE,JA,boekhouding,,,lamaisonducocher@skynet.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-10-14,MONS,,,1.0,HTT
+2094.0,CAMILA SPRL,LE CHEF & MOI,RUE DU CHEVET ST-PIERRE,6,7500.0,TOURNAI,BEL,,,,0479/38.70.20,BE0780.976.296,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2022-10-12,Klanten HTT,500.0,2022-10-14,MONS,,,1.0,HTT
+2095.0,BELLEVUE MONS SPRL,,RUE DES CLERCS,9,7000.0,MONS,BEL,,,,0474/21.99.10,BE0675.448.315,NEE,NEE,boekhouding,,,info@artdesmetsmons.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1500.0,2022-10-14,MONS,,,1.0,HTT
+2096.0,VIS A VIS SPRL,,RUE DE LA COUPE,35,7000.0,MONS,BEL,,,,0476/88.12.24,BE0720.735.734,NEE,NEE,boekhouding,,,visavismons@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-10-17,MONS,,,1.0,HTT
+2098.0,CAB DU MIN-PRESIDENT ELIO DI RUPO,REGION WALLONNE,RUE MAZY,25-27,5100.0,JAMBES,BEL,,,,,,NEE,JA,boekhouding,,,tindaro.tassone@gov.wallonie.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-01-03,Klanten HTT,1000.0,2022-10-17,MONS,,,1.0,HTT
+2100.0,LA FOLLE EPOQUE,,CHAUSSEE DE NAMUR,19,1300.0,WAVRE,BEL,,,,0472/80.02.08,BE0461.313.093,NEE,NEE,Boekhouding,,,folleepoquefacture@gmail.com,,,09 HORECA,2026-01-08,Klanten HTT,0.0,2022-10-19,MONS,,,1.0,HTT
+2101.0,LE PERE MICHEL SCRL,,RUE DE LONGEAU,54,5100.0,DAVE,BEL,,,,0499/25.89.91,BE0437.634.306,NEE,NEE,boekhouding,,,restaurantle54@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-10-19,MONS,,,1.0,HTT
+2103.0,FOOD METAL JACKET SPRL,,RUE DU VENT,26,7070.0,GOTTIGNIES,BEL,,,,0498/51.30.31,BE0555.779.415,NEE,JA,boekhouding,,,bencookhome@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-10-19,MONS,,,1.0,HTT
+2104.0,POIVRE FREDERIC SPRL,,RUE DU GRAND PRE,13,6560.0,HANTES-WIHERIES,BEL,,,,0499/27.64.05,BE0654.881.642,JA,NEE,Boekkhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,2026-01-06,Klanten HTT,5000.0,2022-10-19,MONS,,,1.0,HTT
+2106.0,MBAT SPRL,,RUE DES CLERCS,8,7000.0,MONS,BEL,,,,0496/53.09.52,BE0734.643.158,NEE,NEE,boekhouding,,,monbaratapas@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-10-20,MONS,,,1.0,HTT
+2107.0,BTISSAM BENACHIR,MILLE ET UNE NUIT,FAUBOURG DE BRUXELLES,260,6041.0,GOSSELIES,BEL,071/37.02.48,,,,BE0886.062.435,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-10-21,MONS,,,1.0,HTT
+2108.0,LA CLEF DESCHAMPS,,RUE LESCREVRE,2,7830.0,BASSILY,BEL,,,,0477/44.61.33,BE0669.750.059,NEE,NEE,boekhouding,,,info@laclefdeschamps.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2025-07-03,Klanten HTT,1500.0,2022-10-24,MONS,,,1.0,HTT
+2110.0,GRAPHIC S.T. SPRL,,RUE DE CLAIRE FONTAINE,195,7160.0,CHAPELLE-LEZ-HERLAIMONT,BEL,,,,,BE0452.921.308,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,JA,boekhouding,,,thierry.selvais@gmail.com,,,09 HORECA,,Klanten HTT,0.0,2022-10-24,MONS,,,1.0,HTT
+2114.0,CHEZ GIUSEPPE ET LOUNA SPRL,,CHAUSSEE DE RANSART,316A,6060.0,GILLY,BEL,071/17.89.64,,,0488/04.50.98,BE0669.793.611,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-10-26,MONS,,,1.0,HTT
+2116.0,SCHOEMANS NATHALIE ,TRAITEUR LUNCH ET VOUS,BOULEVARD FULGENCE MASSON,44,7000.0,MONS,BEL,,,,0475/86.73.57,BE0755.722.842,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-10-27,MONS,,,1.0,HTT
+2117.0,RIJOMATIC,LES FOUGERES,GRAND-RUE DE FELUY,2A,7181.0,FELUY,BEL,067/87.92.46,,,,BE0473.499.758,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2022-10-27,Klanten HTT,0.0,2022-10-27,MONS,,,1.0,HTT
+2120.0,LBD HORECA GESTION,AUBERGE DE THINES,CHAUSSEE DE NAMUR,113,1400.0,NIVELLES,BEL,,,,0493/50.52.90,BE0552.872.383,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,info@aubergedethines.be,,,09 HORECA,,Klanten HTT,1500.0,2022-10-28,MONS,,,1.0,HTT
+2121.0,PEERSMAN A-F,,RUE LONGUE,2,6200.0,BOUFFIOULX,BEL,,,,,BE0642.666.570,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-10-28,MONS,,,1.0,HTT
+2123.0,BOUTONDOR SRL,LE BOUTON D'OR,CHAUSSEE DE BRUXELLES,135,7031.0,CASTEAU,BEL,065/72.36.27,,,,BE0426.966.977,NEE,NEE,boekhouding,,,info@leboutondor.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1500.0,2022-11-02,MONS,,,1.0,HTT
+2125.0,VERDE FOOD,L'ENVERS RESTAURANT,RUE DE LA COUPE,20,7000.0,MONS,BEL,,,,0485/46.51.72,BE0689.882.212,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,verdeantoni@hotmail.com,,,09 HORECA,,Klanten HTT,1000.0,2022-11-02,MONS,,,1.0,HTT
+2126.0,WATTCOOK SPRL,,AVENUE REINE ASTRID,31,7000.0,MONS,BEL,,,,0485/15.93.24,BE0524.783.460,NEE,JA,boekhouding,,,salut@jeanphi.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2022-11-04,Klanten HTT,0.0,2022-11-04,MONS,,,1.0,HTT
+2129.0,LIME SRL,TRAITEUR LIME,RUE DES ENHAUT,58,7070.0,VILLE SUR HAINE,BEL,,,,0477/77.16.01,BE0627.619.890,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1500.0,2022-11-15,MONS,,,1.0,HTT
+2130.0,BYBS SRL,BAGU RESTAURANT,CHEMIN DE MARELLES,3,6530.0,THUIN,BEL,,,,0472/36.30.54,BE0788.907.532,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,Bybsresto@gmail.com,,,09 HORECA,,Klanten HTT,1000.0,2022-11-15,MONS,,,1.0,HTT
+2133.0,GOBEST SPRL,,GRAND PLACE,7,7370.0,DOUR,BEL,,,,0474/27.00.04,BE0502.869.972,NEE,JA,boekhouding,,,cristobal_01@live.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-11-18,MONS,,,1.0,HTT
+2134.0,M&C SPRL,LA PATATERIE,BOULEVARD ANDRE DELVAUX,1,7000.0,MONS,BEL,065/78.01.50,,,,BE0806.586.276,NEE,JA,boekhouding,,,restaurant@lapataterie-patamons.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2022-11-18,Klanten HTT,0.0,2022-11-18,MONS,,,1.0,HTT
+2135.0,BN CONSULTING,NEUSY BENOIT,RUE JULES DESTREE,17,7321.0,BLATON,BEL,,,,0478/52.91.69,BE0783.537.888,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,JA,boekhouding,,,Bneusy78@gmail.com,,,09 HORECA,,Klanten HTT,1000.0,2022-11-23,MONS,,,1.0,HTT
+2136.0,LA FERME DU COQ,,BOULEVARD DU COQ,44,7100.0,SAINT-VAAST,BEL,064/26.76.46,,,0497/41.17.67,BE0825.217.602,NEE,NEE,boekhouding,,,fermeducoq@skynet.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-11-24,MONS,,,1.0,HTT
+2137.0,RUGBY CLUB MONS CRAMONCIAU,,RUE DE MONS,365,7011.0,GHLIN,BEL,,,,0474/69.04.11,BE0432.230.119,NEE,NEE,boekhouding,,,gestion@rugbyclubmons.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-11-25,MONS,,,1.0,HTT
+2138.0,CEDIVINPAUWELS CEDRIC,,RUE DE LA CASCADE,18,7022.0,HYON,BEL,,,,0475/85.26.21,BE0700.894.185,NEE,NEE,boekhouding,,,cedivinhyon@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-11-25,MONS,,,1.0,HTT
+2140.0,L'ORNELIA TRAITEUR,RAGNO MANUEL,RUE D'HAININ,65,7350.0,HAININ,BEL,,,,0474/92.07.20,BE0732.721.568,NEE,NEE,boekhouding,,,lornelia.traiteur@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2022-11-28,MONS,,,1.0,HTT
+2141.0,LA FAIM DE LA SEMAINE SCRL,,RUE DE WALHAIN,2,7133.0,BUVRINNES,BEL,,,,0476/92.86.32,BE0741.792.157,NEE,NEE,boekhouding,,,lafaimdelasemaine@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-11-29,MONS,,,1.0,HTT
+2142.0,CENTRE IFAPME MONS - BORINAGE CENTRE,,AVENUE DU TIR,79 A,7000.0,MONS,BEL,,,,,BE0865.567.325,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-11-29,MONS,,,1.0,HTT
+2144.0,PRORESTO SPRL,LA PLANCHE,CHAUSSEE DU PONT DU SART,240,7110.0,LA LOUVIERE,BEL,,,,,BE0890.696.659,NEE,JA,boekhouding,,,jonathan.nicolo@live.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-11-29,Klanten HTT,0.0,2022-12-02,MONS,,,1.0,HTT
+2145.0,DEGARDIN OMER,BOUCHERIE OMER,RUE DU COMMERCE,220,7370.0,ELOUGES,BEL,065/65.31.96,,,,BE0664.079.024,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-12-05,MONS,,,1.0,HTT
+2147.0,LAVOIR DE MESSINES SPRL,,GRAND RUE,110,7000.0,MONS,BEL,065/35.49.95,,,,BE0432.031.466,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2022-12-19,Klanten HTT,0.0,2022-12-06,MONS,,,1.0,HTT
+2150.0,VENTE CONTANTE GHLIN,,,,,,BEL,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-07,Klanten HTT,0.0,2022-12-08,MONS,,,1.0,HTT
+2152.0,RONSYN DELPHINE RESTAURANT,,CHAUSEE D'ENGHEIN,61A,1430.0,REBECQ,BEL,,,,0477/60.20.93,BE0812.740.828,NEE,NEE,boekhouding,,,facture@restaurantdr.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-06-21,Klanten HTT,1500.0,2022-12-09,MONS,,,1.0,HTT
+2153.0,6000 EATUDE,VOLON THIBAUD,RUE DE LA NEUVILLE,10/B,6000.0,CHARLEROI,BEL,071/30.42.09,,,,BE0628.603.649,NEE,NEE,boekhouding,,,6000eatude@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-12-12,MONS,,,1.0,HTT
+2154.0,SASIRO,,RUE GRANDE,75,7330.0,SAINT-GHISLAIN,BEL,,,,0475/66.05.92,BE0476.451.825,NEE,NEE,boekhouding,,,info@olivenoire.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2022-12-26,Klanten HTT,1000.0,2022-12-12,MONS,,,1.0,HTT
+2156.0,PEETERS EVELYNE,,AVENUE DE SAINT PIERRE,75,7000.0,MONS,BEL,,,,0471/60.20.70,BE0427.113.665,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-12-13,MONS,,,1.0,HTT
+2158.0,AUX PLAISIRS DE LA TABLE,,PLACE DE LOMBISE,7,7870.0,LOMBISE,BEL,068/33.38.48,,,0491/08.89.85,BE0465.435.395,NEE,JA,boekhouding,,,glace.bertrand@hotmail.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,0.0,2022-12-15,MONS,,,1.0,HTT
+2161.0,HIRSOUX GREGORY,G.H. TRAITEUR,RUE JULES LETELLIER,9,7120.0,ESTINNES,BEL,,,,0491/22.44.47,BE0777.795.488,NEE,NEE,boekhouding,,,reidroc81@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-12-19,MONS,,,1.0,HTT
+2162.0,STRICCELLE CHRISTOPHE,AU PETIT BONHEUR,PLACE VERTE,26,5620.0,FLORENNES,BEL,,,,0496/12.20.93,BE0658.543.094,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,ficellestriccelle@gmail.com,,,09 HORECA,,Klanten HTT,500.0,2022-12-19,MONS,,,1.0,HTT
+2164.0,CHATEAU NOUGATINE,,GRAND RUE,44-46,6470.0,RANCE,BEL,,,,0497/03.86.22,BE0826.378.335,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-12-20,MONS,,,1.0,HTT
+2167.0,DEVOS YOLANDE,LA FOURCHETTE EN BOUCHE,RUE DES SAULES,42,7070.0,THIEU,BEL,,,,0473/56.23.95,BE0757.569.604,NEE,JA,boekhouding,,,devosyolande@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,0.0,2022-12-21,MONS,,,1.0,HTT
+2169.0,ARTATOUILLE,,QUAI NORD,56,7000.0,MONS,BEL,,,,0486/23.38.90,,NEE,JA,boekhouding,,,florine000@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2022-12-22,MONS,,,1.0,HTT
+2173.0,COLLURA SALVATORE,ENTRE-POTES,RUE DE LA FOSSE,60,7810.0,MAFFLE,BEL,,,,0496/18.98.00,BE0717.323.215,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2022-12-28,Klanten HTT,500.0,2022-12-28,MONS,,,1.0,HTT
+2179.0,SDO COOKING,,RUE DE NIMY,116,7000.0,MONS,BEL,,,,0489/45.83.49,BE0507.610.106,NEE,NEE,boekhouding,,,osmoserestaurant@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-11-28,Klanten HTT,4000.0,2022-12-29,MONS,,,1.0,HTT
+2190.0,AU FOURNEAU,FERNEZ PATRICK,CHAUSSEE DE MAUBEUGE,362,7022.0,HYON,BEL,,,,0477/74.25.58,BE0783.093.965,NEE,JA,boekhouding,,,patrick.fernez@icloud.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-01-24,Klanten HTT,500.0,2023-01-03,MONS,,,1.0,HTT
+2192.0,FULL HOUSE CONSTRUCTION,,ROUTE DE WALLONIE,4,7011.0,GHLIN,BEL,,,,,BE0771.464.556,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2022-12-27,Klanten HTT,500.0,2023-01-05,MONS,,,1.0,HTT
+2193.0,BAUDOUT FRANCISCO,BCN NAMUR,RUE DES FOSSES FLEURIS,28,5000.0,NAMUR,BEL,0474/26.98.90,,,0470/93.47.21,BE0795.199.169,NEE,JA,boekhouding,,,compta@restobcn.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-10-19,Klanten HTT,0.0,2023-01-05,MONS,,,1.0,HTT
+2196.0,DE ALTO & CO,LE CENTRE VILLE,GRAND PLACE,17,7000.0,MONS,BEL,,,,0498/66.48.42,BE0549.903.391,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,JA,boekhouding,,,dealto.giulian@gmail.com,,,09 HORECA,,Klanten HTT,500.0,2023-01-09,MONS,,,1.0,HTT
+2203.0,C.R.DEVELOPPEMENT,LA FERME DE LA PITANCE,RUE JEAN LORETTE,33,6230.0,THIMEON,BEL,,,,0477/29.13.19,BE0429.911.819,NEE,NEE,boekhouding,,,fermedelapitance@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2023-01-18,MONS,,,1.0,HTT
+2209.0,LA CUISINE DU RAVEL,,CHAUSSEE DE DINANT,203,5170.0,RIVIERE,BEL,,,,0475/93.09.34,BE0761.599.359,NEE,JA,boekhouding,,,lacuisineduravel@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2025-03-05,Klanten HTT,500.0,2023-01-23,MONS,,,1.0,HTT
+2218.0,CALLENS MARC,,RUE WIOTS,12,7530.0,GAURAIN RAMECROIX,BEL,,,,0478/21.97.58,BE0670.186.559,,,,,,,,,09 HORECA,,Klanten HTT,500.0,2023-01-26,MONS,,,1.0,HTT
+2221.0,VERRES ET COUVERTS,,ROUTE D'HACQUEGNIES,9,7911.0,FRASNES-LEZ-ANVAING,BEL,069/57.91.14,,,,BE0825.544.630,NEE,NEE,boekhouding,,,verresetcouverts@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-01-27,MONS,,,1.0,HTT
+2222.0,LE CONTY SPRL,,CHAUSSEE DE COURCELLES,173,6041.0,GOSSELIES,BEL,071/37.13.65,,,,BE0451.197.775,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,bellitalia@skynet.be,,,09 HORECA,,Klanten HTT,1000.0,2023-01-30,MONS,,,1.0,HTT
+2223.0,INSTITUT PROVINCIALE MONS BORINAGE,,AVENUE GOUVERNEUR EMILE CORNEZ,1,7000.0,MONS,BEL,,,,,BE0207.656.610,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,factures.fournisseurs@hainaut.be,,,09 HORECA,2026-01-06,Klanten HTT,500.0,2023-01-30,MONS,,,1.0,HTT
+2224.0,REGIE PROVINCIAL ORDINAIRE MONS BORINAGE,,ROUTE DE VALENCIENNE,58,7301.0,HORNU,BEL,065/76.76.14,,,,BE0207.656.610,NEE,NEE,boekhouding,,,factures.fournisseurs@hainaut.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-01-30,MONS,,,1.0,HTT
+2227.0,AUBERGE DU VIEUX CEDRE MONS,MONS GRAND PLACE,PLACE DU PARC,1,7000.0,MONS,BEL,,,,0474/46.43.11,BE0754.867.460,NEE,NEE,boekhouding,,,bilalhammoud@hotmail.fr,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2025-03-04,Klanten HTT,500.0,2023-02-03,MONS,,,1.0,HTT
+2228.0,AUBERGE DU VIEUX CEDRE,,AVENUE ELISABETH1ER,9,7850.0,ENGHIEN,BEL,02/397.13.00,,,,BE0466.114.001,NEE,NEE,boekhouding,,,info@levieuxcedre.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-02-03,MONS,,,1.0,HTT
+2229.0,HALL FOOD CENTER,,CHAUSSEES DE BEAUMONT,16B,7000.0,MONS,BEL,,,,0470/24.86.85,BE0500.847.127,NEE,NEE,boekhouding,,,info@hallfoodcenter.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-02-06,MONS,,,1.0,HTT
+2232.0,LA BRACE,,PLACE VERTE,9,7060.0,SOIGNIES,BEL,,,,0474/41.88.87,BE0479.703.701,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,carlo.greco@outlook.be,,,09 HORECA,,Klanten HTT,500.0,2023-02-07,MONS,,,1.0,HTT
+2234.0,LES GAUCHERS,,RUE MERODE 29,95,1060.0,SAINT-GILLES,BEL,,,,,BE0660.785.081,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,JA,boekhouding,,,sara@entrenousbxl.com,,,09 HORECA,,Klanten HTT,0.0,2023-02-07,MONS,,,1.0,HTT
+2235.0,A LA BONNE HEURE,,RUE DE LA COUPE,34,7000.0,MONS,BEL,,,,0485/06.00.22,BE0544.547.904,NEE,NEE,boekhouding,,,stephaniedelcourt@hotmail.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-02-08,MONS,,,1.0,HTT
+2242.0,D.S.D. SRL,L'ANCIENNE POSTE,BOULEVARD DES DEPORTE,1,7500.0,TOURNAI,BEL,069/86.61.66,,,0475/30.50.89,BE0867.257.204,NEE,JA,boekhouding,,,degelsvincent@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-02-10,MONS,,,1.0,HTT
+2243.0,BELLANCA ANTILLIO,LE PETIT CHEZ SOI,PLACE COMMUNALE,7,7100.0,LA LOUVIERE,BEL,064/22.98.27,,,,BE0764.150.063,,,,,,,,,09 HORECA,2023-02-10,Klanten HTT,500.0,2023-02-10,MONS,,,1.0,HTT
+2244.0,CAYANASA,LE DELICE DU JOUR,RUE DU CHEMIN DE FER,57,7160.0,CHAPELLE LEZ HERLAIMONT,BEL,,,,0475/45.31.63,BE0798.147.078,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,ledelicedujour@gmail.com,,,09 HORECA,2024-08-22,Klanten HTT,3000.0,2023-02-20,MONS,,,1.0,HTT
+2247.0,GHLIN DELICATESSEN VANHAUWAERT,,ROUTE DE WALLONIE (G),4 W,7011.0,GHLIN,BEL,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,01 GHLIN,2025-12-29,GHLIN Stock,0.0,2023-02-22,MONS,,,1.0,HTT
+2248.0,ZEEBRUGGE DELICATESSEN VANHAUWAERT,,IERSE ZEESTRAAT,109/112,8380.0,ZEEBRUGGE,BEL,,,,,,,,,,,,,,00 DELI VHA,2026-01-08,GHLIN Stock,0.0,2023-02-22,MONS,,,1.0,HTT
+2249.0,CAPPETTI FREDDY,RATATTOUILLE,RUE OLIVIER LHOIR,9,7333.0,TERTRE,BEL,,,,0473/97.18.98,BE0644.757.317,NEE,NEE,boekhouding,,,cappettifreddy@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-02-23,MONS,,,1.0,HTT
+2257.0,CLEH SPRL,,RUE DE NIMY,132,7000.0,MONS,BEL,,,,0472/24.89.62,BE0701.627.328,NEE,JA,boekhouding,,,jessica.claes@outlook.fr,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,JA,boekhouding,,,hacourt.mickael@excelsior-mons.be,,,09 HORECA,2026-01-05,Klanten HTT,2000.0,2023-03-01,MONS,,,1.0,HTT
+2258.0,GUCHET THUNUS SPRL,AU GRE DU VENT,RUE DE SOUDROMONT,67,7180.0,SENEFFE,BEL,064/33.66.01,,,,BE0835.624.118,NEE,NEE,boekhouding,,,info@resto-augreduvent.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,2500.0,2023-03-02,MONS,,,1.0,HTT
+2260.0,BUISSERET BERNARD,L'ETAL,CHAUSSEE DE BINCHE,215,7000.0,MONS,BEL,065/31.10.53,,,,BE0624.889.044,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,poissonnerie.etal@skynet.be,,,06 POISSONERIE,,Klanten HTT,3000.0,2023-03-02,MONS,,,1.0,HTT
+2262.0,YONG MEI CHEN,DYNASTY SPRL,CHAUSSEE DE CHARLEROI,206,5030.0,GEMBLOUX,BEL,,,,0473/68.88.89,BE0830.754.817,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-03-06,Klanten HTT,500.0,2023-03-06,MONS,,,1.0,HTT
+2264.0,VEWI,,RUE DES COUTURELLES,30,6230.0,PONT-A-CELLES,BEL,071/84.48.82,,,,BE0439.773.254,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-06-13,Klanten HTT,3000.0,2023-03-07,MONS,,,1.0,HTT
+2265.0,MAROIT-SANTONI,L'OCEAN POISSONNERIE SRL,ROUTE DE CHATELET,373,5621.0,MORIALME,BEL,,,,0497/38.34.42,BE0786.561.518,NEE,JA,boekhouding,,,l.ocean.aisemont@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,2024-02-07,Klanten HTT,0.0,2023-03-08,MONS,,,1.0,HTT
+2267.0,LA FLAMME,,RUE CHABOTTEAU,2026-07-05 00:00:00,7080.0,FRAMERIE,BEL,065/66.06.25,,,0489/21.92.91,BE0439.908.559,NEE,NEE,boekhouding,,,salvatorelivolsi@icloud.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2023-03-14,MONS,,,1.0,HTT
+2268.0,ART RESTO,,CHAUSSEE DE BRUXELLES,40,7061.0,CASTEAU,BEL,065/23.53.23,,,0495/72.27.78,BE0419.524.901,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-06,Klanten HTT,1500.0,2023-03-14,MONS,,,1.0,HTT
+2270.0,HALL 42 SRL,,Avenue des Nouvelles Technologies,41,7080.0,FRAMERIES,BEL,065/84.78.76,,,0472/39.40.36,BE0749.693.303,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,JA,BOEKHOUDING,,,authentic.mons@gmail.com,,,09 HORECA,,Klanten HTT,1500.0,2023-03-17,MONS,,,1.0,HTT
+2273.0,LA FERME DES 7 FONTAINES SPRL,,CHAUSSEE DE BRUXELLES,314,1410.0,WATERLOO,BEL,,,,0475/83.99.44,BE0861.325.257,NEE,NEE,boekhouding,,,compta@7fontaines.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,,Klanten HTT,0.0,2023-03-21,MONS,,,1.0,HTT
+2275.0,ALTO AND CO,,RUE DU TRIEUX,29,7040.0,BLAREGNIES,BEL,065/35.36.42,,,,BE0787.356.423,NEE,NEE,boekhouding,,,lebellaciao@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-05,Klanten HTT,3500.0,2023-03-21,MONS,,,1.0,HTT
+2277.0,L'ANGELE SERVICE TRAITEUR,,IMPASSE DU PARC,25,5620.0,FLORENNES,BEL,,,,0488/28.37.77,BE0677.429.291,NEE,JA,boekhouding,,,traiteur.langele@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2023-03-23,MONS,,,1.0,HTT
+2278.0,AU CAPRICE DES TEMPS,,RUE DU GRAND PERIL,108B25,7090.0,HENNUYERE,BEL,,,,0477/67.32.00,BE0631.937.677,NEE,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,,Klanten HTT,0.0,2023-03-23,MONS,,,1.0,HTT
+2282.0,CHALLEE,,RUE DE LA CHAUSSEE,22,7000.0,MONS,BEL,,,,0487/25.60.10,BE0645.722.367,NEE,NEE,boekhouding,,,hanxiang1024@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-03-28,MONS,,,1.0,HTT
+2284.0,INSTITUT NOTRE DAME ASBL,LE DELICE DU JOUR FLEURUS,RUE DE BRUXELLES,97,6220.0,FLEURUS,BEL,071/21.93.43,,,,,NEE,JA,boekhouding,,,ledelicedujour@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-03-29,MONS,,,1.0,HTT
+2286.0,REGGINA MONS,,RUE DE MONS,99,7011.0,MONS,BEL,,,,0478/94.46.81,BE0553.812.887,NEE,NEE,boekhouding,,, Filipponic@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-03-30,MONS,,,1.0,HTT
+2292.0,CHEZ BABIS SASPJ,,RUE FRANCOIS DORZEE,75,7300.0,BOUSSU,BEL,,,,0496/23.73.97,BE0674.558.091,NEE,NEE,boekhouding,,,rokoslabis@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1500.0,2023-04-03,MONS,,,1.0,HTT
+2293.0,ITALIA NOSTRA,,RUE EMILE CARLIER,178,7321.0,BERNISSART,BEL,069/44.44.05,,,,BE0737.632.243,NEE,JA,boekhouding,,,ougrineadonia8@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-04-03,MONS,,,1.0,HTT
+2294.0,GGFB SPRL,LA PLACE 4,GRAND PLACE,4,1470.0,GENAPPE,BEL,067/83.08.06,,,,BE0673.589.279,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,info@laplace4.com,,,09 HORECA,2026-01-03,Klanten HTT,2500.0,2023-04-04,MONS,,,1.0,HTT
+2295.0,LES ROUTARDS DE MONS,RDM,AVENUE DES GUERITS,28,7000.0,MONS,BEL,,,,,BE0776.835.386,,,,,,,,,09 HORECA,,Klanten HTT,500.0,2023-04-04,MONS,,,1.0,HTT
+2301.0,PAUL TRAITEUR,,RUE DE LADEUZE,1,7950.0,CHIEVRES,BEL,,,,0497/31.87.25,BE0797.681.280,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-04-06,MONS,,,1.0,HTT
+2302.0,CONGRES HOTEL VAN DER VALK MONS,,AVENUE MELINA MERCOURI,7,7000.0,MONS,BEL,,,,,BE0537.257.066,,,,,,,,,09 HORECA,,Klanten HTT,2500.0,2023-04-06,MONS,,,1.0,HTT
+2303.0,LA ROMANA FILS,,RUE DE DOUVRAIN,26,7011.0,MONS,BEL,065/34.83.18,,,,BE0448.070.318,,,,,,,,,06 POISSONERIE,,Klanten HTT,0.0,2023-04-07,MONS,,,1.0,HTT
+2304.0,CAFE DE LA LANTERNE,,RUE DE BRUXELLES,2026-03-01 00:00:00,1470.0,GENAPPE,BEL,067/84.02.61,,,,BE0633.518.480,NEE,NEE,boekhouding,,,info@cafedelalanterne.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,,Klanten HTT,0.0,2023-04-07,MONS,,,1.0,HTT
+2306.0,FACTORY PIZZA,,RUE JEAN JAURES,41,59243.0,QUAROUBLE,FRA,,,,0471/27.00.04,FR56834265134,,,,,,,,,09 HORECA,,Klanten HTT,500.0,2023-04-12,MONS,,,1.0,HTT
+2308.0,LE JONCQUOIS,,CHAUSSEE D'ENGHIEN,177,7060.0,SOIGNIES,BEL,067/34.06.20,,,,BE0786.723.448,NEE,NEE,boekhouding,,,nardelp@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,2500.0,2023-04-14,MONS,,,1.0,HTT
+2309.0,CORDIER FOOD GROUP,,ZONING FAUBOURG,,7170.0,MANAGE,BEL,064/52.20.20,,064/66.20.95,0498/92.81.82,BE0440.257.561,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,invoice@cordor.be,,,05 VISHANDEL,2026-01-08,Wekelijks,4000.0,2023-04-18,MONS,,,1.0,HTT
+2310.0,AUX COULEURS DU MONDE,,ROUTE D'ATH,490 A,7050.0,JURBISE,BEL,065/84.32.76,,,,BE0840.535.385,NEE,JA,boekhouding,,,traiteur.norys@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-04-18,MONS,,,1.0,HTT
+2311.0,JOSHUA DEPREZ,L'ANTRE DE METS,ROUTE DE MONS,763,7130.0,BRAY,BEL,,,,0493/13.95.96,BE0787.977.025,NEE,JA,boekhouding,,,info@lantredesmets.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-04-25,Klanten HTT,500.0,2023-04-18,MONS,,,1.0,HTT
+2312.0,MILFORT,,RUE DE BAUDOUR,2,7011.0,MONS,BEL,,,,0483/28.12.10,BE0673.634.910,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-09-22,Klanten HTT,1500.0,2023-04-19,MONS,,,1.0,HTT
+2313.0,SRL GHLV,CHEZ GINETTE,RUE DE NIVELLES,19A,1476.0,HOUTAIN-LE-VAL,BEL,067/21.09.00,,,,BE0869.994.384,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,info@chezginette.be,,,06 POISSONERIE,2026-01-05,Klanten HTT,0.0,2023-04-21,MONS,,,1.0,HTT
+2315.0,POISSONNERIE LE CORAIL,,RUE DE LA GENDARMERIE,2,1380.0,LASNE,BEL,,,,0473/71.67.07,BE0454.413.623,NEE,NEE,boekhouding,,,lecorail13@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,,Klanten HTT,0.0,2023-04-24,MONS,,,1.0,HTT
+2316.0,VILLA CASTELLI,,PLACE COMMUNALE,6 BOITE A,6120.0,HAM-SUR-HEURE-NALINNES,BEL,,,,,BE0897.785.082,,,,,,,,,09 HORECA,2023-05-05,Klanten HTT,0.0,2023-04-26,MONS,,,1.0,HTT
+2319.0,ISOLABELLA,,PLACE DU BEGUINAGE,13,7000.0,MONS,BEL,,,,0474/29.51.96,BE0800.896.039,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,JA,boekhouding,,,aless.isolabella@gmail.com,,,09 HORECA,,Klanten HTT,1000.0,2023-05-02,MONS,,,1.0,HTT
+2320.0,LA TABLE DU BOUCHER,,RUE D'HAVRE,49,7000.0,MONS,BEL,065/31.68.38,,,,BE0860.609.140,,,,,,,,,09 HORECA,2023-05-04,Klanten HTT,1000.0,2023-05-04,MONS,,,1.0,HTT
+2332.0,KALL S.R.L.,VUE SUR MER,RUE DU BOIS D'HAVRE,23A,5100.0,JAMBES,BEL,081/31.32.18,,,0478/61.06.95,BE0687.622.211,NEE,NEE,boekhouding,,,vuesurmerjambes@hotmail.com,Facturatie,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,2026-01-05,Klanten HTT,0.0,2023-05-16,MONS,,,1.0,HTT
+2333.0,DA MAXANTOINE,,RUE DES ALLIES,122 B,7080.0,FRAMERIES,BEL,065/56.70.28,,,,BE0648.672.058,NEE,JA,boekhouding,,,angelacordaro@icloud.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-05-16,Klanten HTT,500.0,2023-05-16,MONS,,,1.0,HTT
+2336.0,DANS LES VIGNES RESTAURANT,,GRAND ROUTE (QLG),58,7040.0,QUEVY,BEL,,,,0478/95.14.45,BE0784.996.452,NEE,NEE,boekhouding,,,invoices@chantdeole.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,2026-01-02,Klanten HTT,5000.0,2023-05-19,MONS,,,1.0,HTT
+2340.0,PROVINCE DU HAINAUT,INSTITUT PROVINCIAL DES ARTS ET METIERS DU CENTRE,RUE DES ARCHERS,12,7130.0,BINCHE,BEL,064/31.02.47,,,,BE0207.656.610,NEE,NEE,boekhouding,,,factures.fournisseurs@hainaut.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-05-24,MONS,,,1.0,HTT
+2342.0,ENFAIM ELISE & PASCAL,,RUE PIERRE HENNEBERT,4,7030.0,ST-SYMPHORIEN,BEL,,,,0477/40.54.82,BE0677.883.708,NEE,JA,boekhouding,,,pascallavenne93@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,250.0,2023-05-31,MONS,,,1.0,HTT
+2343.0,PASTA GIANNI,,RUE DE NIMY,6,7000.0,MONS,BEL,,,,,BE0689.628.824,NEE,NEE,boekhouding,,,pastagiannisrl@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2023-06-01,MONS,,,1.0,HTT
+2344.0,EDWARD'S STREET FOOD,,ROUTE D'ATH,316,7011.0,MONS,BEL,,,,,BE0778.358.880,NEE,JA,boekhouding,,,edward.street.food@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-07-03,Klanten HTT,0.0,2023-06-02,MONS,,,1.0,HTT
+2345.0,AU 101,,RUE GRANDE,101,7330.0,SAINT-GHISLAIN,BEL,,,,0497/45.21.41,BE0769.309.077,,,,,,,,,09 HORECA,,Klanten HTT,250.0,2023-06-05,MONS,,,1.0,HTT
+2347.0,LA POISSONNERIE ROGER ET FILLE,,RUE PATENIER,65,5000.0,NAMUR,BEL,,,,0494/77.34.00,BE0753.766.610,NEE,JA,boekhouding,,,roger.morgan2802@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,2024-01-23,Klanten HTT,0.0,2023-06-09,MONS,,,1.0,HTT
+2360.0,ELKDE,BARAMISS,RUE DES VIADUCS,100,7020.0,MONS,BEL,,,,0475/23.18.17,BE0793.254.221,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-06-21,MONS,,,1.0,HTT
+2361.0,MJS CONSULTING,,RIVE GAUCHE DU CANAL,15,7011.0,MONS,BEL,,,,0488 / 26 05 39,BE0500.612.050,,,,,,,,,09 HORECA,,Klanten HTT,250.0,2023-06-21,MONS,,,1.0,HTT
+2362.0,TRAITEUR ML,,RUE DES HAUTS ARBRES,19G,7950.0,CHIEVRES,BEL,,,,0472/55.80.84,BE0839.955.662,,,,,,,,,09 HORECA,,Klanten HTT,500.0,2023-06-21,MONS,,,1.0,HTT
+2363.0,CHEZ TOI,,RUE D'HAVRE,48,7000.0,MONS,BEL,0498/57.28.64,,,0492/17.73.21,BE0797.403.643,NEE,JA,boekhouding,,,a.picron@apetitescook.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-10-31,Klanten HTT,250.0,2023-06-21,MONS,,,1.0,HTT
+2374.0,MCQC EVENTS SRL,LES ECURIES MODERNES,ROUTE DE MONS,35,6560.0,MONTIGNIES ST CHRISTOPHE,BEL,,,,0485/40.43.27,BE0750.779.901,NEE,JA,boekhouding,,,lesecuriesmodernes@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-12-18,Klanten HTT,0.0,2023-06-28,MONS,,,1.0,HTT
+2381.0,FM HOTEL SRL,ORANGE HOTEL,RUE DE BIENNE,9,7120.0,ESTINNES,BEL,064/77.33.00,,,,BE0839.438.196,NEE,NEE,boekhouding,,,secretariat@framax.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,2500.0,2023-07-05,MONS,,,1.0,HTT
+2382.0,COTES A COTES,,RUE D'ARMENTIERES,334,7783.0,COMINES-WARNETON,BEL,0033/62.17.86.58,,,,BE0839.914.684,NEE,NEE,BOEKHOUDING,,,desseinannesophie@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-07-06,Klanten HTT,500.0,2023-07-05,MONS,,,1.0,HTT
+2386.0,CORA S.A.,,RUE DE CAPILONE,10,6220.0,FLEURUS,BEL,,,,,BE0402.537.726,NEE,NEE,boekhouding,,,corabel.in@cora.oneamail.be,,,00 DELI VHA,2023-07-20,Wekelijks,0.0,2023-07-10,MONS,,,1.0,HTT
+2387.0,NAPOLI ANGELO,ANGELFISH,RUE FRERE ORBAN,41,6020.0,CHARLEROI,BEL,,,,0491/32.38.14,BE0817.627.450,NEE,NEE,boekhouding,,,angelonapoli0311@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,05 VISHANDEL,2026-01-07,Klanten HTT,500.0,2023-07-12,MONS,,,1.0,HTT
+2389.0,LE RELAIS DU CENTRE,,BOULEVARD DE LA TECHNICITE,30,7110.0,LA LOUVIERE,BEL,,,,0467/05.15.58,BE0454.683.243,NEE,NEE,boekhouding,,,facturerelais@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-07-14,MONS,,,1.0,HTT
+2396.0,WHITE HOUSE CONCEPT,,CHAUSSEE DE CHARLEROI,657,6220.0,FLEURUS,BEL,,,,0471/49.71.93,BE0772.877.786,,,,,,,,,09 HORECA,2023-07-24,Klanten HTT,500.0,2023-07-25,MONS,,,1.0,HTT
+2401.0,POISSONNERIE OLIVIA ENTRE MERE & FILLE,PERUZZI SANDRINE,RUE DES JUIFS,61,7050.0,HERCHIES,BEL,,,,0497/41.64.61,BE0672.640.263,NEE,JA,boekhouding,,,poissonnerie.olivia@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,2024-03-15,Klanten HTT,0.0,2023-08-01,MONS,,,1.0,HTT
+2409.0,ONSENFISH,,AVENUE JOSEPH ABRAS,113,5001.0,NAMUR,BEL,,,,0497/07.05.03,BE0776.605.853,NEE,NEE,boekhouding,,,onsenfish@outlook.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-08-15,Klanten HTT,500.0,2023-08-11,MONS,,,1.0,HTT
+2416.0,L'ATELIER PAN'AMORE,,MARCHE AUX HERBES,19,7000.0,MONS,BEL,,,,0493/71.20.21,BE0875.271.778,NEE,NEE,boekhouding,,,panamore.mons@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-08-29,MONS,,,1.0,HTT
+2417.0,GREENWITCHES,,RUE NEUVE,2,7000.0,MONS,BEL,,,,0468/45.98.57,BE0745.720.657,NEE,NEE,boekhouding,,,contact@greenwitches.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,250.0,2023-08-29,MONS,,,1.0,HTT
+2418.0,OLIBO,,CHAUSSEE DE BINCHE,50 BOITE 6,7000.0,MONS,BEL,0499/48.61.11,,,0493/41.45.39,BE0788.643.751,NEE,JA,boekhouding,,,olibo2715@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-11-04,Klanten HTT,0.0,2023-08-29,MONS,,,1.0,HTT
+2419.0,LE JADIS - WAWRZYNIAK,,GRAND-PLACE,3,7900.0,LEUZE-EN-HAINAUT,BEL,069/22.81.34,,,0473/38.77.76,BE0837.692.196,NEE,NEE,boekhouding,,,Lejadis@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1500.0,2023-08-29,MONS,,,1.0,HTT
+2421.0,L'ALIGHIERI,,AVENUE JOSEPH WAUTERS,145,7033.0,MONS,BEL,,,,0494/62.43.23,BE0673.898.887,NEE,NEE,boekhouding,,,auroralentini1974@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-08-30,MONS,,,1.0,HTT
+2423.0,BAGEL CITY,,RUE DE NIMY,87,7000.0,MONS,BEL,,,,0471/48.78.13,BE0789.851.303,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,, Bagelcity.contact@gmail.com,,,09 HORECA,2023-10-19,Klanten HTT,500.0,2023-08-31,MONS,,,1.0,HTT
+2424.0,PIZZA ADREATICA,,CHAUSSEE DU ROEULX,385,7000.0,MONS,BEL,065/69.06.81,,,0484/08.95.15,BE0810.167.853,NEE,NEE,boekhouding,,,Hanouche.nas@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-10-19,Klanten HTT,500.0,2023-09-01,MONS,,,1.0,HTT
+2425.0,LA PORTE DU PRINCE,,RUE DE LA FRANCO BELGE,28,7100.0,LA LOUVIERE,BEL,,,,0496/50.15.91,BE0442.299.412,NEE,JA,boekhouding,,,kurtoglu-macit@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-09-01,MONS,,,1.0,HTT
+2426.0,RESTAURANT TICHOUX ET FILS,,GRAND'ROUTE,491,1428.0,BRAINE-L'ALLEUD,BEL,,,,067/21.65.33,BE0862.181.134,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-08-12,Klanten HTT,1000.0,2023-09-04,MONS,,,1.0,HTT
+2427.0,LE LOUP DE MER,,RUE DU TEMPLE,25,7100.0,LA LOUVIERE,BEL,,,,0497/21.90.19,BE0736.480.715,NEE,NEE,BOEKHOUDING,,,rosariozammuto@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,2024-12-20,Klanten HTT,0.0,2023-09-04,MONS,,,1.0,HTT
+2428.0,LA CANTINE DE MARS,,RUE DES PASSAGES,1,7000.0,MONS,BEL,,,,0488/22.66.86,BE0720.920.331,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-10-20,Klanten HTT,500.0,2023-09-04,MONS,,,1.0,HTT
+2429.0,PIZZA REGAL,,RUE DE MONS,169/B,7011.0,MONS,BEL,065/64.40.44,,,,BE0787.763.328,NEE,JA,boekhouding,,,abou.salam@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-10-09,Klanten HTT,500.0,2023-09-04,MONS,,,1.0,HTT
+2430.0,BAALBECK 2020,,RUE DE CLEF,16,7000.0,MONS,BEL,,,,0488/01.48.22,BE0737.984.908,,,,,,,,,09 HORECA,,Klanten HTT,500.0,2023-09-05,MONS,,,1.0,HTT
+2431.0,LE PARION,,ROUTE DE FLOBECQ,18,7800.0,ATH,BEL,,,,0498/83.18.63,BE0506.774.520,,,,,,,,,09 HORECA,,Klanten HTT,500.0,2023-09-05,MONS,,,1.0,HTT
+2432.0,JULIEN DEBIEVE,P'TITE FAIM,AVENUE DE JEMAPPES,2/0,7000.0,MONS,BEL,,,,0474/81.46.10,BE0754.524.792,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-12-21,Klanten HTT,0.0,2023-09-05,MONS,,,1.0,HTT
+2434.0,AP PIZZA STREET FOOD NAPOLETANO,,GRAND RUE,61,7000.0,MONS,BEL,,,,0476/05.47.99,BE0793.859.183,NEE,NEE,BOEKHOUDING,,,lvmrk28@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-12-05,Klanten HTT,500.0,2023-09-06,MONS,,,1.0,HTT
+2435.0,LA PRIMAVERA,,RUE D'HAVRE,2,7000.0,MONS,BEL,065/33.90.43,,,0465/48.95.88,BE0889.065.871,NEE,NEE,boekhouding,,,piazzafrancesco54@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,,Klanten HTT,500.0,2023-09-06,MONS,,,1.0,HTT
+2436.0,VALSIM,RESTAURANT STESSA LUNA,RUE DES CLERCS,4,7000.0,MONS,BEL,,,,0470/50.57.01,BE0417.856.697,NEE,JA,boekhouding,,,stessaluna@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-09-07,MONS,,,1.0,HTT
+2440.0,SAVEURS SUCREES SALEES,,RUE DU MANOIR,2,6900.0,MARCHE-EN-FAMENNE,BEL,,,,0472/45.70.69,BE0673.793.771,NEE,NEE,boekhouding,,,inattendu.d@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-02-06,Klanten HTT,1500.0,2023-09-14,MONS,,,1.0,HTT
+2442.0,SARABELLA SRL RESTAURANT,ET LA SUITE,RUE DE TERTRE,50,7331.0,BOUDOUR,BEL,,,,,BE0445.307.796,NEE,JA,boekhouding,,,etlasuite.restaurant@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-12-30,Klanten HTT,0.0,2023-09-15,MONS,,,1.0,HTT
+2443.0,MASARYS,,CHAUSSEE DE MAUBERGE,225,7022.0,MONS,BEL,065/22.78.40,,,0488/86.04.01,BE0716.948.477,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-03-15,Klanten HTT,500.0,2023-09-18,MONS,,,1.0,HTT
+2444.0,L'IMPERATIF D'EOLE,,GRAND'ROUTE,58,7040.0,QUEVY,BEL,,,,0478/52.91.69,BE0800.653.539,NEE,NEE,boekhouding,,,invoices@chantdeole.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,,Klanten HTT,0.0,2023-09-18,MONS,,,1.0,HTT
+2449.0,NOTA BENE,,CHAUSSEE DU ROI BAUDOUIN,161,7030.0,MONS,BEL,065/95.06.49,,,0473/71.68.10,BE0630.876.815,NEE,NEE,boekhouding,,,notabene.mons@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,750.0,2023-09-27,MONS,,,1.0,HTT
+2451.0,THIERRY BALZARINI,,AVENUE PAUL PASTUR,93,6032.0,CHARLEROI,BEL,,,,0496/25.42.44,BE0564.901.670,NEE,JA,boekhouding,,,mirella_licata@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,,Klanten HTT,500.0,2023-10-02,MONS,,,1.0,HTT
+2452.0,DSM-CONSULT,,RUE CLEMENCEAU,45,7340.0,COLFONTAINE,BEL,065/98.15.24,,,0487/24.59.21,BE0671.603.155,NEE,JA,boekhouding,,,julien@dsm-consult.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,250.0,2023-10-04,MONS,,,1.0,HTT
+2455.0,NORBERG VINCENT,,RUE EMILE JAMBE,156,7021.0,MONS,BEL,,,,0479/70.00.89,BE0864.581.586,,,,,,,,,09 HORECA,,Klanten HTT,500.0,2023-10-05,MONS,,,1.0,HTT
+2460.0,UNIVERSITE DE MONS,,PLACE DU PARC,20,7000.0,MONS,BEL,,,,0479/89.13.55,BE0850.123.935,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,finances@umons.ac.be,,,09 HORECA,,Klanten HTT,500.0,2023-10-12,MONS,,,1.0,HTT
+2468.0,VIPLUX SARL,,RUE EDMOND REUTER,23B,5326.0,CONTERN,LUX,00352/26.66.06.47,,,,LU20801320,NEE,JA,boekhouding,,,info@ad-vitam-eternam.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-10-19,Klanten HTT,500.0,2023-10-20,MONS,,,1.0,HTT
+2473.0,ALL EVENTS CONCEPT SRL,BIRDIE RESTAURANTGOLF D'AVERNAS,AVENUE DES AMANDIERS,15,1020.0,BRUXELLES,BEL,,,,0479/84.01.57,BE0797.478.471,NEE,NEE,boekhouding,,,andre.nefontaine@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-12-06,Klanten HTT,500.0,2023-11-02,MONS,,,1.0,HTT
+2475.0,TRAITEUR GILLES,,"RUE DE BRUYERE, LEUZE",49,5310.0,EGHEZEE,BEL,,,,0475/47.51.26,BE0826.775.837,NEE,NEE,boekhouding,,,gillescoor@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,,Klanten HTT,0.0,2023-11-13,MONS,,,1.0,HTT
+2476.0,DE BOUCHE A OREILLE,,ROUTE D'ATH,150,7050.0,JURBISE,BEL,,,,0473/974.753,BE0867.523.656,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-10-07,Klanten HTT,500.0,2023-11-14,MONS,,,1.0,HTT
+2480.0,MALO SRL,,CHAUSSEE DE BINCHE,50B BOITE,7000.0,MONS,BEL,065/98.21.03,,,,BE0803.448.030,,,,,,,,,09 HORECA,2024-02-14,Klanten HTT,500.0,2023-11-22,MONS,,,1.0,HTT
+2481.0,THE GALLERY,,RUE JULES DESTREE,172,7390.0,QUAREGNON,BEL,,,,0492/44.12.84,BE1001.699.006,,,,,,,,,09 HORECA,2024-02-20,Klanten HTT,0.0,2023-11-23,MONS,,,1.0,HTT
+2482.0,CORNU MANON,,RUE DE LA STATION,56 BOITE 3,7080.0,FRAMERIES,BEL,,,,0477/23.42.50,BE0750.540.864,NEE,JA,boekhouding,,,man.cornu@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-04-23,Klanten HTT,500.0,2023-11-27,MONS,,,1.0,HTT
+2483.0,REJANE BOUILLONS,,RUE MARECHAL FOCH,82,59740.0,LIESSIES,FRA,,,,,,NEE,JA,boekhouding,,,rejanebouillon@orange.fr,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-11-27,MONS,,,1.0,HTT
+2484.0,MANITAS,,GRAND PLACE,18,7000.0,MONS,BEL,,,,0479/44.03.41,BE0778.683.633,JA,NEE,BOEKHOUDING,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-11-27,MONS,,,1.0,HTT
+2485.0,CICCATH,,RUE BOURGOGNE,5A,4452.0,JUPRELLE,BEL,,,,,BE0451.333.278,NEE,NEE,boekhouding,,,santus.alex@skynet.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-11-30,MONS,,,1.0,HTT
+2493.0,M.L. TECHNOLOGIES,,RUE DU CAMP,91,7034.0,MONS,BEL,,,,0497/57.16.93,BE0456.547.029,NEE,JA,boekhouding,,,fannylemaire@live.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2023-12-11,MONS,,,1.0,HTT
+2494.0,PAPILLEZ-VOUS,,RUE DES ARQUEBUSIERS,66,7000.0,MONS,BEL,,,,0477/89.75.56,BE1000.429.987,,,,,,,,,09 HORECA,2023-12-28,Klanten HTT,500.0,2023-12-12,MONS,,,1.0,HTT
+2496.0,LA DIGUE SRL,,RUE DU GRAND CENTRAL,37,6000.0,CHARLEROI,BEL,,,,0485/72.48.59,BE0425.676.283,NEE,JA,boekhouding,,,ladigue37@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-06,Klanten HTT,5000.0,2023-12-13,MONS,,,1.0,HTT
+2498.0,L'EXPRESS,,PLACE LEOPOLD,9,7000.0,MONS,BEL,,,,0472/41.71.57,BE0759.741.711,NEE,JA,boekhouding,,,mimi270366@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-12-16,Klanten HTT,500.0,2023-12-14,MONS,,,1.0,HTT
+2499.0,TAVERNE LES ARCADES,,GRAND PLACE,5,7330.0,SAINT-GHISLAIN,BEL,,,,0470/98.83.25,BE0725.440.630,NEE,JA,boekhouding,,,lesarcadesabp@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-12-06,Klanten HTT,500.0,2023-12-15,MONS,,,1.0,HTT
+2502.0,IDELIAS SRL,,AVENUE DU BELIAN,2,7000.0,MONS,BEL,,,,0475/31.76.86,,NEE,JA,boekhouding,,,stephane.dieu@idelias.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2023-12-18,Klanten HTT,500.0,2023-12-18,MONS,,,1.0,HTT
+2521.0,L'ECAILLER MARCHOIS,,"MARCHE,RUE DES TANNEURS",7,6900.0,MARCHE-EN-FAMENNE,BEL,084/47.70.45,,,0475/26.75.97,BE0776.802.031,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,invoice@lecailler-marchois.be,,,06 POISSONERIE,2025-01-27,Klanten HTT,0.0,2024-01-22,MONS,,,1.0,HTT
+2522.0,2CC67 SRL,INTERMARCHE MAISIERE,RUE GRANDE,208/A,7000.0,MONS,BEL,,,,0476/70.94.96,BE0813.226.521,NEE,NEE,boekhouding,,,geoffrey.lacroix@u2s.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,05 VISHANDEL,2024-03-01,Klanten HTT,0.0,2024-01-23,MONS,,,1.0,HTT
+2524.0,LE TEDDY'S,,RUE DE NIMY,8,7000.0,MONS,BEL,,,,0486/57.66.46,BE0805.741.782,NEE,JA,boekhouding,,,leteddysmons@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1500.0,2024-01-24,MONS,,,1.0,HTT
+2528.0,A.R.C. BORINAGE-HAUT-PAYS,,RUE DU GENERAL LEMAN,23B,7370.0,DOUR,BEL,,,,0475/80.53.05,BE0430.229.246,NEE,NEE,boekhouding,,,asblarcdour@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-02-09,Klanten HTT,500.0,2024-01-29,MONS,,,1.0,HTT
+2534.0,L'APTIT,,RUE DU GRAND CENTRAL,51,6000.0,CHARLEROI,BEL,,,,0472/06.52.64,BE0837.474.343,NEE,NEE,boekhouding,,,Pieredebidart@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2024-02-01,MONS,,,1.0,HTT
+2535.0,VILAIN,,AVENUE PAUL PASTUR,365,6032.0,CHARLEROI,BEL,,,,0499/42.33.18,BE0782.988.255,NEE,NEE,boekhouding,,,hello@vilainrestaurant.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2024-02-01,MONS,,,1.0,HTT
+2536.0,COLLIN'S,,RUE LEOPOLD III,3,7011.0,GHLIN,BEL,,0484/02.72.07,,0487/59.41.97,BE0771.880.963,NEE,JA,boekhouding,,,invoices@lecollins.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-07-11,Klanten HTT,1000.0,2024-02-02,MONS,,,1.0,HTT
+2537.0,COMITE D'ANIMATION,,RUE PAUL PASTUR,11,7800.0,ATH,BEL,,,,,,,,,,,,,,09 HORECA,,Klanten HTT,500.0,2024-02-02,MONS,,,1.0,HTT
+2539.0,MAMY ARLETTE,,RUE DE TOURNAI,10,7900.0,LEUZE-EN-HAINAUT,BEL,,,,0479/45.41.03,BE1002.331.286,NEE,NEE,boekhouding,,,Compta@mamy-arlette.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-05,Klanten HTT,1500.0,2024-02-05,MONS,,,1.0,HTT
+2541.0,CHEZ ARNAUD SPRL,,PLACE ALBERT I,14,6041.0,CHARLEROI,BEL,,,,0475/31.53.62,BE0661.629.971,NEE,JA,boekhouding,,,arnaud@chez-arnaud.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2024-02-07,MONS,,,1.0,HTT
+2542.0,LE MENU PLAISIR,,RUE DE PATURAGES,84,7390.0,QUAREGNON,BEL,,,,0495/79.38.62,BE0476.785.880,NEE,NEE,boekhouding,,,info@lemenuplaisir.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-03,Klanten HTT,500.0,2024-02-07,MONS,,,1.0,HTT
+2552.0,STREPYDIS,,RUE DE L'INDEPENDANCE,81,7110.0,LE LOUVIERE,BEL,064/67.80.40,,,,BE0732.580.919,NEE,NEE,boekhouding,,,cateno.sanguine-adh@mousquetaires.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,05 VISHANDEL,,Klanten HTT,2500.0,2024-02-26,MONS,,,1.0,HTT
+2555.0,GERPIDIS,,CHAUSSEE DE PHILIPPEVILLE,196,6280.0,GERPINNES,BEL,071/21.69.09,,,,BE0802.039.451,NEE,NEE,boekhouding,,,pdv09863@mousquetaires.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,gerpinnescompta@gmail.com,,,05 VISHANDEL,2026-01-06,Klanten HTT,0.0,2024-02-29,MONS,,,1.0,HTT
+2561.0,ADEL MONS SA,,CHAUSSEE DU ROEULX,292,7000.0,MONS,BEL,065/84.73.69,,,,BE1001.017.234,NEE,JA,boekhouding,,,comptabilite@adelmons.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2024-03-07,MONS,,,1.0,HTT
+2563.0,DELNIVELLE SRL,,CHAUSSEE DE MONS,18,1400.0,NIVELLES,BEL,,,,0472/35.64.63,BE0804.897.882,NEE,NEE,boekhouding,,,Secretariat@delnivelles.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,05 VISHANDEL,,Klanten HTT,2500.0,2024-03-08,MONS,,,1.0,HTT
+2566.0,SCHP CONCEPT,,RUE DES JUIFS,61,7050.0,JURBISE,BEL,,,,0497/41.64.61,BE1006.813.181,NEE,NEE,boekhouding,,,Schp.concept@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,,Klanten HTT,0.0,2024-03-18,MONS,,,1.0,HTT
+2567.0,LES HAZALLES RESTAURANT,,PRE LIGNE,3,6940.0,DURBUY,BEL,086/21.03.92,,,0496/72.85.82,BE0895.330.487,NEE,NEE,boekhouding,,,leshazalles@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2024-03-20,MONS,,,1.0,HTT
+2570.0,LIBERT G SRL,,RUE DU COLONEL DETTMER,2,7500.0,TOURNAI,BEL,,,,0470/02.23.24,BE0804.620.245,NEE,NEE,boekhouding,,,info@latablederic.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-09-23,Klanten HTT,2000.0,2024-03-21,MONS,,,1.0,HTT
+2571.0,DI FRANCISCA ROSARIO,,RUE VALERE MABILLE,57,7140.0,MORLANWELZ,BEL,,,,0499/82.89.93,BE0653.582.040,NEE,JA,boekhouding,,,saro1970@outlook.fr,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,,Klanten HTT,0.0,2024-03-22,MONS,,,1.0,HTT
+2573.0,MIKE ELLIOT COMMERCIALISATIONLA CENTRALE CPK,,AVENUE ALBERT EINSTEIN,18,93150.0,LE BLANC MESNIL,FRA,0033/663.12.98.04,,,,FR47334820958,,,,,,,,,09 HORECA,2024-03-28,Klanten HTT,5000.0,2024-03-26,MONS,,,1.0,HTT
+2577.0,LA FLAMBEE,,RUE DU RAT D'EAU,45B,7387.0,HONELLES,BEL,065/77.85.55,,,,BE0755.339.295,NEE,NEE,Boekhouding,,,la_flambeedelivery@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1500.0,2024-04-02,MONS,,,1.0,HTT
+2579.0,ZHOU & FILS,,RUE VINCENT VAN GOGH,45,7033.0,CUESMES,BEL,,,,0486/48.26.26,BE0721.884.094,NEE,NEE,boekhouding,,,vincentzhou1703@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2024-04-03,MONS,,,1.0,HTT
+2580.0,SONALIM,,CHAUSSEE DE LESSINES,6,7060.0,SOIGNIES,BEL,,,,,BE0877.690.543,NEE,JA,boekhouding,,,pdv05826@mousquetaires.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,05 VISHANDEL,2024-04-05,Klanten HTT,0.0,2024-04-05,MONS,,,1.0,HTT
+2582.0,DOMAINE DU CHANT EOLE,CHAMP D'EOLE EVENEMENT,GRAND'ROUTE,58,7040.0,QUEVY,BEL,065/22.05.00,,,,BE0526.828.081,NEE,NEE,boekhouding,,,aude.awoust@chantdeole.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,invoices@chantdeole.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,,Klanten HTT,0.0,2024-04-10,MONS,,,1.0,HTT
+2583.0,SAKURA CM ZAVENTEM,,LEUVENSESTEENWEG,179,1932.0,ZAVENTEM,BEL,,,,0488/46.95.90,BE0745.647.710,NEE,NEE,boekhouding,,,sakura-cm@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,,Klanten HTT,0.0,2024-04-10,MONS,,,1.0,HTT
+2587.0,CHRISTOPHE BRUYERE,,RUE DE MALPLAQUET,15,7040.0,QUEVY,BEL,,,,0495/24.79.53,BE0800.234.558,NEE,NEE,boekhouding,,,bruyere.christophe@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,250.0,2024-04-22,MONS,,,1.0,HTT
+2590.0,LA ROMAFLO,,CHAUSSEE DE MAUBEUGE,482,7022.0,MONS,BEL,,,,0470/07.95.27,BE0689.824.309,NEE,JA,boekhouding,,,laromanafils@skynet.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,florianromana@outlook.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,,Klanten HTT,0.0,2024-04-24,MONS,,,1.0,HTT
+2599.0,PHAR-OST-FOV,DEPOORTER RIK,FRANCIS VERESTRAAT,26-B101,8400.0,OOSTENDE,BEL,,,,0495/51.15.10,BE1008.978.360,NEE,NEE,Boekhouding,,,depoorter.rik@telenet.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,,,,03 GROOTHANDEL ZONDER VEILING,2025-12-15,Extra controle,2500.0,2024-05-13,OOSTENDE,,,1.0,HTT
+2601.0,DSM-CONSULT SRL,,RUE CLEMENCEAU,45,7340.0,COLFONTAINE,BEL,065/98.15.24,,,0487/24.59.21,BE1004.393.131,NEE,NEE,boekhouding,,,julien@dsm-consult.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2025-12-29,Klanten HTT,250.0,2024-05-14,MONS,,,1.0,HTT
+2608.0,QUINTIN ISABELLE,,RUE HAUTE,9,7050.0,JURBISE,BEL,065/22.86.71,,,,BE0834.779.921,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,JA,boekhouding,,,pascaldelporte@live.be,,,09 HORECA,,Klanten HTT,500.0,2024-05-17,MONS,,,1.0,HTT
+2610.0,NO MAISON,,GRAND-PLACE,21,7000.0,MONS,BEL,0495/27.35.19,,,0492/16.45.61,BE0726.464.276,NEE,NEE,Boekhouding,,,giorgiosgyparakis@gmail.com,,,09 HORECA,2024-05-28,Klanten HTT,1500.0,2024-05-22,MONS,,,1.0,HTT
+2617.0,SNC KROKET,,RUE DE LA PAIX,28 B2,7070.0,LE ROEULX,BEL,0474/45.69.07,,,0476/83.25.85,BE0768.583.854,NEE,NEE,boekhouding,,,kroketsartisanales@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2024-05-29,MONS,,,1.0,HTT
+2622.0,O BAR'HIK,,RUE DE LA CLEF,8,7000.0,MONS,BEL,,,,0495/16.60.59,BE0717.936.194,NEE,JA,boekhouding,,,obarhikmons@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2025-03-26,Klanten HTT,500.0,2024-06-05,MONS,,,1.0,HTT
+2627.0,VERVOORT STEPHANIE,MA CUISINE BINCHE,ROUTE DE MONS,727,7130.0,BINCHE,BEL,,,,0493/18.79.78,BE0673.595.615,NEE,JA,boekhouding,,,repasadomicilemacuisine@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,,Klanten HTT,0.0,2024-06-06,MONS,,,1.0,HTT
+2628.0,L'INSTANT C,,RUE D'ENGHIEN,8,7000.0,MONS,BEL,,,,0498/97.63.23,BE0538.708.997,NEE,JA,boekhouding,,,celine.linstantc@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2024-06-06,MONS,,,1.0,HTT
+2632.0,L'EXCEL,,GRAND-PLACE,29,7000.0,MONS,BEL,,,,0472/24.89.62,BE1004.111.633,NEE,JA,boekhouding,,,secretariatlexcel@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-06,Klanten HTT,500.0,2024-06-07,MONS,,,1.0,HTT
+2635.0,COTE APPART SRL,COSMO,AVENUE DES NOUVELLES TECHNOLOGIES,41,7080.0,FRAMERIES,BEL,,,,0492/52.81.66,BE0750.602.133,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,JA,boekhouding,,,sg.coteappart@gmail.com,,,09 HORECA,2026-01-06,Klanten HTT,2500.0,2024-06-12,MONS,,,1.0,HTT
+2641.0,LE MEDIEVAL,,RUE DE BOUSSU,238,7334.0,SAINT-GHISLAIN,BEL,,,,0470/02.98.94,BE0694.555.731,NEE,NEE,boekhouding,,,info@brasserie-le-medieval.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-08,Klanten HTT,2500.0,2024-06-21,MONS,,,1.0,HTT
+2643.0,LA FERME DE BONNE-MAMAN,,RUE DE PATURAGES,104,7041.0,QUEVY,BEL,,,,,BE0825.217.602,,,,,,,,,09 HORECA,,Klanten HTT,2500.0,2024-06-24,MONS,,,1.0,HTT
+2648.0,AU MOULIN,,CHAUSSEE DE BELLE-VUE,41 BOITE 1,7322.0,BERNISSART,BEL,065/45.01.91,,,,BE0792.132.979,NEE,NEE,Boekhouding,,,resto.aumoulin@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Wekelijks,0.0,2024-06-28,MONS,,,1.0,HTT
+2654.0,CUISINE PARTY LIVE,,ZEEDIJK,403 BUS 41,8301.0,KNOKKE-HEIST,BEL,,,,0473/57.92.99,BE0653.547.594,NEE,JA,Boekhouding,,,oliverflor@live.be,,,06 POISSONERIE,2024-07-17,Klanten HTT,2500.0,2024-07-03,MONS,,,1.0,HTT
+2655.0,RTDK SRL,LA PEAU DE VACHE,RUE EMILE ALBOT,2,7900.0,LEUZE-EN-HAINAUT,BEL,0470/92.58.00,,,,BE1010.544.317,NEE,NEE,boekhouding,,,restaurantpeaudevache@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-07,Klanten HTT,500.0,2024-07-03,MONS,,,1.0,HTT
+2656.0,DEIDDA RENZO,,AVENUE LOUIS GOBLET,7,7331.0,BAUDOUR,BEL,065/64.16.66,,,0498/56.60.99,BE0624.753.244,,,,,,,,,09 HORECA,,Klanten HTT,500.0,2024-07-03,MONS,,,1.0,HTT
+2657.0,EOLE EVENT EXPERIENCE,,GRAND'ROUTE,58,7040.0,QUEVY,BEL,,,,0033/74.89.51.1,BE1007.117.643,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,invoices@chantdeole.be,,,06 POISSONERIE,,Klanten HTT,0.0,2024-07-03,MONS,,,1.0,HTT
+2662.0,DA ME,,RUE LION JACQUES,25C,6040.0,CHARLEROI,BEL,071/37.18.30,,,0495/36.16.50,BE0782.736.451,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,JA,boekhouding,,,azito@live.be,,,09 HORECA,,Klanten HTT,2500.0,2024-07-08,MONS,,,1.0,HTT
+2663.0,SUSHI HOUSE MONS,,GRAND-PLACE,26,7000.0,MONS,BEL,,,,0483/38.53.32,BE0766.814.494,NEE,NEE,Boekhouding,,,info@sushihousemons.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,2025-01-27,Klanten HTT,2500.0,2024-07-09,MONS,,,1.0,HTT
+2665.0,HAPPY WOK MANAGE,,AVENUE EMILE HERMAN,308,7170.0,MANAGE,BEL,0485/86.81.71,,,,BE0547.969.727,NEE,JA,boekhouding,,,flola89@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,2024-07-10,Klanten HTT,1000.0,2024-07-10,MONS,,,1.0,HTT
+2666.0,LE JARDIN ORIENTAL,,CHAUSSEE DU ROEULX,143,7000.0,MONS,BEL,,,,,BE0444.850.512,JA,NEE,BOEKHOUDING,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,,Klanten HTT,2500.0,2024-07-10,MONS,,,1.0,HTT
+2668.0,LA FLEUR DE MER,,LA RUE DU CHANOINE SCARMURE,24A,7060.0,SOIGNIES,BEL,067/33.96.03,,,0485/12.09.20,BE0790.883.956,NEE,JA,boekhouding,,,lafleurdemer.soignies@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,2026-01-07,Extra controle,2500.0,2024-07-15,MONS,,,1.0,HTT
+2669.0,LA GRIM'RHODIENNE,,RUE GRANDE,28,7070.0,ROEULX,BEL,,,,0488/28.66.86,BE0801.690.449,NEE,NEE,boekhouding,,,virginie.bernie@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2024-07-17,MONS,,,1.0,HTT
+2677.0,LA MAISON DES CHEMINOTS ET P.T.T.,,PLACE VAUBAN,23,6000.0,CHARLEROI,BEL,,,,0497/10.90.27,BE0401.523.679,NEE,NEE,boekhouding,,,giovani-nitri@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2024-08-01,MONS,,,1.0,HTT
+2680.0,MATTEI SRL,NOU RESTAURANT,RUE SAINT MARTIN,35,7500.0,TOURNAI,BEL,,,,0470/01.05.65,BE0752.981.504,NEE,JA,boekhouding,,,hello@nou-restaurant.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2025-01-07,Klanten HTT,2500.0,2024-08-07,MONS,,,1.0,HTT
+2684.0,CAMPAGNOLI,,CHAUSSEE DE BEAUMONT,185,7030.0,MONS,BEL,,,,065/84.34.14,BE0634.560.340,NEE,JA,boekhouding,,,benjamin.lion@skynet.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2024-08-21,MONS,,,1.0,HTT
+2685.0,HARVENGT MARC,,RUE BOIS DES RAVES,82,7110.0,HOUDENG GOEGNIES,BEL,,,,0471/54.05.53,BE0651.831.585,NEE,NEE,boekhouding,,,saveurs.show@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2025-07-02,Klanten HTT,500.0,2024-08-22,MONS,,,1.0,HTT
+2690.0,LA QUILLE BRASSERIE,,RUE DE MARCINELLE,33,6000.0,CHARLEROI,BEL,,,,0492/07.25.23,BE1009.457.026,NEE,JA,boekhouding,,,blackblueevents2023@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-11-26,Klanten HTT,500.0,2024-08-29,MONS,,,1.0,HTT
+2694.0,LEROY & LEMPEREUR,,RUE DE MONS 60,95,7970.0,BELOEIL,BEL,,,,0475/66.46.98,BE1012.326.543,NEE,NEE,Boekhouding,,,sncleroylempereur@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,2500.0,2024-09-06,MONS,,,1.0,HTT
+2697.0,VINS LA BARRIQUE - IMPORT,TABLE DES VIGNERONS RESTAURANT,RUE DES ECOLES,5,6120.0,HAM-SUR-HEURE-NALINNES,BEL,071/21.80.25,,,0476/91.94.00,BE0462.946.752,NEE,NEE,Boekhouding,,,arnauddutranoit@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,Boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-05,Klanten HTT,2500.0,2024-09-11,MONS,,,1.0,HTT
+2703.0,LE PADEL ATHOIS SRL,,RUE ANDRE DELZENNE,4,7800.0,ATH,BEL,068/26.47.72,,,0477/04.46.83,BE0788.852.302,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,info@athoislepadel.be,,,09 HORECA,,Klanten HTT,500.0,2024-09-18,MONS,,,1.0,HTT
+2706.0,CARMENIMMO,,RUE GUY DE BRES,77,7000.0,MONS,BEL,,,,0479/29.40.09,BE0544.875.625,NEE,JA,boekhouding,,,camillesaavedra@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2024-09-20,MONS,,,1.0,HTT
+2711.0,GUSTORAZIO,,RUE DU GENERAL LEMAN,57,7012.0,JEMAPPES,BEL,,,,0943/08.26.46,BE0847.296.285,NEE,JA,boekhouding,,,russoorazio@hotmail.fr,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2024-09-25,MONS,,,1.0,HTT
+2713.0,CENTRE D'EXCELLENCE DES METIERS DE L'HOTELLERIE,,RUE GRANDE,86,7330.0,SAINT-GHISLAIN,BEL,065/71.42.23,,,,BE0207.656.610,NEE,NEE,boekhouding,,,factures.fournisseurs@hainaut.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2024-09-25,MONS,,,1.0,HTT
+2716.0,L'ASSIETTE GOURMANDE,,RUE LALIVARDE,7B,7863.0,GHOY,BEL,,,,0498/27.41.51,BE0884.176.774,,,,,,,,,09 HORECA,,Klanten HTT,500.0,2024-10-01,MONS,,,1.0,HTT
+2719.0,SENDROLIPSOIRE SRL,,RUE EMILE TUMELAIRE,90,6000.0,CHARLEROI,BEL,,,,0474/50.90.57,BE0659.821.120,NEE,JA,Boekhouding,,,lipsin.frederic@yahoo.fr,,,09 HORECA,,Klanten HTT,2500.0,2024-10-04,MONS,,,1.0,HTT
+2721.0,LA COTE D'OR SA,,RUE DE LA GENDARMERIE,1,5600.0,PHILIPPEVILLE,BEL,,,,0475/57.92.22,BE0429.547.474,NEE,NEE,boekhouding,,,info@lacotedor.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2025-12-30,Klanten HTT,500.0,2024-10-09,MONS,,,1.0,HTT
+2722.0,BAGUETTE ET FOURCHETTE SRL,,CHAUSSEE DE CHARLEROI,87,5030.0,GEMBLOUX,BEL,,,,0485/96.15.65,BE0839.084.543,NEE,NEE,boekhouding,,,info@baguettesetfourchette.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-10-21,Klanten HTT,500.0,2024-10-09,MONS,,,1.0,HTT
+2723.0,CEPA SRL,,PLACE DE SAINT-SYMPHORIEN,4,7030.0,SAINT-SYMPHORIEN,BEL,,,,0477/40.54.88,BE1010.591.827,NEE,JA,boekhouding,,,pascallavenne93@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2024-10-09,MONS,,,1.0,HTT
+2725.0,RELAIS DE LA HAUTE SAMBRE,,RUE FONTAINE PEPIN,12,6540.0,LOBBES,BEL,071/59.79.70,,,0468/08.75.88,BE0415.846.819,NEE,NEE,boekhouding,,,direction@rhs.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,restaurant@rhs.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2024-10-10,MONS,,,1.0,HTT
+2728.0,MKS LA SUGGESTION SPRL,,RUE DU STAMPIA,99,1390.0,GREZ DOICEAU,BEL,010/80.53.11,,,0495/11.30.60,BE0843.070.748,NEE,NEE,boekhouding,,,lasuggestion@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2024-10-11,MONS,,,1.0,HTT
+2733.0,WHEN PIG'S FLY,,RUE DES DEPORTES,94,7050.0,MASNUY-SAINT-JEAN,BEL,,,,0489/29.32.25,BE0672.761.118,NEE,NEE,boekhouding,,,wpf.resto@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-10-17,Klanten HTT,500.0,2024-10-17,MONS,,,1.0,HTT
+2734.0,ROYALE ENTENTE MONS NORD,,RUE DU CAMP,100,7034.0,MONS,BEL,,,,,BE0425.572.058,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2024-10-17,MONS,,,1.0,HTT
+2741.0,LUMA SRL NALINNES,,RUE DES ECOLES,20,6120.0,NALINNES,BEL,071/52.16.21,,,0471/20.10.84,BE1014.398.779,NEE,JA,boekhouding,,,luma-srl@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2024-10-31,MONS,,,1.0,HTT
+2747.0,DUTRANOIT ARNAUD,,RUE PASTUR,38,6142.0,FONTAINE-L'EVEQUE,BEL,,,,0476/91.94.00,BE0831.464.994,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2024-11-18,MONS,,,1.0,HTT
+2756.0,PUZZLES COMPANY SRL,KICK OFF BAR MONS,RUE DU HAUBOIS,1,7000.0,MONS,BEL,,,,0478/97.64.18,BE1008.806.928,NEE,NEE,boekhouding,,,kickoffmons@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2024-12-06,Klanten HTT,500.0,2024-12-06,MONS,,,1.0,HTT
+2758.0,BALI SRL,,GRAND PLACE,18,7000.0,MONS,BEL,,,,0495/24.71.34,BE0478.151.404,NEE,JA,boekhouding,,,lecentral@outlook.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2024-12-18,MONS,,,1.0,HTT
+2759.0,L'ECHOPPE TRAITEUR,,RUE D'OURSEL,14C,7608.0,WIERS,BEL,,,,0493/93.92.07,BE0780.477.935,NEE,NEE,boekhouding,,,info@lechoppe.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2024-12-19,MONS,,,1.0,HTT
+2761.0,DELPINOIS SA (DELHAIZE),,RUE SAINT FIACRE,2,7134.0,EPINOIS,BEL,064/37.09.25,,,,BE1005.556.834,NEE,NEE,boekhouding,,,delhaize.epinois@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,05 VISHANDEL,2026-01-08,Klanten HTT,5000.0,2024-12-19,MONS,,,1.0,HTT
+2763.0,DUFRANE PARTNERS SRL,DELHAIZE HORNU,RUE DE MONS,280,7301.0,BOUSSU,BEL,,,,0497/70.25.47,BE1003.403.632,NEE,NEE,boekhouding,,,cedric-du@live.fr,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,05 VISHANDEL,2024-12-26,Klanten HTT,5000.0,2024-12-26,MONS,,,1.0,HTT
+2769.0,CHERMANNE STEPHANE,,RUE DE LIMAGE,33,6150.0,ANDERLUES,BEL,,,,0497/46.11.81,BE0798.188.848,NEE,NEE,boekhouding,,,stephane.chermanne@hotmail.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2025-01-10,MONS,,,1.0,HTT
+2773.0,AU RELAIS DE BURY,,GRAND'ROUTE,5,7602.0,PERUWELZ,BEL,,,,0477/95.14.99,BE0460.146.422,NEE,NEE,boekhouding,,,Aurelaisdebury@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2025-01-23,MONS,,,1.0,HTT
+2774.0,COTE MER SRL,,CHEMIN DES ARCHIVES,13,5100.0,WEPION,BEL,,,,0495/90.14.78,BE1010.639.733,NEE,NEE,boekhouding,,,philippebolle@skynet.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2025-02-03,Klanten HTT,500.0,2025-01-24,MONS,,,1.0,HTT
+2776.0,PLAISIR DIT VIN SRL,,GRAND PLACE,9,7900.0,LEUZE,BEL,,,,0497/15.18.64,BE0778.934.546,NEE,NEE,boekhouding,,,juliennameche@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2025-01-27,MONS,,,1.0,HTT
+2778.0,MAGARIKO SRL,,RUE DU BASSON,100,6001.0,MARCINELLE,BEL,,,,0498/32.94.75,BE1015.729.857,NEE,NEE,boekhouding,,,magari@outlook.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2025-02-03,Klanten HTT,500.0,2025-01-29,MONS,,,1.0,HTT
+2780.0,FNPP SRL,LE PIANO,AVENUE DE LA PETITE SUISSE,16,6011.0,MARCINELLE,BEL,,,,0493/91.01.45,BE0777.513.792,NEE,NEE,boekhouding,,,factures.fnpp@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-06,Klanten HTT,500.0,2025-01-30,MONS,,,1.0,HTT
+2782.0,ITALIAN STYLE SRL,,ROUTE D'ATH,331,7050.0,JURBISE,BEL,,,,0495/84.74.00,BE0845.284.526,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2025-02-06,MONS,,,1.0,HTT
+2783.0,BOLC SRL,,RUE DES MONTHYS,59/2,5651.0,THY LE CHATEAU,BEL,,,,0494/42.44.77,BE0561.973.062,NEE,NEE,boekhouding,,,La.pireaux@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2025-02-13,Klanten HTT,500.0,2025-02-06,MONS,,,1.0,HTT
+2784.0,NAUTIFOOD SRL,INTERMARCHE GHISLENGHIEN,CHAUSSEE DE BRUXELLES,458,7822.0,GHISLENGHIEN,BEL,,,,0477/45.06.53,BE0675.749.015,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,Nautifood@outlook.com,,,06 POISSONERIE,2025-08-21,Klanten HTT,500.0,2025-02-06,MONS,,,1.0,HTT
+2787.0,BARBA SPRL,BARBAVIN,AVENUE REINE ASTRID,27,1310.0,LA HULPE,BEL,,,,0475/73.47.03,BE0475.498.948,NEE,NEE,boekhouding,,,barbavin@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2025-12-23,Klanten HTT,500.0,2025-02-17,MONS,,,1.0,HTT
+2788.0,UMAMI SUSHI SRL,,RUE DE PINTAMONT,32,7800.0,ATH,BEL,,,,0460/97.38.72,BE0787.289.216,NEE,NEE,boekhouding,,,umamisushiath@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2025-02-19,Klanten HTT,2500.0,2025-02-18,MONS,,,1.0,HTT
+2791.0,L'INSOLITE-LE TAILVENT,,CHAUSSEE DE NAMUR,87,5537.0,ANHEE,BEL,,,,0455/18.08.52,BE0639.980.165,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,Lid.letailvent2024@hotmail.com,,,09 HORECA,2026-01-05,Klanten HTT,500.0,2025-02-26,MONS,,,1.0,HTT
+2796.0,L'ENTRACTE,,RUE DU ONZE NOVEMBRE,1,7140.0,MORLANWELZ,BEL,,,,0493/53.02.65,BE0695.973.812,,,,,,,,,09 HORECA,2025-03-07,Klanten HTT,2500.0,2025-03-07,MONS,,,1.0,HTT
+2799.0,SOLARSON SPRL,,CLOS DES GRENADIER,10,7300.0,BOUSSU,BEL,0479/47.59.57,,,0475/37.67.20,BE0670.985.919,NEE,NEE,Boekhouding,,,sophie@lesthelicesdesophie.be,,,09 HORECA,,Klanten HTT,2500.0,2025-03-12,MONS,,,1.0,HTT
+2806.0,VERSAKA&CO SRL,BRASSERIE DE L'ETANG BLEU,RUE DE BINCHE,8,6540.0,LOBBE,BEL,,,,0483/42.00.74,BE1016.744.003,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,2500.0,2025-03-22,MONS,,,1.0,HTT
+2807.0,INTER LSC BINCHE,,RUE ZEPHIRIN FONTAINE,140,7130.0,BINCHE,BEL,064/28.31.13,,,,BE1007.240.179,NEE,NEE,boekhouding,,,pdv11895@mousquetaires.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,05 VISHANDEL,,Klanten HTT,500.0,2025-03-24,MONS,,,1.0,HTT
+2813.0,SPAPENS FRESH FOOD,,RUE TIENNE SAINT-GILLES,21,6020.0,COUILLET,BEL,071/36.05.34,,,,BE0429.984.568,JA,NEE,,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,Boekhouding,,,compta@spapens.be,,,09 HORECA,2026-01-06,Klanten HTT,2500.0,2025-04-03,MONS,,,1.0,HTT
+2814.0,PIERRE POTGENS,BASTION DES 8H,RUE DU PETIT SABLON,51,6043.0,RANSART,BEL,,,,0475/23.30.48,BE1011.892.617,NEE,JA,boekhouding,,,lebastillondes8h@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2025-10-13,Klanten HTT,2500.0,2025-04-04,MONS,,,1.0,HTT
+2818.0,SMACLOT,,CHAUSSEE DE BRAINE-LE-COMTE,83,1400.0,NIVELLES,BEL,,,,0484/88.66.77,BE1021.456.520,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,smaclot1400@gmail.com,,,09 HORECA,,Klanten HTT,2500.0,2025-04-07,MONS,,,1.0,HTT
+2819.0,INTERATH SA,,CHAUSSEE DE MONS,324,7800.0,ATH,BEL,068/26.41.08,,,,BE0865.844.665,,,,,,,,,09 HORECA,,Klanten HTT,2500.0,2025-04-08,MONS,,,1.0,HTT
+2820.0,MAUROY JEAN,,RUE DES ECOSSAIS,3,7050.0,JURBISE,BEL,,,,0498/52.03.14,BE1020.993.393,,,,,,,,,09 HORECA,,Klanten HTT,1000.0,2025-04-10,MONS,,,1.0,HTT
+2835.0,VIA BELTRAME,,RUE DU MAZY,63,7134.0,RESSAIX,BEL,,,,0472/93.47.40,BE1003.150.145,NEE,JA,boekhouding,,,bonacorsifabio@hotmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,2500.0,2025-05-20,MONS,,,1.0,HTT
+2836.0,LE NEW VAN GOGH,,RUE NEUVE,91,7300.0,BOUSSU,BEL,,,,0465/97.46.03,BE1008.241.655,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,lenewvangogh@gmail.com,,,09 HORECA,2025-06-27,Klanten HTT,500.0,2025-05-23,MONS,,,1.0,HTT
+2842.0,HOUDINIS SA,,PASSAGE MICHEL DEGENS,3,7110.0,HOUDENG GOEGNIES,BEL,,,,,BE0801.839.018,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,cateno.sanguine-adh@mousquetaires.com,,,07 DELHAIZE - INTERMARCHE,,Klanten HTT,2500.0,2025-05-27,MONS,,,1.0,HTT
+2845.0,RANCHO SRL,,RUE EMILE WAUQUIER,59,7040.0,QUEVY,BEL,065/56.82.91,,,0477/86.62.91,BE0564.819.518,NEE,NEE,boekhouding,,,ranchoinfo@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-03,Klanten HTT,1000.0,2025-06-04,MONS,,,1.0,HTT
+2856.0,BDC BRASSERIE,,RUE DE PHILIPPEVILLE,7,6120.0,HAMME-SUR-HEURE-NALINNES,BEL,071/30.24.61,,,0498/92.41.91,BE0537.610.523,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,JA,boekhouding,,,contact@brasseriexavier.be,,,06 POISSONERIE,,Klanten HTT,2500.0,2025-06-26,MONS,,,1.0,HTT
+2857.0,MMI ASBL,,GRAND CHEMIN,61,7063.0,SOIGNIES,BEL,,,,0477/26.40.10,BE0420.788.671,JA,NEE,,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,Boekhouding,,,s.dieudonne@asbl-mmi.be,,,09 HORECA,,Klanten HTT,2500.0,2025-06-27,MONS,,,1.0,HTT
+2868.0,INTERMARCHE FORCHIE ,,RUE CHAUSSEE,229,6141.0,FONTAINE L'EVEQUE,BEL,,,,0461/44.91.02,BE0721.465.907,NEE,NEE,boekhouding,,,guillaumecas@skynet.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,07 DELHAIZE - INTERMARCHE,,Klanten HTT,1000.0,2025-07-16,MONS,,,1.0,HTT
+2869.0,GRAINES DE PAIN,,RUE DES FRANCAIS,4,7600.0,PERUWELZ,BEL,,,,0477/78.78.17,BE0831.940.294,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,grainesdepain@gmail.com,,,09 HORECA,,Klanten HTT,1000.0,2025-07-16,MONS,,,1.0,HTT
+2879.0,O BISTROT,,RUE LOUIS CATY,137,7331.0,SAINT-GHISLAIN,BEL,,,,0489/36.55.37,BE0666.828.973,NEE,JA,boekhouding,,,lionelcornu0@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2025-08-13,MONS,,,1.0,HTT
+2881.0,COTE APPART SRL,LA MADELEINE,AVENUE DES NOUVELLES TECHNOLOGIES,41,7080.0,FRAMERIES,BEL,,,,0492/52.81.66,BE0750.602.133,NEE,JA,boekhouding,,,sg.coteappart@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2025-12-29,Klanten HTT,2500.0,2025-08-18,MONS,,,1.0,HTT
+2907.0,PROVINCE DU HAINAUT,RPO MESS JURBISE,ROUTE D'ATH,25/35,7050.0,JURBISE,BEL,,,,,BE0207.656.610,NEE,NEE,boekhouding,,,factures.fournisseurs@hainaut.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1500.0,2025-10-27,MONS,,,1.0,HTT
+2908.0,LA DECOUPE DE L'ARTISAN,,RUE DE PATURAGE,6,7340.0,COLFONTAINE,BEL,,,,0476/61.78.65,BE0753.420.180,NEE,NEE,boekhouding,,,vincenturbpro@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,06 POISSONERIE,,Klanten HTT,500.0,2025-10-28,MONS,,,1.0,HTT
+2910.0,CGJB,,RUE DE ROBIANO,16,7130.0,BINCHE,BEL,,,,,BE0750.652.712,NEE,NEE,boekhouding,,,julien.beautrix@skynet.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,2500.0,2025-10-30,MONS,,,1.0,HTT
+2911.0,VAN NEYLEN ALAIN,,RUE DE BINCHE,5,7061.0,SOIGNIES,BEL,,,,,BE0641.761.995,NEE,JA,boekhouding,,,alain.v.neylen@outlook.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,2500.0,2025-11-05,MONS,,,1.0,HTT
+2912.0,LE NAPOLEON,,RUE AUX FLEURS,26,7973.0,BELOEIL,BEL,,,,,BE1027.443.695,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2026-01-02,Klanten HTT,2500.0,2025-11-05,MONS,,,1.0,HTT
+2915.0,CALDERS SRL,,RUE DIDI,49,6060.0,GILLY,BEL,,,,0474/12.30.94,BE0418.276.470,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,calders@skynet.be,,,05 VISHANDEL,2026-01-06,Klanten HTT,0.0,2025-11-13,MONS,,,1.0,HTT
+2920.0,ECOLE EAFC JEAN MEUNIER,,AVENUE DU ROI ALBERT,643,7012.0,JEMAPPES,BEL,,,,0491/44.26.45,BE0850.017.829,,,,,,,,,09 HORECA,,Klanten HTT,2500.0,2025-11-19,MONS,,,1.0,HTT
+2921.0,DESTRE DANY,,RUE DES ARCACIAS,32,6110.0,MONTIGNY LE TILLEUL,BEL,,,,0492/09.55.91,BE0822.788.741,NEE,NEE,boekhouding,,,danydestre@gmail.com,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,2025-11-22,Klanten HTT,1000.0,2025-11-20,MONS,,,1.0,HTT
+2924.0,NOTTE CLEMENCE,COTE MEUSE,PLACE ALBERT 1ER,6,5500.0,DINANT,BEL,,,,0473/50.06.96,BE0801.803.087,,,,,,,,,09 HORECA,,Klanten HTT,2500.0,2025-11-26,MONS,,,1.0,HTT
+2925.0,MAISON D'ACCEUIL SAINT-PAUL,,RUE SAINT-PAUL,17,7000.0,MONS,BEL,065/34.80.94,,,0473/11.15.32,,NEE,NEE,boekhouding,,,secretariat@maison-saint-paul.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,NEE,boekhouding,,,f.nicolas@maison-saint-paul.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2025-11-27,MONS,,,1.0,HTT
+2927.0,MAISON FUMESSE,,ROUTE DE WALLONIE (G),4 W,7011.0,GHLIN,BEL,,,,,,JA,NEE,,,,ghlin@delicatessenvanhauwaert.be,,,01 GHLIN,2026-01-08,Maandelijks,0.0,2025-12-03,MONS,,,1.0,HTT
+2929.0,BETCHARD BRASSERIE,,RUE DU TRY,2,1480.0,TUBIZE,BEL,,,,0473/54.31.76,BE0766.625.642,NEE,NEE,boekhouding,,,carinedruart@yahoo.fr,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2025-12-08,MONS,,,1.0,HTT
+2930.0,COQUELIFRAIS,,RUE DE MIGNAULT,165,7062.0,SOIGNIES,BEL,,,,0497/41.63.62,BE1029.299.761,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,500.0,2025-12-10,MONS,,,1.0,HTT
+2931.0,EL FERON,,RUE DE LA CHAPELLE,14,7370.0,DOUR,BEL,,,,0477/91.88.40,BE0828.052.574,NEE,NEE,boekhouding,,,david.f@allinfitness.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2025-12-11,MONS,,,1.0,HTT
+2933.0,CAULIER FABRICE,,RUE DU FRUJIA,1A,5560.0,CIERGNON,BEL,,,,0477/27.97.74,BE0671.232.773,,,,,,,,,09 HORECA,,Klanten HTT,2500.0,2025-12-15,MONS,,,1.0,HTT
+2934.0,PROFOOD EXPERT,,CHAUSSEE D'ALSEMBERG,853,1420.0,BRAINE-L'ALLEUD,BEL,,,,,BE0794.861.055,,,,,,,,,09 HORECA,,Klanten HTT,2500.0,2025-12-15,MONS,,,1.0,HTT
+2938.0,BAROMETRE MAH,,MARCHE AUX HERBES,30,7000.0,MONS,BEL,,,,0475/31.76.86,BE0797.262.695,NEE,JA,boekhouding,,,barometremah@gmail.com,Facturatie,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,ghlin@delicatessenvanhauwaert.be,,,09 HORECA,,Klanten HTT,1000.0,2025-12-19,MONS,,,1.0,HTT
+2949.0,FIERET VISCENTRALE HARELBEKE,,GENTSESTEENWEG 104,,8530.0,HARELBEKE,BEL,056/68.18.18,,,,BE 0477.731.334,JA,NEE,Boekhouding,,,facturen@viscentralefieret.be,,,04 FIERET,,Wekelijks,200000.0,2026-01-02,IEPER,,,1.0,HTT
+2951.0,LEGRAND BLEU SPRL,,CHAUSSEE DE JOLIMONT 60/4,,7100.0,HAINE-ST-PAUL,BEL,0495/50.25.81,,,0495/50.20.75,BE 0458.574.824,JA,NEE,Boekhouding,,,legrand_daniel@hotmail.com,,,06 POISSONERIE,2026-01-06,Wekelijks,100000.0,2026-01-02,DRIEGE,,,1.0,HTT
+2952.0,BORREMANS NV,,HEMELRIJKEN 6,,2890.0,SINT-AMANDS,BEL,,,,,BE 0451.511.244,JA,NEE,Boekhouding,,,boekhouding@borremanspvh.be,,,02. GROOTHANDEL,2026-01-03,Wekelijks,0.0,2026-01-02,AFHALING,,,1.0,HTT
+2953.0,MIAMI 777 BV,DELHAIZE KNOKKE,KUSTLAAN,34,8300.0,KNOKKE-HEIST,BEL,050/60.90.84,,,0496/91.26.40,BE0804.727.143,NEE,NEE,Boekhouding,,,aankoop-0804727143@kmoadministratie.clouddemat.be,,,07 DELHAIZE - INTERMARCHE,,Wekelijks,0.0,2026-01-02,KNOKKE VROEG,,,1.0,HTT
+2954.0,SPAR WEVELGEM,,MENENSTRAAT,268,8560.0,WEVELGEM,BEL,051/41.04.05,,,0473/40.38.71,BE0413.970.957,JA,NEE,boekhouding,,,christelle@sparwevelgem.be,,,,,,,,,,,,
+,,,,,,,,,,,,,NEE,JA,Boekhouding,,,christelle@sparwevelgem.be,,,05 VISHANDEL,2026-01-05,Wekelijks,15000.0,2026-01-02,WEVELGEM,,,1.0,HTT
+2956.0,DELICATESSEN VANHAUWAERT BV,,IERSE ZEESTRAAT,109/112,8380.0,ZEEBRUGGE,BEL,050/55.02.55,,,,BE0843.191.504,,,,,,,,,00 DELI VHA,2026-01-06,Wekelijks,0.0,2026-01-02,,,,1.0,HTT
+2957.0,EUROSPAR LICHTERVELDE,,STATIESTRAAT 69,,8810.0,LICHTERVELDE,BEL,051/72.56.70,,,,BE 0438.785.438,NEE,NEE,Boekhouding,,,runico@yukiworks.be,,,,,,,,,,,,
+,,,,,,,,,,,,,JA,NEE,boekhouding,,,info@sparlichtervelde.be,,,05 VISHANDEL,,Wekelijks,45000.0,2026-01-02,IEPER,,,1.0,HTT
+2959.0,SNOUBER SARL,,AVENUE WANDERPEPEN,6,7130.0,BINCHE,BEL,,,,0483/62.65.07,BE0473.019.213,,,,,,,,,09 HORECA,2026-01-07,Wekelijks,0.0,2026-01-06,MONS,,,1.0,HTT
+2960.0,L'OSTREA SRL,,RUE DES OLIVIERS 6,,7134.0,EPINOIS,BEL,,,,0477/68.12.13,BE 0736.464.580,JA,NEE,Boekhouding,,,fabricer10@hotmail.com,,,06 POISSONERIE,2026-01-08,Wekelijks,30000.0,2026-01-08,,,,1.0,HTT
+999985.0,TESTKLANT 06 POISSONERIE,,,,,,BEL,,,,,,,,,,,,,,06 POISSONERIE,,Wekelijks,0.0,2022-02-08,,,,1.0,HTT
+999988.0,TESTKLANT 08 TRAITEUR - FR,,,,,,BEL,,,,,,,,,,,,,,08 TRAITEUR,,Wekelijks,0.0,2022-02-08,,,,1.0,HTT
+999989.0,TESTKLANT 09 HORECA - FR,,,,,,BEL,,,,,,,,,,,,,,09 HORECA,,Wekelijks,0.0,2022-02-08,,,,1.0,HTT
+999991.0,TESTKLANT 03 GROOTHANDEL ZONDER VEILING - FR,,,,,,BEL,,,,,,,,,,,,,,03 GROOTHANDEL ZONDER VEILING,,Wekelijks,0.0,2022-02-22,,,,1.0,HTT
+999994.0,TESTKLANT 10 CONTANT - FR,,,,,,BEL,,,,,,,,,,,,,,10 CONTANT,,Wekelijks,0.0,2022-10-06,,,,1.0,HTT
+999995.0,TESTKLANT 07 DELHAIZE-INTERMARCHE - FR,,,,,,BEL,,,,,,,,,,,,,,07 DELHAIZE - INTERMARCHE,,Wekelijks,0.0,2025-01-30,,,,1.0,HTT
