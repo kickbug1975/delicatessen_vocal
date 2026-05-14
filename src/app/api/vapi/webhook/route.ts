@@ -73,13 +73,13 @@ export async function POST(req: Request) {
                 type: "function",
                 function: {
                   name: "identifyClient",
-                  description: "Cherche le profil du client dans la base de données. À utiliser UNIQUEMENT après avoir demandé le nom de l'établissement.",
+                  description: "Cherche le profil du client dans la base de données. À utiliser UNIQUEMENT après avoir demandé le numéro de TVA ou le numéro de téléphone de l'établissement.",
                   parameters: {
                     type: "object",
                     properties: {
-                      nom_ou_telephone: { type: "string", description: "Le nom de l'entreprise ou le numéro de téléphone donné par le client." }
+                      tva_ou_telephone: { type: "string", description: "Le numéro de TVA ou le numéro de téléphone donné par le client." }
                     },
-                    required: ["nom_ou_telephone"]
+                    required: ["tva_ou_telephone"]
                   }
                 }
               },
@@ -146,13 +146,13 @@ export async function POST(req: Request) {
         const args = call.toolCall.function.arguments;
 
         if (functionName === 'identifyClient') {
-          const { nom_ou_telephone } = args;
+          const { tva_ou_telephone } = args;
           
-          // Recherche réelle dans la table clients (par nom, nom de société ou téléphone)
+          // Recherche réelle dans la table clients (par TVA, téléphone, ou nom)
           const { data: clients, error: clientErr } = await supabaseAdmin
             .from('clients')
             .select('*')
-            .or(`name.ilike.%${nom_ou_telephone}%,company_name.ilike.%${nom_ou_telephone}%,phone.ilike.%${nom_ou_telephone}%`)
+            .or(`vat_number.ilike.%${tva_ou_telephone}%,phone.ilike.%${tva_ou_telephone}%,name.ilike.%${tva_ou_telephone}%,company_name.ilike.%${tva_ou_telephone}%`)
             .limit(3);
 
           if (clientErr || !clients || clients.length === 0) {
