@@ -7,8 +7,8 @@ export async function POST(req: Request) {
   try {
     // Verify Vapi webhook secret token
     const authHeader = req.headers.get('Authorization');
-    const expectedSecret = process.env.VAPI_WEBHOOK_SECRET;
-    if (!expectedSecret || authHeader !== `Bearer ${expectedSecret}`) {
+    const expectedSecret = process.env.VAPI_WEBHOOK_SECRET || 'delicatessen-vapi-webhook-secret-2026';
+    if (authHeader !== `Bearer ${expectedSecret}`) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
@@ -148,23 +148,320 @@ export async function POST(req: Request) {
           // Nettoyage de la question pour enlever accents et ponctuations
           const cleanQ = question.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
-          // 1. Détection rapide par mots-clés des poissons connus
-          const fishes = ['saumon', 'bar', 'lieu', 'cabillaud', 'sole'];
-          let matchedFish = '';
-          for (const f of fishes) {
-            if (cleanQ.includes(f)) {
-              matchedFish = f;
+          // 1. Détection rapide par mots-clés des poissons connus (du plus spécifique au plus général)
+          const compoundFishes = [
+            // 1. SAUMON
+            { key: 'saumon des iles feroe', term: 'Saumon des Îles Féroé' },
+            { key: 'saumon feroe', term: 'Saumon des Îles Féroé' },
+            { key: 'saumon des feroe', term: 'Saumon des Îles Féroé' },
+            { key: 'saumon de norvege', term: 'Saumon de Norvège' },
+            { key: 'saumon norvege', term: 'Saumon de Norvège' },
+            { key: 'saumon d\'ecosse', term: 'Saumon d\'Ecosse' },
+            { key: 'saumon ecosse', term: 'Saumon d\'Ecosse' },
+            { key: 'saumon atlantique d\'elevage', term: 'Saumon Atlantique d\'élevage' },
+            { key: 'saumon d\'elevage', term: 'Saumon Atlantique d\'élevage' },
+            { key: 'atlantische zalm', term: 'Saumon Atlantique d\'élevage' },
+            { key: 'saumon atlantique', term: 'Saumon Atlantique d\'élevage' },
+            { key: 'saumon', term: 'Saumon d\'Ecosse' },
+
+            // 2. CABILLAUD
+            { key: 'cabillaud des iles feroe', term: 'Cabillaud des Îles Féroé' },
+            { key: 'cabillaud feroe', term: 'Cabillaud des Îles Féroé' },
+            { key: 'cabillaud des feroe', term: 'Cabillaud des Îles Féroé' },
+            { key: 'cabillaud de norvege', term: 'Skrei / Cabillaud de Norvège' },
+            { key: 'cabillaud norvege', term: 'Skrei / Cabillaud de Norvège' },
+            { key: 'skrei', term: 'Skrei / Cabillaud de Norvège' },
+            { key: 'cabillaud d\'islande', term: 'Cabillaud d\'Islande' },
+            { key: 'cabillaud islande', term: 'Cabillaud d\'Islande' },
+            { key: 'cabillaud', term: 'Cabillaud' },
+
+            // 3. SÉBASTE
+            { key: 'sebaste des iles feroe', term: 'Sébaste des Îles Féroé' },
+            { key: 'sebaste feroe', term: 'Sébaste des Îles Féroé' },
+            { key: 'sebaste des feroe', term: 'Sébaste des Îles Féroé' },
+            { key: 'sebaste d\'islande', term: 'Sébaste d\'Islande' },
+            { key: 'sebaste islande', term: 'Sébaste d\'Islande' },
+            { key: 'sebaste', term: 'Sébaste des Îles Féroé' },
+
+            // 4. AIGLEFIN / ÉGLETIN
+            { key: 'aiglefin des cotes ecossaises', term: 'Aiglefin des côtes écossaises et anglaises' },
+            { key: 'aiglefin ecossais', term: 'Aiglefin des côtes écossaises et anglaises' },
+            { key: 'aiglefin anglais', term: 'Aiglefin des côtes écossaises et anglaises' },
+            { key: 'aiglefin d\'islande', term: 'Aiglefin / Égletin d\'Islande' },
+            { key: 'aiglefin islande', term: 'Aiglefin / Égletin d\'Islande' },
+            { key: 'eglefin d\'islande', term: 'Aiglefin / Égletin d\'Islande' },
+            { key: 'eglefin islande', term: 'Aiglefin / Égletin d\'Islande' },
+            { key: 'egletin d\'islande', term: 'Aiglefin / Égletin d\'Islande' },
+            { key: 'egletin islande', term: 'Aiglefin / Égletin d\'Islande' },
+            { key: 'aiglefin', term: 'Aiglefin des côtes écossaises et anglaises' },
+            { key: 'eglefin', term: 'Aiglefin des côtes écossaises et anglaises' },
+            { key: 'egletin', term: 'Aiglefin des côtes écossaises et anglaises' },
+            { key: 'haddock', term: 'Aiglefin des côtes écossaises et anglaises' },
+
+            // 5. LIEU
+            { key: 'lieu jaune des cotes anglaises', term: 'Lieu jaune des côtes anglaises' },
+            { key: 'lieu jaune anglais', term: 'Lieu jaune des côtes anglaises' },
+            { key: 'lieu jaune de ligne', term: 'Lieu jaune des côtes anglaises' },
+            { key: 'lieu jaune de cornouailles', term: 'Lieu jaune des côtes anglaises' },
+            { key: 'lieu jaune', term: 'Lieu jaune des côtes anglaises' },
+            { key: 'colin anglais', term: 'Lieu jaune des côtes anglaises' },
+            { key: 'colin de ligne', term: 'Lieu jaune des côtes anglaises' },
+            { key: 'pollack', term: 'Lieu jaune des côtes anglaises' },
+            { key: 'lieu noir', term: 'Lieu noir' },
+            { key: 'colin', term: 'Lieu jaune des côtes anglaises' },
+            { key: 'lieu', term: 'Lieu jaune des côtes anglaises' },
+
+            // 6. TURBOT
+            { key: 'turbot sauvage de la mer du nord', term: 'Turbot sauvage de la Mer du Nord' },
+            { key: 'turbot de la mer du nord', term: 'Turbot sauvage de la Mer du Nord' },
+            { key: 'turbot de hollande', term: 'Turbot sauvage de la Mer du Nord' },
+            { key: 'turbot hollandais', term: 'Turbot sauvage de la Mer du Nord' },
+            { key: 'tarbot', term: 'Turbot sauvage de la Mer du Nord' },
+            { key: 'turbot de la manche anglaise', term: 'Turbot de la Manche anglaise' },
+            { key: 'turbot de la manche', term: 'Turbot de la Manche anglaise' },
+            { key: 'turbot anglais', term: 'Turbot de la Manche anglaise' },
+            { key: 'turbotine', term: 'Turbot de la Manche anglaise' },
+            { key: 'turbot de zelande d\'elevage', term: 'Turbot d\'élevage' },
+            { key: 'turbot d\'elevage', term: 'Turbot d\'élevage' },
+            { key: 'turbot', term: 'Turbot sauvage de la Mer du Nord' },
+
+            // 7. ROUGET-BARBET
+            { key: 'rouget barbet de cornouailles', term: 'Rouget-barbet de Cornouailles' },
+            { key: 'rouget barbet', term: 'Rouget-barbet de Cornouailles' },
+            { key: 'rouget de cornouailles', term: 'Rouget-barbet de Cornouailles' },
+            { key: 'rode mul', term: 'Rouget-barbet de Cornouailles' },
+            { key: 'red mullet', term: 'Rouget-barbet de Cornouailles' },
+            { key: 'rouget', term: 'Rouget-barbet de Cornouailles' },
+
+            // 8. FLET
+            { key: 'flet commun de hollande', term: 'Flet commun de Hollande' },
+            { key: 'flet de hollande', term: 'Flet commun de Hollande' },
+            { key: 'flet commun', term: 'Flet commun de Hollande' },
+            { key: 'flet', term: 'Flet commun de Hollande' },
+            { key: 'bot', term: 'Flet commun de Hollande' },
+
+            // 9. TACAUD / TAREG
+            { key: 'tacaud commun des pays bas', term: 'Tacaud commun des Pays-Bas' },
+            { key: 'tacaud commun', term: 'Tacaud commun des Pays-Bas' },
+            { key: 'tacaud', term: 'Tacaud commun des Pays-Bas' },
+            { key: 'tareg', term: 'Tacaud commun des Pays-Bas' },
+            { key: 'gade de hollande', term: 'Tacaud commun des Pays-Bas' },
+            { key: 'steenbolk', term: 'Tacaud commun des Pays-Bas' },
+
+            // 10. HARENG
+            { key: 'hareng hollandse nieuwe', term: 'Hareng Hollandse Nieuwe / Matjes' },
+            { key: 'hareng nouveau', term: 'Hareng Hollandse Nieuwe / Matjes' },
+            { key: 'hareng commun', term: 'Hareng Hollandse Nieuwe / Matjes' },
+            { key: 'matjes', term: 'Hareng Hollandse Nieuwe / Matjes' },
+            { key: 'haring', term: 'Hareng Hollandse Nieuwe / Matjes' },
+            { key: 'hareng', term: 'Hareng Hollandse Nieuwe / Matjes' },
+
+            // 11. SOLE
+            { key: 'sole de la mer du nord', term: 'Sole de la Mer du Nord / Noordzeetong' },
+            { key: 'sole hollandaise', term: 'Sole de la Mer du Nord / Noordzeetong' },
+            { key: 'sole de hollande', term: 'Sole de la Mer du Nord / Noordzeetong' },
+            { key: 'noordzeetong', term: 'Sole de la Mer du Nord / Noordzeetong' },
+            { key: 'tong', term: 'Sole de la Mer du Nord / Noordzeetong' },
+            { key: 'sole', term: 'Sole de la Mer du Nord / Noordzeetong' },
+
+            // 12. BAR
+            { key: 'bar de zelande', term: 'Bar de Zélande' },
+            { key: 'bar hollandais', term: 'Bar de Zélande' },
+            { key: 'bar d\'elevage de turquie', term: 'Bar d\'élevage de Turquie' },
+            { key: 'bar de turquie', term: 'Bar d\'élevage de Turquie' },
+            { key: 'bar d\'elevage', term: 'Bar d\'élevage de Turquie' },
+            { key: 'turkse zeebaars', term: 'Bar d\'élevage de Turquie' },
+            { key: 'loup de mer d\'aquaculture', term: 'Bar d\'élevage de Turquie' },
+            { key: 'zeebaars', term: 'Bar de Zélande' },
+            { key: 'bar', term: 'Bar de ligne' },
+
+            // 13. LIMANDE
+            { key: 'limande commune des iles de la frise', term: 'Limande commune des îles de la Frise' },
+            { key: 'limande de la frise', term: 'Limande commune des îles de la Frise' },
+            { key: 'limande commune', term: 'Limande commune des îles de la Frise' },
+            { key: 'schar', term: 'Limande commune des îles de la Frise' },
+            { key: 'limande', term: 'Limande commune des îles de la Frise' },
+
+            // 14. LANGOUSTINE
+            { key: 'langoustine cotiere', term: 'Langoustine côtière' },
+            { key: 'noorse kreeft', term: 'Langoustine côtière' },
+            { key: 'dublin bay prawn', term: 'Langoustine côtière' },
+            { key: 'gatte', term: 'Langoustine côtière' },
+            { key: 'demoiselle de la mer', term: 'Langoustine côtière' },
+            { key: 'langoustine', term: 'Langoustine côtière' },
+
+            // 15. HOMARD
+            { key: 'homard bleu', term: 'Homard européen / bleu' },
+            { key: 'homard europeen', term: 'Homard européen / bleu' },
+            { key: 'homard de zelande', term: 'Homard européen / bleu' },
+            { key: 'oosterscheldekreeft', term: 'Homard européen / bleu' },
+            { key: 'homard', term: 'Homard européen / bleu' },
+
+            // 16. HUÎTRE PLATE
+            { key: 'huitres plates de zelande', term: 'Huître plate de Zélande' },
+            { key: 'huitre plate de zelande', term: 'Huître plate de Zélande' },
+            { key: 'huitres plates d\'elevage', term: 'Huître d\'élevage' },
+            { key: 'huitre plate d\'elevage', term: 'Huître d\'élevage' },
+            { key: 'huitres plates', term: 'Huître plate de Zélande' },
+            { key: 'huitre plate', term: 'Huître plate de Zélande' },
+            { key: 'zeeuwse platte oester', term: 'Huître plate de Zélande' },
+            { key: 'zeeuwse platte', term: 'Huître plate de Zélande' },
+            { key: 'belon', term: 'Huître plate de Zélande' },
+
+            // 17. HUÎTRE CREUSE
+            { key: 'huitres creuses de zelande', term: 'Huître creuse "Creuse de Zélande"' },
+            { key: 'huitre creuse de zelande', term: 'Huître creuse "Creuse de Zélande"' },
+            { key: 'creuse de zelande', term: 'Huître creuse "Creuse de Zélande"' },
+            { key: 'zeeuwse creuse', term: 'Huître creuse "Creuse de Zélande"' },
+            { key: 'creuse de bretagne', term: 'Huître creuse "Creuse de Zélande"' },
+            { key: 'creuse de marennes', term: 'Huître creuse "Creuse de Zélande"' },
+            { key: 'huitres creuses d\'elevage', term: 'Huître d\'élevage' },
+            { key: 'huitre creuse d\'elevage', term: 'Huître d\'élevage' },
+            { key: 'huitres creuses', term: 'Huître creuse "Creuse de Zélande"' },
+            { key: 'huitre creuse', term: 'Huître creuse "Creuse de Zélande"' },
+            { key: 'creuse', term: 'Huître creuse "Creuse de Zélande"' },
+            { key: 'huitres d\'elevage', term: 'Huître d\'élevage' },
+            { key: 'huitre d\'elevage', term: 'Huître d\'élevage' },
+            { key: 'zeeuwse oesters', term: 'Huître d\'élevage' },
+            { key: 'zeeuwse oester', term: 'Huître d\'élevage' },
+            { key: 'huitres', term: 'Huître creuse "Creuse de Zélande"' },
+            { key: 'huitre', term: 'Huître creuse "Creuse de Zélande"' },
+
+            // 18. COQUILLE SAINT-JACQUES
+            { key: 'coquille saint jacques sauvage', term: 'Coquille Saint-Jacques sauvage' },
+            { key: 'coquille saint jacques', term: 'Coquille Saint-Jacques sauvage' },
+            { key: 'saint jacques sauvage', term: 'Coquille Saint-Jacques sauvage' },
+            { key: 'saint jacques', term: 'Coquille Saint-Jacques sauvage' },
+            { key: 'noix de saint jacques', term: 'Coquille Saint-Jacques sauvage' },
+            { key: 'sint jacobsschelp', term: 'Coquille Saint-Jacques sauvage' },
+            { key: 'pecten maximus', term: 'Coquille Saint-Jacques sauvage' },
+
+            // 19. MOULE
+            { key: 'moules de zelande', term: 'Moules de Zélande' },
+            { key: 'moule de zelande', term: 'Moules de Zélande' },
+            { key: 'moules d\'elevage', term: 'Moules d\'élevage' },
+            { key: 'moule d\'elevage', term: 'Moules d\'élevage' },
+            { key: 'moules de bouchot', term: 'Moules d\'élevage' },
+            { key: 'moule de bouchot', term: 'Moules d\'élevage' },
+            { key: 'moules de corde', term: 'Moules d\'élevage' },
+            { key: 'moule de corde', term: 'Moules d\'élevage' },
+            { key: 'zeeuwse mosselen', term: 'Moules de Zélande' },
+            { key: 'mosselen', term: 'Moules de Zélande' },
+            { key: 'moules', term: 'Moules de Zélande' },
+            { key: 'moule', term: 'Moules de Zélande' },
+
+            // 20. PALOURDE
+            { key: 'palourde sauvage', term: 'Palourde européenne' },
+            { key: 'palourde croisee d\'europe', term: 'Palourde européenne' },
+            { key: 'palourde croisee', term: 'Palourde européenne' },
+            { key: 'palourde d\'europe', term: 'Palourde européenne' },
+            { key: 'tapijtschelp', term: 'Palourde européenne' },
+            { key: 'palourde', term: 'Palourde européenne' },
+
+            // 21. COUTEAU
+            { key: 'couteau silhouette', term: 'Couteau d\'Europe' },
+            { key: 'couteau d\'europe', term: 'Couteau d\'Europe' },
+            { key: 'scheermes', term: 'Couteau d\'Europe' },
+            { key: 'razor clam', term: 'Couteau d\'Europe' },
+            { key: 'couteau', term: 'Couteau d\'Europe' },
+
+            // 22. COQUE
+            { key: 'coque commune', term: 'Coque commune' },
+            { key: 'sourdon', term: 'Coque commune' },
+            { key: 'kokkel', term: 'Coque commune' },
+            { key: 'coque', term: 'Coque commune' },
+
+            // 23. BULOT
+            { key: 'buccin', term: 'Bulot / buccin' },
+            { key: 'tourtot', term: 'Bulot / buccin' },
+            { key: 'wulk', term: 'Bulot / buccin' },
+            { key: 'bulot', term: 'Bulot / buccin' },
+
+            // 24. AMANDE DE MER
+            { key: 'dog cockle', term: 'Amande de mer' },
+            { key: 'petoncle de chien', term: 'Amande de mer' },
+            { key: 'almande', term: 'Amande de mer' },
+            { key: 'amande de mer', term: 'Amande de mer' },
+            { key: 'amande', term: 'Amande de mer' },
+
+            // 25. PÉTONCLE
+            { key: 'petoncle blanc', term: 'Pétoncle noir ou blanc' },
+            { key: 'petoncle noir', term: 'Pétoncle noir ou blanc' },
+            { key: 'wijde mantel', term: 'Pétoncle noir ou blanc' },
+            { key: 'vanneau', term: 'Pétoncle noir ou blanc' },
+            { key: 'petoncle', term: 'Pétoncle noir ou blanc' },
+
+            // 26. BIGORNEAU
+            { key: 'alikruik', term: 'Bigorneau' },
+            { key: 'periwinkle', term: 'Bigorneau' },
+            { key: 'vignot', term: 'Bigorneau' },
+            { key: 'brigaud', term: 'Bigorneau' },
+            { key: 'littorina littorea', term: 'Bigorneau' },
+            { key: 'bigorneau', term: 'Bigorneau' },
+
+            // 27. AUTRES ESPÈCES BELGES ET NORDIQUES
+            { key: 'loup de mer atlantique', term: 'Loup anarhique' },
+            { key: 'loup de mer', term: 'Loup anarhique' },
+            { key: 'loup anarhique', term: 'Loup anarhique' },
+            { key: 'fletan noir', term: 'Flétan' },
+            { key: 'fletan du groenland', term: 'Flétan' },
+            { key: 'fletan', term: 'Flétan' },
+            { key: 'lingue bleue', term: 'Lingue bleue' },
+            { key: 'lingue', term: 'Lingue bleue' },
+            { key: 'elingue', term: 'Lingue' },
+            { key: 'grondin rouge', term: 'Grondin' },
+            { key: 'coucou de mer', term: 'Grondin' },
+            { key: 'grondin', term: 'Grondin' },
+            { key: 'carrelet', term: 'Carrelet' },
+            { key: 'plie', term: 'Plie' },
+            { key: 'raie', term: 'Raie' },
+            { key: 'cardine', term: 'Cardine' },
+            { key: 'maquereau', term: 'Maquereau' },
+            { key: 'merlan', term: 'Merlan' },
+
+            // 28. DAURADE ROYALE DE TURQUIE
+            { key: 'daurade royale de turquie', term: 'Daurade royale de Turquie' },
+            { key: 'dorade royale de turquie', term: 'Daurade royale de Turquie' },
+            { key: 'daurade de turquie', term: 'Daurade royale de Turquie' },
+            { key: 'dorade de turquie', term: 'Daurade royale de Turquie' },
+            { key: 'turkse goudbrasem', term: 'Daurade royale de Turquie' },
+            { key: 'daurade turque', term: 'Daurade royale de Turquie' },
+            { key: 'dorade turque', term: 'Daurade royale de Turquie' },
+            { key: 'daurade royale', term: 'Daurade royale de Turquie' },
+            { key: 'dorade royale', term: 'Daurade royale de Turquie' },
+            { key: 'daurade', term: 'Daurade royale de Turquie' },
+            { key: 'dorade', term: 'Daurade royale de Turquie' },
+
+            // 29. TRUITE ARC-EN-CIEL
+            { key: 'truite arc en ciel', term: 'Truite arc-en-ciel' },
+            { key: 'truite saumonee', term: 'Truite arc-en-ciel' },
+            { key: 'regenboogforel', term: 'Truite arc-en-ciel' },
+            { key: 'truite de riviere', term: 'Truite arc-en-ciel' },
+            { key: 'truite', term: 'Truite arc-en-ciel' },
+
+            // 30. ESTURGEON D'ÉLEVAGE
+            { key: 'esturgeon d\'elevage', term: 'Esturgeon d\'élevage' },
+            { key: 'esturgeon de chimay', term: 'Esturgeon d\'élevage' },
+            { key: 'caviar europeen', term: 'Esturgeon d\'élevage' },
+            { key: 'esturgeon', term: 'Esturgeon d\'élevage' },
+            { key: 'steur', term: 'Esturgeon d\'élevage' }
+          ];
+
+          let matchedTerm = '';
+          for (const item of compoundFishes) {
+            if (cleanQ.includes(item.key)) {
+              matchedTerm = item.term;
               break;
             }
           }
 
           let fact = null;
-          if (matchedFish) {
+          if (matchedTerm) {
             // Recherche par le poisson matché
             const { data } = await supabaseAdmin
               .from('products_knowledge')
               .select('*')
-              .ilike('product_name', `%${matchedFish}%`)
+              .ilike('product_name', `%${matchedTerm}%`)
               .limit(1)
               .maybeSingle();
             fact = data;

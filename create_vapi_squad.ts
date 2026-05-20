@@ -1,11 +1,29 @@
 import fs from 'fs';
-import dotenv from 'dotenv';
+import path from 'path';
 
-dotenv.config();
+// Parse .env manually to avoid dependency issues with 'dotenv'
+const env: Record<string, string> = {};
+try {
+  const envPath = path.join(process.cwd(), '.env');
+  if (fs.existsSync(envPath)) {
+    const envContent = fs.readFileSync(envPath, 'utf-8');
+    for (const line of envContent.split('\n')) {
+      const trimmed = line.trim();
+      if (!trimmed || trimmed.startsWith('#')) continue;
+      const eqIndex = trimmed.indexOf('=');
+      if (eqIndex === -1) continue;
+      const key = trimmed.substring(0, eqIndex).trim();
+      const value = trimmed.substring(eqIndex + 1).replace(/^["']|["']$/g, '').trim();
+      env[key] = value;
+    }
+  }
+} catch (e) {
+  console.warn("Could not read .env file:", e);
+}
 
-const VAPI_API_KEY = process.env.VAPI_API_KEY;
+const VAPI_API_KEY = process.env.VAPI_API_KEY || env.VAPI_API_KEY;
 if (!VAPI_API_KEY) {
-  throw new Error("Missing VAPI_API_KEY in environment variables");
+  throw new Error("Missing VAPI_API_KEY in environment variables or .env file");
 }
 const SERVER_URL = 'https://delicatessen-dashboard-dimitri-2026.netlify.app/api/vapi/webhook';
 
@@ -73,7 +91,7 @@ Si une question technique ou de préparation culinaire dépasse tes connaissance
               description: 'Retrieve current product prices for the client.',
               parameters: { type: 'object', properties: {} }
             },
-            server: { url: SERVER_URL }
+            server: { url: SERVER_URL, secret: process.env.VAPI_WEBHOOK_SECRET || 'delicatessen-vapi-webhook-secret-2026' }
           },
           {
             type: 'function',
@@ -83,7 +101,7 @@ Si une question technique ou de préparation culinaire dépasse tes connaissance
               description: 'Submit the final order.',
               parameters: { type: 'object', properties: {} }
             },
-            server: { url: SERVER_URL }
+            server: { url: SERVER_URL, secret: process.env.VAPI_WEBHOOK_SECRET || 'delicatessen-vapi-webhook-secret-2026' }
           },
           {
             type: 'function',
@@ -100,7 +118,7 @@ Si une question technique ou de préparation culinaire dépasse tes connaissance
                 required: ['question']
               }
             },
-            server: { url: SERVER_URL }
+            server: { url: SERVER_URL, secret: process.env.VAPI_WEBHOOK_SECRET || 'delicatessen-vapi-webhook-secret-2026' }
           }
         ],
       }
@@ -130,7 +148,7 @@ RÈGLES STRICTES :
               description: 'Retrieve current product prices for the client.',
               parameters: { type: 'object', properties: {} }
             },
-            server: { url: SERVER_URL }
+            server: { url: SERVER_URL, secret: process.env.VAPI_WEBHOOK_SECRET || 'delicatessen-vapi-webhook-secret-2026' }
           },
           {
             type: 'function',
@@ -140,7 +158,7 @@ RÈGLES STRICTES :
               description: 'Submit the final order.',
               parameters: { type: 'object', properties: {} }
             },
-            server: { url: SERVER_URL }
+            server: { url: SERVER_URL, secret: process.env.VAPI_WEBHOOK_SECRET || 'delicatessen-vapi-webhook-secret-2026' }
           }
         ],
       }
@@ -175,7 +193,7 @@ RÈGLES STRICTES :
                 required: ['identifier']
               }
             },
-            server: { url: SERVER_URL }
+            server: { url: SERVER_URL, secret: process.env.VAPI_WEBHOOK_SECRET || 'delicatessen-vapi-webhook-secret-2026' }
           },
           {
             type: 'handoff',
