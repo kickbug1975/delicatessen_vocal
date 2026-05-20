@@ -6,9 +6,18 @@ import path from 'path';
 export async function POST(req: Request) {
   try {
     // Verify Vapi webhook secret token
-    const authHeader = req.headers.get('Authorization');
+    const authHeader = req.headers.get('Authorization') || '';
+    const xVapiSecret = req.headers.get('x-vapi-secret') || '';
     const expectedSecret = process.env.VAPI_WEBHOOK_SECRET || 'delicatessen-vapi-webhook-secret-2026';
-    if (authHeader !== `Bearer ${expectedSecret}`) {
+    
+    const isValid = 
+      authHeader === `Bearer ${expectedSecret}` ||
+      authHeader === expectedSecret ||
+      authHeader.replace(/^Bearer\s+/i, '') === expectedSecret ||
+      xVapiSecret === expectedSecret;
+
+    if (!isValid) {
+      console.warn('Unauthorized webhook request. Received Authorization:', authHeader ? 'Present' : 'Missing', 'x-vapi-secret:', xVapiSecret ? 'Present' : 'Missing');
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
