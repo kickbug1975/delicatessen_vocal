@@ -20,6 +20,9 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           <Link href="/dashboard/produits" className="px-4 py-2 rounded-lg hover:bg-slate-800 transition">
             🐟 Produits & Stocks
           </Link>
+          <Link href="/dashboard/connaissances" className="px-4 py-2 rounded-lg hover:bg-slate-800 transition">
+            🧠 Base Connaissances
+          </Link>
           <Link href="/dashboard/promotions" className="px-4 py-2 rounded-lg hover:bg-slate-800 transition text-red-400 font-semibold">
             🔥 Promotions
           </Link>

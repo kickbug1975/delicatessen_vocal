@@ -1,11 +1,12 @@
 const https = require('https');
+require('dotenv').config();
 
 const options = {
   hostname: 'api.vapi.ai',
   path: '/call?assistantId=a0eee2d3-de59-4c71-8900-1a6f71c7e816&limit=1',
   method: 'GET',
   headers: {
-    'Authorization': 'Bearer 21a64a63-ee7b-4b12-96b6-ea52aa3d4f91'
+    'Authorization': `Bearer ${process.env.VAPI_API_KEY}`
   }
 };
 

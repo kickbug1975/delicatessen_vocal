@@ -1,4 +1,5 @@
 const https = require('https');
+require('dotenv').config();
 
 const data = JSON.stringify({
   serverUrl: 'https://delicatessen-dashboard-dimitri-2026.netlify.app/api/vapi/webhook'
@@ -9,7 +10,7 @@ const options = {
   path: '/assistant/a0eee2d3-de59-4c71-8900-1a6f71c7e816',
   method: 'PATCH',
   headers: {
-    'Authorization': 'Bearer 21a64a63-ee7b-4b12-96b6-ea52aa3d4f91',
+    'Authorization': `Bearer ${process.env.VAPI_API_KEY}`,
     'Content-Type': 'application/json',
     'Content-Length': data.length
   }

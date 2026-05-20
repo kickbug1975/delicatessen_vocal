@@ -5,6 +5,13 @@ import path from 'path';
 
 export async function POST(req: Request) {
   try {
+    // Verify Vapi webhook secret token
+    const authHeader = req.headers.get('Authorization');
+    const expectedSecret = process.env.VAPI_WEBHOOK_SECRET;
+    if (!expectedSecret || authHeader !== `Bearer ${expectedSecret}`) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
+
     const payload = await req.json();
     const { message } = payload;
     
@@ -111,10 +118,11 @@ export async function POST(req: Request) {
             .single();
 
           if (orderError) {
+             console.error('Order creation error:', orderError);
              toolResponses.push({
-              toolCallId,
-              result: `Erreur interne lors de la création de la commande : ${orderError.message}`
-            });
+               toolCallId,
+               result: `Erreur interne lors de la création de la commande.`
+             });
           } else {
             // Insert items
             const orderItemsInsert = items.map((i: any) => ({
@@ -211,6 +219,6 @@ export async function POST(req: Request) {
     return NextResponse.json({ success: true });
   } catch (err: any) {
     console.error('Webhook Error:', err);
-    return NextResponse.json({ error: err.message }, { status: 500 });
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
 }

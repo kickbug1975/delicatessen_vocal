@@ -5,8 +5,19 @@ export async function POST(req: Request) {
   try {
     const { formulas } = await req.json();
 
-    if (!formulas || typeof formulas['06'] === 'undefined') {
+    if (!formulas || typeof formulas !== 'object') {
       return NextResponse.json({ error: 'Formules invalides' }, { status: 400 });
+    }
+
+    const tiers = ['06', '08', '09', '10'];
+    for (const tier of tiers) {
+      if (typeof formulas[tier] === 'undefined') {
+        return NextResponse.json({ error: `Tarif manquant pour le groupe ${tier}` }, { status: 400 });
+      }
+      const val = parseFloat(formulas[tier]);
+      if (isNaN(val)) {
+        return NextResponse.json({ error: `Tarif invalide pour le groupe ${tier}` }, { status: 400 });
+      }
     }
 
     // 1. Fetch all products
@@ -58,6 +69,6 @@ export async function POST(req: Request) {
 
   } catch (err: any) {
     console.error('API /tarifs/update Error:', err);
-    return NextResponse.json({ error: err.message }, { status: 500 });
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
 }
