@@ -3,6 +3,80 @@ import { supabaseAdmin } from '@/lib/supabase';
 import fs from 'fs';
 import path from 'path';
 
+function cleanProductName(name: string): string {
+  if (!name) return "";
+  let cleaned = name.toUpperCase();
+  
+  // Replace specific phrases/words
+  cleaned = cleaned.replace(/\bDEEP SKIN\b/g, 'sans peau');
+  cleaned = cleaned.replace(/\b\(HANDMADE\)\b/g, '(artisanal)');
+  cleaned = cleaned.replace(/\bHANDMADE\b/g, 'artisanal');
+  cleaned = cleaned.replace(/\bNORWAY\b/g, 'de Norvège');
+  cleaned = cleaned.replace(/\bICELAND\b/g, "d'Islande");
+  cleaned = cleaned.replace(/\bDK\/UK\b/g, 'Danemark/Royaume-Uni');
+  cleaned = cleaned.replace(/\b5KG\+\b/g, '5 kg et plus');
+  cleaned = cleaned.replace(/\bKG\b/g, 'kg');
+  
+  // Convert standard terms to nice lowercase/accented French
+  cleaned = cleaned.replace(/\bSAUMON\b/g, 'Saumon');
+  cleaned = cleaned.replace(/\bLIEU NOIR\b/g, 'Lieu noir');
+  cleaned = cleaned.replace(/\bFILET\b/g, 'filet');
+  cleaned = cleaned.replace(/\bENTIER\b/g, 'entier');
+  cleaned = cleaned.replace(/\bPORTION\b/g, 'portion');
+  cleaned = cleaned.replace(/\bCABILLAUD\b/g, 'Cabillaud');
+  cleaned = cleaned.replace(/\bDOS\b/g, 'dos');
+  cleaned = cleaned.replace(/\bTURBOT\b/g, 'Turbot');
+  cleaned = cleaned.replace(/\bSOLE\b/g, 'Sole');
+  cleaned = cleaned.replace(/\bBAR\b/g, 'Bar');
+  cleaned = cleaned.replace(/\bDAURADE\b/g, 'Daurade');
+  cleaned = cleaned.replace(/\bDORADE\b/g, 'Dorade');
+  cleaned = cleaned.replace(/\bTRUITE\b/g, 'Truite');
+  cleaned = cleaned.replace(/\bMOULES\b/g, 'Moules');
+  cleaned = cleaned.replace(/\bMOULE\b/g, 'Moule');
+  cleaned = cleaned.replace(/\bHOMARD\b/g, 'Homard');
+  cleaned = cleaned.replace(/\bLANGOUSTINE\b/g, 'Langoustine');
+  cleaned = cleaned.replace(/\bHUÎTRE\b/g, 'Huître');
+  cleaned = cleaned.replace(/\bHUITRE\b/g, 'Huître');
+  cleaned = cleaned.replace(/\bHUÎTRES\b/g, 'Huîtres');
+  cleaned = cleaned.replace(/\bHUITRES\b/g, 'Huîtres');
+  cleaned = cleaned.replace(/\bCOQUILLE\b/g, 'Coquille');
+  cleaned = cleaned.replace(/\bSAINT JACQUES\b/g, 'Saint-Jacques');
+  cleaned = cleaned.replace(/\bSAINT-JACQUES\b/g, 'Saint-Jacques');
+  cleaned = cleaned.replace(/\bPALOURDE\b/g, 'Palourde');
+  cleaned = cleaned.replace(/\bCOUTEAU\b/g, 'Couteau');
+  cleaned = cleaned.replace(/\bCOQUE\b/g, 'Coque');
+  cleaned = cleaned.replace(/\bBULOT\b/g, 'Bulot');
+  cleaned = cleaned.replace(/\bAMANDE\b/g, 'Amande');
+  cleaned = cleaned.replace(/\bPETONCLE\b/g, 'Pétoncle');
+  cleaned = cleaned.replace(/\bPÉTONCLE\b/g, 'Pétoncle');
+  cleaned = cleaned.replace(/\bBIGORNEAU\b/g, 'Bigorneau');
+  
+  // Format remaining uppercase words in lowercase
+  cleaned = cleaned.split(' ').map((word) => {
+    if (word === word.toUpperCase() && word.length > 2 && !word.includes('/') && !word.includes('-') && !word.includes('(') && !word.includes(')')) {
+      return word.toLowerCase();
+    }
+    return word;
+  }).join(' ');
+
+  // Clean double spaces
+  cleaned = cleaned.replace(/\s+/g, ' ').trim();
+  
+  // Capitalize first letter of the whole name
+  if (cleaned.length > 0) {
+    cleaned = cleaned.charAt(0).toUpperCase() + cleaned.slice(1);
+  }
+
+  return cleaned;
+}
+
+function formatPriceFrench(price: number | string): string {
+  if (price === undefined || price === null || price === '') return "Prix non défini";
+  const num = typeof price === 'number' ? price : parseFloat(price);
+  if (isNaN(num)) return "Prix non défini";
+  return `${num.toFixed(2).replace('.', ',')} €`;
+}
+
 export async function POST(req: Request) {
   try {
     // Verify Vapi webhook secret token
@@ -113,12 +187,12 @@ export async function POST(req: Request) {
             });
           } else {
             const resultsText = clients.map((c: any) => 
-              `- ${c.company_name || c.name} (Tél: ${c.phone}). Tarif: price_${c.pricing_group || '10'}. ID: ${c.id}`
+              `- ${c.company_name || c.name} (Tél: ${c.phone}). Tarif: groupe price_${c.pricing_group || '10'}. ID: ${c.id}`
             ).join('\n');
 
             toolResponses.push({
               toolCallId,
-              result: `Profils trouvés :\n${resultsText}\n\nMémorisez le "Tarif: price_XX" du client pour la consultation des prix, et l'ID pour prendre la commande.`
+              result: `Profils trouvés :\n${resultsText}\n\nMémorisez le "Tarif: groupe price_XX" du client pour la consultation des prix, et l'ID pour prendre la commande.`
             });
           }
         }
@@ -145,8 +219,9 @@ export async function POST(req: Request) {
             });
           } else {
             const resultsText = products.map((p: any) => {
-              const priceVal = p[actualColumn] ? `${p[actualColumn]} €` : "Prix non défini";
-              return `- ${p.name} (ID: ${p.id}) : ${priceVal}. (Stock restant: ${p.stock_quantity})`;
+              const priceVal = p[actualColumn] ? formatPriceFrench(p[actualColumn]) : "Prix non défini";
+              const cleanedName = cleanProductName(p.name);
+              return `- ${cleanedName} (ID: ${p.id}) : ${priceVal}. (Stock restant: ${p.stock_quantity})`;
             }).join('\n');
             
             toolResponses.push({
@@ -228,7 +303,7 @@ export async function POST(req: Request) {
                 } else {
                   toolResponses.push({
                     toolCallId,
-                    result: `Commande créée avec succès. ID: ${order.id}. Total: ${total_price} €.`
+                    result: `Commande créée avec succès. ID: ${order.id}. Total: ${formatPriceFrench(total_price)}.`
                   });
                 }
               }

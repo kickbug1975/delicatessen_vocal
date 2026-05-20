@@ -71,6 +71,11 @@ async function createSquad() {
       name: 'Agent 3 - Closer Expert',
       firstMessage: "Je suis l'Expert Marée, que puis-je pour vous ?",
       voice: { provider: '11labs', voiceId: VOICES.closer, model: 'eleven_turbo_v2_5' },
+      transcriber: {
+        provider: 'deepgram',
+        model: 'nova-2',
+        language: 'fr'
+      },
       model: {
         ...COMMON_MODEL,
         systemPrompt: `Tu es le meilleur agent commercial expert en produits de la mer de la Maison Fumesse, spécialisé dans l'acquisition. 
@@ -184,6 +189,11 @@ Si une question technique ou de préparation culinaire dépasse tes connaissance
       name: 'Agent 2 - Preneur de Commande',
       firstMessage: "Génial, on a de très beaux arrivages aujourd'hui, que puis-je vous préparer ?",
       voice: { provider: '11labs', voiceId: VOICES.preneur, model: 'eleven_turbo_v2_5' },
+      transcriber: {
+        provider: 'deepgram',
+        model: 'nova-2',
+        language: 'fr'
+      },
       model: {
         ...COMMON_MODEL,
         systemPrompt: `Tu es l'agent des ventes "Fast Lane" de la Maison Fumesse. Tu parles à des poissonniers et restaurateurs qui sont DÉJÀ clients.
@@ -271,6 +281,11 @@ RÈGLES STRICTES :
       name: 'Agent 1 - Routeur',
       firstMessage: "Maison Fumesse bonjour ! Êtes-vous déjà client chez nous ?",
       voice: { provider: '11labs', voiceId: VOICES.routeur, model: 'eleven_turbo_v2_5' },
+      transcriber: {
+        provider: 'deepgram',
+        model: 'nova-2',
+        language: 'fr'
+      },
       clientMessages: [],
       model: {
         ...COMMON_MODEL,
@@ -322,9 +337,36 @@ RÈGLES STRICTES :
     const squad = await vapiFetch('PATCH', `/squad/${TARGET_IDS.squad}`, {
       name: 'Squad Maison Fumesse',
       members: [
-        { assistantId: routerAssistant.id },
-        { assistantId: orderTakerAssistant.id },
-        { assistantId: closerAssistant.id }
+        {
+          assistantId: routerAssistant.id,
+          assistantOverrides: {
+            transcriber: {
+              provider: 'deepgram',
+              model: 'nova-2',
+              language: 'fr'
+            }
+          }
+        },
+        {
+          assistantId: orderTakerAssistant.id,
+          assistantOverrides: {
+            transcriber: {
+              provider: 'deepgram',
+              model: 'nova-2',
+              language: 'fr'
+            }
+          }
+        },
+        {
+          assistantId: closerAssistant.id,
+          assistantOverrides: {
+            transcriber: {
+              provider: 'deepgram',
+              model: 'nova-2',
+              language: 'fr'
+            }
+          }
+        }
       ]
     });
     console.log(`✅ Squad mis à jour : ${squad.id}`);
