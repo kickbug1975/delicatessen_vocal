@@ -146,43 +146,76 @@ export async function POST(req: Request) {
         if (functionName === 'submitOrder') {
           const { client_id, items } = args;
           
-          let total_price = 0;
-          for (const item of items) {
-             total_price += (item.quantity * item.unit_price);
-          }
-
-          // Create order
-          const { data: order, error: orderError } = await supabaseAdmin
-            .from('orders')
-            .insert({
-              client_id: client_id === 'anonymous' ? null : client_id,
-              total_price,
-              status: 'pending'
-            })
-            .select()
-            .single();
-
-          if (orderError) {
-             console.error('Order creation error:', orderError);
-             toolResponses.push({
-               toolCallId,
-               result: `Erreur interne lors de la création de la commande.`
-             });
-          } else {
-            // Insert items
-            const orderItemsInsert = items.map((i: any) => ({
-              order_id: order.id,
-              product_id: i.product_id,
-              quantity: i.quantity,
-              unit_price: i.unit_price
-            }));
-            
-            await supabaseAdmin.from('order_items').insert(orderItemsInsert);
-
+          if (!items || !Array.isArray(items) || items.length === 0) {
+            console.warn('submitOrder tool called with empty or invalid items:', items);
             toolResponses.push({
               toolCallId,
-              result: `Commande créée avec succès. ID: ${order.id}. Total: ${total_price} €.`
+              result: "La commande ne contient aucun article valide. Veuillez d'abord rechercher le poisson avec getProductPrices pour obtenir son ID et son prix, puis soumettre la commande avec la quantité souhaitée."
             });
+          } else {
+            let total_price = 0;
+            let hasInvalidItems = false;
+
+            for (const item of items) {
+              const qty = Number(item.quantity);
+              const price = Number(item.unit_price);
+              
+              if (!item.product_id || isNaN(qty) || isNaN(price) || qty <= 0) {
+                hasInvalidItems = true;
+                break;
+              }
+              total_price += (qty * price);
+            }
+
+            if (hasInvalidItems) {
+              console.warn('submitOrder tool called with invalid item structure:', items);
+              toolResponses.push({
+                toolCallId,
+                result: "Certains articles de la commande contiennent des données manquantes ou invalides (ID produit, quantité ou prix). Veuillez vous assurer de chercher les produits d'abord."
+              });
+            } else {
+              // Create order
+              const { data: order, error: orderError } = await supabaseAdmin
+                .from('orders')
+                .insert({
+                  client_id: (!client_id || client_id === 'anonymous') ? null : client_id,
+                  total_price,
+                  status: 'pending'
+                })
+                .select()
+                .single();
+
+              if (orderError) {
+                 console.error('Order creation error:', orderError);
+                 toolResponses.push({
+                   toolCallId,
+                   result: `Erreur technique lors de l'enregistrement de la commande.`
+                 });
+              } else {
+                // Insert items
+                const orderItemsInsert = items.map((i: any) => ({
+                  order_id: order.id,
+                  product_id: i.product_id,
+                  quantity: Number(i.quantity),
+                  unit_price: Number(i.unit_price)
+                }));
+                
+                const { error: itemsErr } = await supabaseAdmin.from('order_items').insert(orderItemsInsert);
+                
+                if (itemsErr) {
+                  console.error('Order items insertion error:', itemsErr);
+                  toolResponses.push({
+                    toolCallId,
+                    result: `Commande ${order.id} créée, mais erreur lors de l'enregistrement des articles.`
+                  });
+                } else {
+                  toolResponses.push({
+                    toolCallId,
+                    result: `Commande créée avec succès. ID: ${order.id}. Total: ${total_price} €.`
+                  });
+                }
+              }
+            }
           }
         }
 

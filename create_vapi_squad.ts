@@ -57,10 +57,17 @@ const COMMON_MODEL = {
   model: 'gpt-4o',
 };
 
+const TARGET_IDS = {
+  router: 'f8e699f4-5306-462e-ae3c-0b57d7cca70e',
+  orderTaker: '588a8560-460c-424b-8036-63e0389c511a',
+  closer: '10203c20-ad17-48da-9038-f9b68b957ac7',
+  squad: 'e1140011-cc44-44b1-b862-317d8092d94a'
+};
+
 async function createSquad() {
   try {
-    console.log('--- ÉTAPE 1 : Création du Closer (Agent 3) ---');
-    const closerAssistant = await vapiFetch('POST', '/assistant', {
+    console.log('--- ÉTAPE 1 : Mise à jour du Closer (Agent 3) ---');
+    const closerConfig = {
       name: 'Agent 3 - Closer Expert',
       firstMessage: "Je suis l'Expert Marée, que puis-je pour vous ?",
       voice: { provider: '11labs', voiceId: VOICES.closer, model: 'eleven_turbo_v2_5' },
@@ -89,7 +96,21 @@ Si une question technique ou de préparation culinaire dépasse tes connaissance
             function: {
               name: 'getProductPrices',
               description: 'Retrieve current product prices for the client.',
-              parameters: { type: 'object', properties: {} }
+              parameters: {
+                type: 'object',
+                properties: {
+                  search_query: {
+                    type: 'string',
+                    description: "Le nom du produit ou poisson à rechercher (ex: 'dos de cabillaud', 'saumon', 'turbot')."
+                  },
+                  price_column: {
+                    type: 'string',
+                    enum: ['price_06', 'price_08', 'price_09', 'price_10'],
+                    description: "La colonne de prix correspondant au groupe tarifaire du client identifié (price_06, price_08, price_09, price_10)."
+                  }
+                },
+                required: ['search_query']
+              }
             },
             server: { url: SERVER_URL, secret: process.env.VAPI_WEBHOOK_SECRET || 'delicatessen-vapi-webhook-secret-2026' }
           },
@@ -98,8 +119,39 @@ Si une question technique ou de préparation culinaire dépasse tes connaissance
             messages: [{ type: 'request-start', content: 'Je valide la commande...' }],
             function: {
               name: 'submitOrder',
-              description: 'Submit the final order.',
-              parameters: { type: 'object', properties: {} }
+              description: 'Submit the final order to the database.',
+              parameters: {
+                type: 'object',
+                properties: {
+                  client_id: {
+                    type: 'string',
+                    description: "L'identifiant unique (UUID) du client identifié ou 'anonymous' s'il s'agit d'un nouveau prospect."
+                  },
+                  items: {
+                    type: 'array',
+                    description: "La liste des articles commandés.",
+                    items: {
+                      type: 'object',
+                      properties: {
+                        product_id: {
+                          type: 'string',
+                          description: "L'identifiant unique (UUID) du produit obtenu via getProductPrices."
+                        },
+                        quantity: {
+                          type: 'number',
+                          description: "La quantité commandée (en kg ou pièces)."
+                        },
+                        unit_price: {
+                          type: 'number',
+                          description: "Le prix unitaire du produit obtenu via getProductPrices."
+                        }
+                      },
+                      required: ['product_id', 'quantity', 'unit_price']
+                    }
+                  }
+                },
+                required: ['client_id', 'items']
+              }
             },
             server: { url: SERVER_URL, secret: process.env.VAPI_WEBHOOK_SECRET || 'delicatessen-vapi-webhook-secret-2026' }
           },
@@ -122,11 +174,13 @@ Si une question technique ou de préparation culinaire dépasse tes connaissance
           }
         ],
       }
-    });
-    console.log(`✅ Closer créé : ${closerAssistant.id}`);
+    };
+    
+    const closerAssistant = await vapiFetch('PATCH', `/assistant/${TARGET_IDS.closer}`, closerConfig);
+    console.log(`✅ Closer mis à jour : ${closerAssistant.id}`);
 
-    console.log('\n--- ÉTAPE 2 : Création du Preneur de Commande (Agent 2) ---');
-    const orderTakerAssistant = await vapiFetch('POST', '/assistant', {
+    console.log('\n--- ÉTAPE 2 : Mise à jour du Preneur de Commande (Agent 2) ---');
+    const orderTakerConfig = {
       name: 'Agent 2 - Preneur de Commande',
       firstMessage: "Génial, on a de très beaux arrivages aujourd'hui, que puis-je vous préparer ?",
       voice: { provider: '11labs', voiceId: VOICES.preneur, model: 'eleven_turbo_v2_5' },
@@ -146,7 +200,21 @@ RÈGLES STRICTES :
             function: {
               name: 'getProductPrices',
               description: 'Retrieve current product prices for the client.',
-              parameters: { type: 'object', properties: {} }
+              parameters: {
+                type: 'object',
+                properties: {
+                  search_query: {
+                    type: 'string',
+                    description: "Le nom du produit ou poisson à rechercher (ex: 'dos de cabillaud', 'saumon', 'turbot')."
+                  },
+                  price_column: {
+                    type: 'string',
+                    enum: ['price_06', 'price_08', 'price_09', 'price_10'],
+                    description: "La colonne de prix correspondant au groupe tarifaire du client identifié (price_06, price_08, price_09, price_10)."
+                  }
+                },
+                required: ['search_query']
+              }
             },
             server: { url: SERVER_URL, secret: process.env.VAPI_WEBHOOK_SECRET || 'delicatessen-vapi-webhook-secret-2026' }
           },
@@ -155,18 +223,51 @@ RÈGLES STRICTES :
             messages: [{ type: 'request-start', content: 'Validation en cours...' }],
             function: {
               name: 'submitOrder',
-              description: 'Submit the final order.',
-              parameters: { type: 'object', properties: {} }
+              description: 'Submit the final order to the database.',
+              parameters: {
+                type: 'object',
+                properties: {
+                  client_id: {
+                    type: 'string',
+                    description: "L'identifiant unique (UUID) du client identifié ou 'anonymous' s'il s'agit d'un nouveau prospect."
+                  },
+                  items: {
+                    type: 'array',
+                    description: "La liste des articles commandés.",
+                    items: {
+                      type: 'object',
+                      properties: {
+                        product_id: {
+                          type: 'string',
+                          description: "L'identifiant unique (UUID) du produit obtenu via getProductPrices."
+                        },
+                        quantity: {
+                          type: 'number',
+                          description: "La quantité commandée (en kg ou pièces)."
+                        },
+                        unit_price: {
+                          type: 'number',
+                          description: "Le prix unitaire du produit obtenu via getProductPrices."
+                        }
+                      },
+                      required: ['product_id', 'quantity', 'unit_price']
+                    }
+                  }
+                },
+                required: ['client_id', 'items']
+              }
             },
             server: { url: SERVER_URL, secret: process.env.VAPI_WEBHOOK_SECRET || 'delicatessen-vapi-webhook-secret-2026' }
           }
         ],
       }
-    });
-    console.log(`✅ Preneur de commande créé : ${orderTakerAssistant.id}`);
+    };
 
-    console.log('\n--- ÉTAPE 3 : Création du Routeur (Agent 1) ---');
-    const routerAssistant = await vapiFetch('POST', '/assistant', {
+    const orderTakerAssistant = await vapiFetch('PATCH', `/assistant/${TARGET_IDS.orderTaker}`, orderTakerConfig);
+    console.log(`✅ Preneur de commande mis à jour : ${orderTakerAssistant.id}`);
+
+    console.log('\n--- ÉTAPE 3 : Mise à jour du Routeur (Agent 1) ---');
+    const routerConfig = {
       name: 'Agent 1 - Routeur',
       firstMessage: "Maison Fumesse bonjour ! Êtes-vous déjà client chez nous ?",
       voice: { provider: '11labs', voiceId: VOICES.routeur, model: 'eleven_turbo_v2_5' },
@@ -212,14 +313,13 @@ RÈGLES STRICTES :
           }
         ],
       }
-    });
-    console.log(`✅ Routeur créé : ${routerAssistant.id}`);
+    };
 
-    // Update original assistant to redirect to router if necessary,
-    // or just let the user set the Router as the inbound assistant.
-    
-    console.log('\n--- ÉTAPE 4 : Création du Squad ---');
-    const squad = await vapiFetch('POST', '/squad', {
+    const routerAssistant = await vapiFetch('PATCH', `/assistant/${TARGET_IDS.router}`, routerConfig);
+    console.log(`✅ Routeur mis à jour : ${routerAssistant.id}`);
+
+    console.log('\n--- ÉTAPE 4 : Mise à jour du Squad ---');
+    const squad = await vapiFetch('PATCH', `/squad/${TARGET_IDS.squad}`, {
       name: 'Squad Maison Fumesse',
       members: [
         { assistantId: routerAssistant.id },
@@ -227,10 +327,10 @@ RÈGLES STRICTES :
         { assistantId: closerAssistant.id }
       ]
     });
-    console.log(`✅ Squad créé : ${squad.id}`);
+    console.log(`✅ Squad mis à jour : ${squad.id}`);
 
-    console.log('\n🎉 SQUAD CREATED SUCCESSFULLY!');
-    console.log(`--> IMPORTANT: Set the inbound calls to point to the SQUAD ID: ${squad.id} (or ROUTER ID: ${routerAssistant.id})`);
+    console.log('\n🎉 SQUAD UPDATED SUCCESSFULLY!');
+    console.log(`--> squad ID: ${squad.id}`);
     
     // Write the IDs to a local config file for reference
     const configData = {
@@ -242,7 +342,7 @@ RÈGLES STRICTES :
     fs.writeFileSync('vapi_squad_ids.json', JSON.stringify(configData, null, 2));
 
   } catch (error) {
-    console.error('Erreur lors de la création du Squad:', error);
+    console.error('Erreur lors de la mise à jour du Squad:', error);
   }
 }
 
