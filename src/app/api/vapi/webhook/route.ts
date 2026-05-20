@@ -39,14 +39,50 @@ export async function POST(req: Request) {
         const args = call.toolCall.function.arguments;
 
         if (functionName === 'identifyClient') {
-          const identifier = args.identifier || args.tva_ou_telephone;
+          const identifier = String(args.identifier || args.tva_ou_telephone || '').trim();
           
-          // Recherche réelle dans la table clients (par TVA, téléphone, ou nom)
-          const { data: clients, error: clientErr } = await supabaseAdmin
-            .from('clients')
-            .select('*')
-            .or(`vat_number.ilike.%${identifier}%,phone.ilike.%${identifier}%,name.ilike.%${identifier}%,company_name.ilike.%${identifier}%`)
-            .limit(3);
+          let orConditions: string[] = [];
+
+          // 1. Extraction of digits for phone / VAT number matching
+          const digits = identifier.replace(/\D/g, '');
+          if (digits.length >= 6) {
+            const last6 = digits.slice(-6);
+            orConditions.push(`phone.ilike.%${last6}%`);
+            orConditions.push(`vat_number.ilike.%${last6}%`);
+          }
+          if (digits.length >= 8) {
+            orConditions.push(`phone.ilike.%${digits}%`);
+            orConditions.push(`vat_number.ilike.%${digits}%`);
+          }
+
+          // 2. Word tokenization for name / company matching
+          const words = identifier.split(/[\s,.-]+/).filter(w => w.length >= 3);
+          for (const word of words) {
+            orConditions.push(`name.ilike.%${word}%`);
+            orConditions.push(`company_name.ilike.%${word}%`);
+          }
+
+          // Fallback to exact match if no specific conditions were generated
+          if (orConditions.length === 0 && identifier) {
+            orConditions.push(`name.ilike.%${identifier}%`);
+            orConditions.push(`company_name.ilike.%${identifier}%`);
+            orConditions.push(`phone.ilike.%${identifier}%`);
+            orConditions.push(`vat_number.ilike.%${identifier}%`);
+          }
+
+          let clients: any[] = [];
+          let clientErr: any = null;
+
+          if (orConditions.length > 0) {
+            const orQuery = orConditions.join(',');
+            const { data, error } = await supabaseAdmin
+              .from('clients')
+              .select('*')
+              .or(orQuery)
+              .limit(3);
+            clients = data || [];
+            clientErr = error;
+          }
 
           if (clientErr || !clients || clients.length === 0) {
             toolResponses.push({
