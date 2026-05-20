@@ -122,6 +122,12 @@ Plusieurs scripts automatisés sont à votre disposition à la racine du projet 
 
 ---
 
+## 🎙️ Documentation de Référence Vapi & Deepgram
+Un document technique complet a été créé à la racine du projet pour la gestion de la pile vocale :
+*   **[`vapi_deepgram_memory.md`](file:///c:/Users/Dimitri/delicatessen%20vocal/vapi_deepgram_memory.md)** : Mémorise toutes les configurations optimales pour le Squad Vapi, le transcriber Deepgram (modèles `nova-2`/`nova-3`/`flux`, paramètres de français comme `numerals`), et la résolution du problème d'accent/chiffres anglais d'ElevenLabs (normalisation en toutes lettres).
+
+---
+
 ## 🚀 Prochaines Étapes du Projet
 
 1. **Recherche Sémantique Hybride** : Remplacer la recherche SQL floue par une recherche par similarité cosinus (pgvector) uniquement si la latence réseau sur Supabase descend sous les 100ms.

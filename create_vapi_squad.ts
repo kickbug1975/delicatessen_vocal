@@ -70,11 +70,13 @@ async function createSquad() {
     const closerConfig = {
       name: 'Agent 3 - Closer Expert',
       firstMessage: "Je suis l'Expert Marée, que puis-je pour vous ?",
-      voice: { provider: '11labs', voiceId: VOICES.closer, model: 'eleven_turbo_v2_5' },
+      voice: { provider: '11labs', voiceId: VOICES.closer, model: 'eleven_multilingual_v2' },
       transcriber: {
         provider: 'deepgram',
         model: 'nova-2',
-        language: 'fr'
+        language: 'fr',
+        smartFormat: true,
+        numerals: true
       },
       model: {
         ...COMMON_MODEL,
@@ -86,12 +88,13 @@ RÈGLES STRICTES :
 2. Utilise la Méthode ECIR pour les objections (C'est trop cher -> Coût Portion ; Je préfère l'import -> Fraîcheur & Label France).
 3. Propose une commande d'essai avec l'outil 'getProductPrices' et clôture avec 'submitOrder'.
 4. S'il refuse de commander aujourd'hui, propose un rendez-vous téléphonique mardi ou mercredi prochain.
+5. RÈGLE D'ÉNONCIATION DES CHIFFRES (CRITIQUE) : Tu ne dois JAMAIS écrire de chiffres arabes (ex: 12, 10.50, 2026) ni de symboles de devises (ex: €) dans tes réponses vocales. Écris TOUJOURS l'intégralité des nombres, prix et unités EN TOUTES LETTRES EN FRANÇAIS (ex: "douze euros cinquante" au lieu de "12.50 €", "dix kilos" au lieu de "10 kg", "cinq" au lieu de "5"). C'est obligatoire pour que le synthétiseur vocal ElevenLabs prononce tout correctement en français sans accent anglais.
 
 [CORE KNOWLEDGE MARÉE - MÉMORISATION IMMÉDIATE]
 - Bar de ligne : Saison (Sept-Mars). Argument : Qualité chair exceptionnelle, pas d'écrasement dans le chalut.
 - Saumon : On travaille de l'Écosse Label Rouge. Argument : Tenue à la cuisson parfaite pour les chefs.
 - Lieu Noir : L'alternative parfaite et sans arêtes pour les collectivités.
-- Objection "C'est cher" -> Réponse : "On calcule au coût-portion. Mon filet n'a pas d'eau, vous avez 100% de rendement."
+- Objection "C'est cher" -> Réponse : "On calcule au coût-portion. Mon filet n'a pas d'eau, vous avez cent pour cent de rendement."
 
 Si une question technique ou de préparation culinaire dépasse tes connaissances, utilise l'outil 'askFishExpertise'. Passe impérativement la valeur 'particular' pour le paramètre 'client_type' s'il s'agit d'un particulier, et 'pro' s'il s'agit d'un restaurateur, poissonnier, traiteur ou autre professionnel.`,
         tools: [
@@ -188,11 +191,13 @@ Si une question technique ou de préparation culinaire dépasse tes connaissance
     const orderTakerConfig = {
       name: 'Agent 2 - Preneur de Commande',
       firstMessage: "Génial, on a de très beaux arrivages aujourd'hui, que puis-je vous préparer ?",
-      voice: { provider: '11labs', voiceId: VOICES.preneur, model: 'eleven_turbo_v2_5' },
+      voice: { provider: '11labs', voiceId: VOICES.preneur, model: 'eleven_multilingual_v2' },
       transcriber: {
         provider: 'deepgram',
         model: 'nova-2',
-        language: 'fr'
+        language: 'fr',
+        smartFormat: true,
+        numerals: true
       },
       model: {
         ...COMMON_MODEL,
@@ -202,7 +207,8 @@ Ton ton est hyper-efficace, naturel et professionnel. Pas de perte de temps.
 RÈGLES STRICTES :
 1. Tu annonces les prix avec l'outil 'getProductPrices' si le client demande.
 2. La Smart Substitution : N'argumente que si un poisson a flambé en prix ou est en rupture. Ex: "La sole a flambé ce matin. J'ai rentré de superbes carrelets, on part là-dessus pour sauver la rentabilité ?"
-3. Dès qu'il a terminé, valide LA totalité avec l'outil 'submitOrder'.`,
+3. Dès qu'il a terminé, valide LA totalité avec l'outil 'submitOrder'.
+4. RÈGLE D'ÉNONCIATION DES CHIFFRES (CRITIQUE) : Tu ne dois JAMAIS écrire de chiffres arabes (ex: 12, 10.50, 2026) ni de symboles de devises (ex: €) dans tes réponses vocales. Écris TOUJOURS l'intégralité des nombres, prix et unités EN TOUTES LETTRES EN FRANÇAIS (ex: "douze euros cinquante" au lieu de "12.50 €", "dix kilos" au lieu de "10 kg", "cinq" au lieu de "5"). C'est obligatoire pour que le synthétiseur vocal ElevenLabs prononce tout correctement en français sans accent anglais.`,
         tools: [
           {
             type: 'function',
@@ -276,15 +282,88 @@ RÈGLES STRICTES :
     const orderTakerAssistant = await vapiFetch('PATCH', `/assistant/${TARGET_IDS.orderTaker}`, orderTakerConfig);
     console.log(`✅ Preneur de commande mis à jour : ${orderTakerAssistant.id}`);
 
+    console.log('\n--- ÉTAPE 2.5 : Création / Mise à jour des Outils de Transfert (Handoff) ---');
+    const existingTools = await vapiFetch('GET', '/tool');
+    
+    // Find or create handoff to Preneur
+    let preneurTool = existingTools.find((t: any) => 
+      t.type === 'handoff' && 
+      t.destinations && 
+      t.destinations[0] && 
+      t.destinations[0].assistantId === orderTakerAssistant.id
+    );
+    
+    const preneurToolConfig = {
+      type: 'handoff',
+      function: {
+        name: 'handoff_to_preneur',
+        description: "Transférer l'appel vers l'agent Preneur de commande (Agent 2)."
+      },
+      destinations: [
+        {
+          type: 'assistant',
+          assistantId: orderTakerAssistant.id
+        }
+      ]
+    };
+    
+    let preneurToolId;
+    if (preneurTool) {
+      console.log(`Outil Handoff vers Preneur existant trouvé. Mise à jour de l'outil ${preneurTool.id}...`);
+      const updated = await vapiFetch('PATCH', `/tool/${preneurTool.id}`, preneurToolConfig);
+      preneurToolId = updated.id;
+    } else {
+      console.log("Création de l'outil Handoff vers Preneur...");
+      const created = await vapiFetch('POST', '/tool', preneurToolConfig);
+      preneurToolId = created.id;
+    }
+    console.log(`✅ Outil Handoff vers Preneur : ${preneurToolId}`);
+
+    // Find or create handoff to Closer
+    let closerTool = existingTools.find((t: any) => 
+      t.type === 'handoff' && 
+      t.destinations && 
+      t.destinations[0] && 
+      t.destinations[0].assistantId === closerAssistant.id
+    );
+    
+    const closerToolConfig = {
+      type: 'handoff',
+      function: {
+        name: 'handoff_to_closer',
+        description: "Transférer l'appel vers l'agent Closer Expert (Agent 3)."
+      },
+      destinations: [
+        {
+          type: 'assistant',
+          assistantId: closerAssistant.id
+        }
+      ]
+    };
+    
+    let closerToolId;
+    if (closerTool) {
+      console.log(`Outil Handoff vers Closer existant trouvé. Mise à jour de l'outil ${closerTool.id}...`);
+      const updated = await vapiFetch('PATCH', `/tool/${closerTool.id}`, closerToolConfig);
+      closerToolId = updated.id;
+    } else {
+      console.log("Création de l'outil Handoff vers Closer...");
+      const created = await vapiFetch('POST', '/tool', closerToolConfig);
+      closerToolId = created.id;
+    }
+    console.log(`✅ Outil Handoff vers Closer : ${closerToolId}`);
+
     console.log('\n--- ÉTAPE 3 : Mise à jour du Routeur (Agent 1) ---');
     const routerConfig = {
       name: 'Agent 1 - Routeur',
       firstMessage: "Maison Fumesse bonjour ! Êtes-vous déjà client chez nous ?",
-      voice: { provider: '11labs', voiceId: VOICES.routeur, model: 'eleven_turbo_v2_5' },
+      voice: { provider: '11labs', voiceId: VOICES.routeur, model: 'eleven_multilingual_v2' },
       transcriber: {
         provider: 'deepgram',
         model: 'nova-2',
-        language: 'fr'
+        language: 'fr',
+        smartFormat: true,
+        numerals: true
       },
       clientMessages: [],
       model: {
@@ -296,7 +375,8 @@ RÈGLES STRICTES :
 2. Utilise IMMÉDIATEMENT l'outil 'identifyClient'.
 3. Dès que l'outil réussit, appelle DIRECTEMENT la fonction de transfert (handoff) vers l'assistant Preneur. NE PRONONCE AUCUNE PHRASE AVANT LE TRANSFERT.
 4. Si le client est nouveau (NON), demande rapidement son nom, sa société (Resto, Poissonnier, Traiteur) et son numéro. Dès que tu as ça, appelle DIRECTEMENT la fonction de transfert (handoff) vers l'assistant Closer. NE PRONONCE AUCUNE PHRASE AVANT LE TRANSFERT.
-5. NE VENDS RIEN, NE DONNE AUCUN PRIX.`,
+5. NE VENDS RIEN, NE DONNE AUCUN PRIX.
+6. RÈGLE D'ÉNONCIATION DES CHIFFRES (CRITIQUE) : Tu ne dois JAMAIS écrire de chiffres arabes (ex: 12, 10.50, 2026) ni de symboles de devises (ex: €) dans tes réponses vocales. Écris TOUJOURS l'intégralité des nombres, prix et unités EN TOUTES LETTRES EN FRANÇAIS. C'est obligatoire pour que le synthétiseur vocal ElevenLabs prononce tout correctement en français sans accent anglais.`,
         tools: [
           {
             type: 'function',
@@ -310,23 +390,9 @@ RÈGLES STRICTES :
               }
             },
             server: { url: SERVER_URL, secret: process.env.VAPI_WEBHOOK_SECRET || 'delicatessen-vapi-webhook-secret-2026' }
-          },
-          {
-            type: 'handoff',
-            destinations: [
-              {
-                type: 'assistant',
-                assistantName: 'Preneur',
-                assistantId: orderTakerAssistant.id
-              },
-              {
-                type: 'assistant',
-                assistantName: 'Closer',
-                assistantId: closerAssistant.id
-              }
-            ]
           }
         ],
+        toolIds: [preneurToolId, closerToolId]
       }
     };
 
@@ -343,7 +409,9 @@ RÈGLES STRICTES :
             transcriber: {
               provider: 'deepgram',
               model: 'nova-2',
-              language: 'fr'
+              language: 'fr',
+              smartFormat: true,
+              numerals: true
             }
           }
         },
@@ -353,7 +421,9 @@ RÈGLES STRICTES :
             transcriber: {
               provider: 'deepgram',
               model: 'nova-2',
-              language: 'fr'
+              language: 'fr',
+              smartFormat: true,
+              numerals: true
             }
           }
         },
@@ -363,7 +433,9 @@ RÈGLES STRICTES :
             transcriber: {
               provider: 'deepgram',
               model: 'nova-2',
-              language: 'fr'
+              language: 'fr',
+              smartFormat: true,
+              numerals: true
             }
           }
         }
