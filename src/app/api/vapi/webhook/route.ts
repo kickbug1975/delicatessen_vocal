@@ -45,7 +45,20 @@ export async function POST(req: Request) {
       for (const call of toolCalls) {
         const toolCallId = call.toolCall.id;
         const functionName = call.toolCall.function.name;
-        const args = call.toolCall.function.arguments;
+        
+        try {
+          let args = call.toolCall.function.arguments;
+          if (typeof args === 'string') {
+            try {
+              args = JSON.parse(args);
+            } catch (e) {
+              console.error("Failed to parse tool call arguments string:", args, e);
+              args = {};
+            }
+          }
+          if (!args || typeof args !== 'object') {
+            args = {};
+          }
 
         if (functionName === 'identifyClient') {
           const identifier = String(args.identifier || args.tva_ou_telephone || '').trim();
@@ -111,7 +124,7 @@ export async function POST(req: Request) {
         }
 
         if (functionName === 'getProductPrices') {
-          const { search_query, price_column } = args;
+          const { search_query = '', price_column = 'price_10' } = args;
 
           // Sécurisation de la colonne demandée pour éviter les hallucinations de l'IA (ex: tarif_06)
           const validColumns = ['price_06', 'price_08', 'price_09', 'price_10'];
@@ -157,6 +170,10 @@ export async function POST(req: Request) {
             let hasInvalidItems = false;
 
             for (const item of items) {
+              if (!item || typeof item !== 'object') {
+                hasInvalidItems = true;
+                break;
+              }
               const qty = Number(item.quantity);
               const price = Number(item.unit_price);
               
@@ -220,7 +237,7 @@ export async function POST(req: Request) {
         }
 
         if (functionName === 'askFishExpertise') {
-          const { question, client_type } = args;
+          const { question = '', client_type } = args;
           const clientType = client_type || 'pro'; // Par défaut pro
 
           // Nettoyage de la question pour enlever accents et ponctuations
@@ -582,6 +599,14 @@ export async function POST(req: Request) {
           toolResponses.push({
             toolCallId,
             result: expertResponse
+          });
+        }
+        
+        } catch (toolErr: any) {
+          console.error(`Error processing tool call ${functionName} (${toolCallId}):`, toolErr);
+          toolResponses.push({
+            toolCallId,
+            result: `Une erreur technique est survenue lors de l'exécution de l'outil ${functionName}.`
           });
         }
       }
