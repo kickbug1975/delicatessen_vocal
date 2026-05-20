@@ -24,11 +24,20 @@
   },
   "include": [
     "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
     ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts",
-    "**/*.mts"
+    ".next/dev/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "check_db.ts",
+    "create_vapi_squad.ts",
+    "import_clients.ts",
+    "seed_knowledge.ts",
+    "sync_prices.ts",
+    "sync_vapi_keywords.ts",
+    "test_rag.ts",
+    "test_words.ts"
+  ]
 }

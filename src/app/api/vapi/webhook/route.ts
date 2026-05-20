@@ -14,125 +14,11 @@ export async function POST(req: Request) {
 
     // Handle Assistant Request (Dynamic setup before call starts)
     if (message.type === 'assistant-request') {
-      const callArgs = message.call;
-      const customerNumber = callArgs?.customer?.number || callArgs?.from;
-
-      let clientText = "Client Inconnu. Vous devez demander au client son identité. Tarif appliqué par défaut: Tarif 10 (Particulier).";
-      let pricingGroup = "10";
-      let clientId = null;
-
-      if (customerNumber) {
-        // Find customer in Supabase
-        const { data: customer } = await supabaseAdmin
-          .from('clients')
-          .select('*')
-          .eq('phone', customerNumber)
-          .single();
-
-        if (customer) {
-          clientId = customer.id;
-          pricingGroup = customer.pricing_group || "10";
-          
-          let groupName = "Particulier";
-          if (pricingGroup === "06") groupName = "Poissonnerie et gros volume";
-          if (pricingGroup === "08") groupName = "Traiteur";
-          if (pricingGroup === "09") groupName = "Horeca";
-
-          clientText = `Client identifié via numéro de téléphone : ${customer.name || customer.company_name}. 
-          Appliquez EXCLUSIVEMENT le tarif ${pricingGroup} (${groupName}). Ne citez jamais d'autres tarifs.`;
-        }
-      }
-
-      // Fetch active promotions
-      const { data: activePromotions } = await supabaseAdmin
-        .from('promotions')
-        .select('*, products(name)')
-        .eq('active', true);
-
-      let promotionsText = "Aucune promotion active pour le moment.";
-      if (activePromotions && activePromotions.length > 0) {
-        promotionsText = "🔥 PROMOTIONS EXCEPTIONNELLES DU JOUR (À PROPOSER ABSOLUMENT) :\n" + 
-          activePromotions.map((p: any) => `- L'offre "${p.title}" : ${p.products?.name} à seulement ${p.promo_price} € le kg/pièce.`).join('\n');
-      }
-
-      // We return the assistant configuration
-      return NextResponse.json({
-        assistant: {
-          name: "Assistant Vanhauwaert",
-          model: {
-            provider: "openai",
-            model: "gpt-4o",
-            messages: [
-              {
-                role: "system",
-                content: fs.readFileSync(path.join(process.cwd(), 'vapi_system_prompt.md'), 'utf-8') + `\n\n[INSTRUCTIONS CONTEXTUELLES TECHNIQUES - INVISIBLES POUR LE CLIENT]\n${clientText}\nL'ID technique de ce client dans la base de données est : ${clientId || "inconnu"}\n\n${promotionsText}`
-              }
-            ],
-            tools: [
-              {
-                type: "function",
-                function: {
-                  name: "identifyClient",
-                  description: "Cherche le profil du client dans la base de données. À utiliser UNIQUEMENT après avoir demandé le numéro de TVA ou le numéro de téléphone de l'établissement.",
-                  parameters: {
-                    type: "object",
-                    properties: {
-                      tva_ou_telephone: { type: "string", description: "Le numéro de TVA ou le numéro de téléphone donné par le client." }
-                    },
-                    required: ["tva_ou_telephone"]
-                  }
-                }
-              },
-              {
-                type: "function",
-                function: {
-                  name: "getProductPrices",
-                  description: "Cherche un produit pour donner son prix et son stock au client. Vous devez passer le préfixe du tarif du client actuel comme argument (ex: 'price_06').",
-                  parameters: {
-                    type: "object",
-                    properties: {
-                      search_query: { type: "string", description: "Nom du produit (ex: Cabillaud, Saumon, Bar de ligne)" },
-                      price_column: { type: "string", description: "La colonne de prix exacte du client (ex: price_06, price_08, price_09, price_10)" }
-                    },
-                    required: ["search_query", "price_column"]
-                  }
-                }
-              },
-              {
-                type: "function",
-                function: {
-                  name: "submitOrder",
-                  description: "Crée une commande pour le client une fois qu'il a finalisé son choix.",
-                  parameters: {
-                    type: "object",
-                    properties: {
-                      client_id: { type: "string", description: "L'ID du client actuel. S'il est inconnu, passez 'anonymous'" },
-                      items: {
-                        type: "array",
-                        description: "Liste des articles commandés.",
-                        items: {
-                          type: "object",
-                          properties: {
-                            product_id: { type: "string", description: "L'ID unique du produit dans la base de données." },
-                            quantity: { type: "number", description: "La quantité désirée." },
-                            unit_price: { type: "number", description: "Le prix unitaire exact de ce produit pour le tarif du client." }
-                          },
-                          required: ["product_id", "quantity", "unit_price"]
-                        }
-                      }
-                    },
-                    required: ["client_id", "items"]
-                  }
-                }
-              }
-            ]
-          },
-          voice: {
-            provider: "11labs",
-            voiceId: "aF9wTE4apSrh9D2pdwwI", // Flo - French Conversational & Sales (Vous pouvez le changer !)
-          }
-        }
-      }, { status: 200 });
+      // Dans l'architecture Squad, nous ne voulons plus écraser l'assistant au démarrage.
+      // Nous laissons Vapi utiliser le "Routeur" (Agent 1) configuré via l'API.
+      // Nous pourrions injecter des 'assistantOverrides' ici si besoin (ex: promotions du jour),
+      // mais pour éviter la latence, nous gardons ça vide.
+      return NextResponse.json({}, { status: 200 });
     }
 
     // Handle Tool Calls
@@ -146,13 +32,13 @@ export async function POST(req: Request) {
         const args = call.toolCall.function.arguments;
 
         if (functionName === 'identifyClient') {
-          const { tva_ou_telephone } = args;
+          const identifier = args.identifier || args.tva_ou_telephone;
           
           // Recherche réelle dans la table clients (par TVA, téléphone, ou nom)
           const { data: clients, error: clientErr } = await supabaseAdmin
             .from('clients')
             .select('*')
-            .or(`vat_number.ilike.%${tva_ou_telephone}%,phone.ilike.%${tva_ou_telephone}%,name.ilike.%${tva_ou_telephone}%,company_name.ilike.%${tva_ou_telephone}%`)
+            .or(`vat_number.ilike.%${identifier}%,phone.ilike.%${identifier}%,name.ilike.%${identifier}%,company_name.ilike.%${identifier}%`)
             .limit(3);
 
           if (clientErr || !clients || clients.length === 0) {
@@ -245,6 +131,75 @@ export async function POST(req: Request) {
               result: `Commande créée avec succès. ID: ${order.id}. Total: ${total_price} €.`
             });
           }
+        }
+
+        if (functionName === 'askFishExpertise') {
+          const { question, client_type } = args;
+          const clientType = client_type || 'pro'; // Par défaut pro
+
+          // Nettoyage de la question pour enlever accents et ponctuations
+          const cleanQ = question.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+          // 1. Détection rapide par mots-clés des poissons connus
+          const fishes = ['saumon', 'bar', 'lieu', 'cabillaud', 'sole'];
+          let matchedFish = '';
+          for (const f of fishes) {
+            if (cleanQ.includes(f)) {
+              matchedFish = f;
+              break;
+            }
+          }
+
+          let fact = null;
+          if (matchedFish) {
+            // Recherche par le poisson matché
+            const { data } = await supabaseAdmin
+              .from('products_knowledge')
+              .select('*')
+              .ilike('product_name', `%${matchedFish}%`)
+              .limit(1)
+              .maybeSingle();
+            fact = data;
+          }
+
+          // 2. Recherche textuelle floue si aucun match précis ou si fact vide
+          if (!fact) {
+            // Découpe les 3 premiers mots significatifs pour chercher
+            const searchTerms = cleanQ.split(/\s+/).filter((w: string) => w.length > 3).slice(0, 3).join('%');
+            if (searchTerms) {
+              const { data } = await supabaseAdmin
+                .from('products_knowledge')
+                .select('*')
+                .or(`product_name.ilike.%${searchTerms}%,provenance.ilike.%${searchTerms}%`)
+                .limit(1)
+                .maybeSingle();
+              fact = data;
+            }
+          }
+
+          let expertResponse = "Je n'ai pas la fiche technique exacte sous les yeux pour ce produit, mais je peux demander à notre chef d'atelier de vous rappeler avec les spécifications.";
+
+          if (fact) {
+            // Construction de la réponse selon le profil (Pro vs Particulier)
+            const parts = [
+              `Fiche Technique pour le ${fact.product_name} :`,
+              `- Provenance : ${fact.provenance}`,
+              `- Saisonnalité : ${fact.saisonnalite}`,
+              `- Calibres disponibles : ${fact.calibres}`
+            ];
+
+            // On ajoute les conseils de préparation uniquement pour les particuliers
+            if (clientType === 'particular' && fact.conseils_preparation) {
+              parts.push(`- Conseils de préparation et cuisson : ${fact.conseils_preparation}`);
+            }
+
+            expertResponse = parts.join('\n');
+          }
+
+          toolResponses.push({
+            toolCallId,
+            result: expertResponse
+          });
         }
       }
 
