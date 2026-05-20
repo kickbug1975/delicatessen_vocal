@@ -82,7 +82,11 @@ Le code a été audité et renforcé selon des standards de sécurité de niveau
 
 > [!IMPORTANT]
 > **Authentification des Webhooks**
-> Tous les appels entrants de Vapi vers l'endpoint `/api/vapi/webhook` doivent être signés avec une clé Bearer. L'API compare l'en-tête `Authorization` à `Bearer ` + `process.env.VAPI_WEBHOOK_SECRET`. En cas d'absence de la clé ou de non-correspondance, un statut `401 Unauthorized` est renvoyé immédiatement.
+> Tous les appels entrants de Vapi vers l'endpoint `/api/vapi/webhook` doivent être sécurisés. Pour une robustesse et une interopérabilité maximales avec Vapi (qui peut formater ses requêtes d'outils différemment des webhooks systèmes), l'API accepte plusieurs formats de signature :
+> * `Authorization: Bearer <secret>`
+> * `Authorization: <secret>` (brut)
+> * `x-vapi-secret: <secret>`
+> L'API compare ces valeurs au secret attendu (défini par `process.env.VAPI_WEBHOOK_SECRET` ou son fallback statique `'delicatessen-vapi-webhook-secret-2026'`). Si aucun de ces formats n'est valide, un statut `401 Unauthorized` est renvoyé immédiatement.
 
 > [!WARNING]
 > **Masquage des Erreurs & Anti-Fuite d'Informations**
