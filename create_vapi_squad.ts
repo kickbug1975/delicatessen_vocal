@@ -70,13 +70,21 @@ async function createSquad() {
     const closerConfig = {
       name: 'Agent 3 - Closer Expert',
       firstMessage: "Je suis l'Expert Marée, que puis-je pour vous ?",
-      voice: { provider: '11labs', voiceId: VOICES.closer, model: 'eleven_multilingual_v2' },
+      voice: { provider: '11labs', voiceId: VOICES.closer, model: 'eleven_flash_v2_5' },
       transcriber: {
         provider: 'deepgram',
-        model: 'nova-2',
+        model: 'flux-general-multi',
         language: 'fr',
         smartFormat: true,
         numerals: true
+      },
+      startSpeakingPlan: {
+        transcriptionEndpointingPlan: {
+          onPunctuationSeconds: 0.1,
+          onNoPunctuationSeconds: 0.8,
+          onNumberSeconds: 0.4
+        },
+        waitSeconds: 0.4
       },
       model: {
         ...COMMON_MODEL,
@@ -191,13 +199,21 @@ Si une question technique ou de préparation culinaire dépasse tes connaissance
     const orderTakerConfig = {
       name: 'Agent 2 - Preneur de Commande',
       firstMessage: "Génial, on a de très beaux arrivages aujourd'hui, que puis-je vous préparer ?",
-      voice: { provider: '11labs', voiceId: VOICES.preneur, model: 'eleven_multilingual_v2' },
+      voice: { provider: '11labs', voiceId: VOICES.preneur, model: 'eleven_flash_v2_5' },
       transcriber: {
         provider: 'deepgram',
-        model: 'nova-2',
+        model: 'flux-general-multi',
         language: 'fr',
         smartFormat: true,
         numerals: true
+      },
+      startSpeakingPlan: {
+        transcriptionEndpointingPlan: {
+          onPunctuationSeconds: 0.1,
+          onNoPunctuationSeconds: 0.8,
+          onNumberSeconds: 0.4
+        },
+        waitSeconds: 0.4
       },
       model: {
         ...COMMON_MODEL,
@@ -310,7 +326,8 @@ RÈGLES STRICTES :
     let preneurToolId;
     if (preneurTool) {
       console.log(`Outil Handoff vers Preneur existant trouvé. Mise à jour de l'outil ${preneurTool.id}...`);
-      const updated = await vapiFetch('PATCH', `/tool/${preneurTool.id}`, preneurToolConfig);
+      const { type, ...preneurToolPatch } = preneurToolConfig;
+      const updated = await vapiFetch('PATCH', `/tool/${preneurTool.id}`, preneurToolPatch);
       preneurToolId = updated.id;
     } else {
       console.log("Création de l'outil Handoff vers Preneur...");
@@ -344,7 +361,8 @@ RÈGLES STRICTES :
     let closerToolId;
     if (closerTool) {
       console.log(`Outil Handoff vers Closer existant trouvé. Mise à jour de l'outil ${closerTool.id}...`);
-      const updated = await vapiFetch('PATCH', `/tool/${closerTool.id}`, closerToolConfig);
+      const { type, ...closerToolPatch } = closerToolConfig;
+      const updated = await vapiFetch('PATCH', `/tool/${closerTool.id}`, closerToolPatch);
       closerToolId = updated.id;
     } else {
       console.log("Création de l'outil Handoff vers Closer...");
@@ -357,13 +375,21 @@ RÈGLES STRICTES :
     const routerConfig = {
       name: 'Agent 1 - Routeur',
       firstMessage: "Maison Fumesse bonjour ! Êtes-vous déjà client chez nous ?",
-      voice: { provider: '11labs', voiceId: VOICES.routeur, model: 'eleven_multilingual_v2' },
+      voice: { provider: '11labs', voiceId: VOICES.routeur, model: 'eleven_flash_v2_5' },
       transcriber: {
         provider: 'deepgram',
-        model: 'nova-2',
+        model: 'flux-general-multi',
         language: 'fr',
         smartFormat: true,
         numerals: true
+      },
+      startSpeakingPlan: {
+        transcriptionEndpointingPlan: {
+          onPunctuationSeconds: 0.1,
+          onNoPunctuationSeconds: 0.8,
+          onNumberSeconds: 0.4
+        },
+        waitSeconds: 0.4
       },
       clientMessages: [],
       model: {
@@ -408,10 +434,18 @@ RÈGLES STRICTES :
           assistantOverrides: {
             transcriber: {
               provider: 'deepgram',
-              model: 'nova-2',
+              model: 'flux-general-multi',
               language: 'fr',
               smartFormat: true,
               numerals: true
+            },
+            startSpeakingPlan: {
+              transcriptionEndpointingPlan: {
+                onPunctuationSeconds: 0.1,
+                onNoPunctuationSeconds: 0.8,
+                onNumberSeconds: 0.4
+              },
+              waitSeconds: 0.4
             }
           }
         },
@@ -420,10 +454,18 @@ RÈGLES STRICTES :
           assistantOverrides: {
             transcriber: {
               provider: 'deepgram',
-              model: 'nova-2',
+              model: 'flux-general-multi',
               language: 'fr',
               smartFormat: true,
               numerals: true
+            },
+            startSpeakingPlan: {
+              transcriptionEndpointingPlan: {
+                onPunctuationSeconds: 0.1,
+                onNoPunctuationSeconds: 0.8,
+                onNumberSeconds: 0.4
+              },
+              waitSeconds: 0.4
             }
           }
         },
@@ -432,10 +474,18 @@ RÈGLES STRICTES :
           assistantOverrides: {
             transcriber: {
               provider: 'deepgram',
-              model: 'nova-2',
+              model: 'flux-general-multi',
               language: 'fr',
               smartFormat: true,
               numerals: true
+            },
+            startSpeakingPlan: {
+              transcriptionEndpointingPlan: {
+                onPunctuationSeconds: 0.1,
+                onNoPunctuationSeconds: 0.8,
+                onNumberSeconds: 0.4
+              },
+              waitSeconds: 0.4
             }
           }
         }
