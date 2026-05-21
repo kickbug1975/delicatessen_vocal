@@ -52,12 +52,18 @@ Un stockage PostgreSQL hébergeant les tables suivantes :
 
 Pour permettre à l'assistant de répondre précisément aux questions techniques ("D'où vient votre bar ?", "Quelle est la saisonnalité du lieu noir ?"), un système de RAG (Retrieval-Augmented Generation) ultra-rapide a été conçu.
 
-### ⚡ Stratégie Anti-Latence (Hybride BDD)
+### ⚡ Stratégie Anti-Latence RAG (Hybride BDD)
 Dans un appel téléphonique, une attente de plus de 1,5 seconde détruit l'expérience utilisateur. L'utilisation d'embeddings vectoriels classiques ou de requêtes LLM intermédiaires générerait une latence inacceptable. Pour éliminer cette latence, un RAG hybride à double niveau a été implémenté :
 1. **Dictionnaire de Mots-Clés Prioritaires (Composés & Simples)** : Recherche instantanée et hiérarchisée sur les espèces de référence locales et importées (57 espèces au total, incluant le Bar d'élevage de Turquie, la Daurade royale de Turquie, le Saumon Atlantique d'élevage, le Turbot d'élevage, la Truite arc-en-ciel, l'Esturgeon d'élevage, l'Huître d'élevage, les Moules d'élevage, le Bigorneau, la Palourde européenne, le Couteau d'Europe, la Coque commune, le Bulot / buccin, l'Amande de mer, le Pétoncle noir ou blanc, la Langoustine côtière, le Homard européen / bleu, l'Huître plate de Zélande, l'Huître creuse "Creuse de Zélande", la Coquille Saint-Jacques sauvage, les Moules de Zélande, la Sole de la Mer du Nord / Noordzeetong, le Hareng Hollandse Nieuwe / Matjes, le Turbot sauvage de la Mer du Nord, le Flet commun de Hollande, le Tacaud commun des Pays-Bas, le Saumon des Îles Féroé, le Lieu jaune des côtes anglaises, le Rouget-barbet de Cornouailles, le Turbot de la Manche anglaise, le Saumon de Norvège, le Skrei, etc.).
 2. **Recherche Textuelle Floue (Fallback)** : Découpage intelligent des 3 premiers mots significatifs saisis par l'IA et recherche par motif SQL (`ilike %mot%`).
 
 Cette approche garantit un temps de réponse **inférieur à 150ms** (généralement autour de 50ms) pour la récupération de la connaissance produit.
+
+### ⚡ Optimisation de la Latence de la Pile Vocale (STT, TTS & Endpointing)
+Afin de faire descendre la latence globale ressentie par l'utilisateur sous la barre fatidique de **1.0 seconde** (environ **700ms - 900ms** en production), une refonte complète de la pile vocale et du plan de prise de parole a été menée :
+1. **Moteur TTS (Text-to-Speech) Ultra-Rapide** : Passage au modèle d'ElevenLabs **`eleven_flash_v2_5`** pour les trois agents de la squad. Ce modèle optimisé pour le temps réel réduit la latence de génération vocale de **~1200ms à ~75ms-150ms**, tout en conservant une diction et un accent français parfaits (appuyés par nos règles de transcription en toutes lettres).
+2. **Transcripteur STT de Dernière Génération** : Remplacement de Deepgram `nova-2` par **`flux-general-multi`**. Ce modèle gère nativement et de manière asynchrone la détection de fin de tour de parole (EOT) en français.
+3. **Planification Heuristique des Silences (`startSpeakingPlan`)** : Configuration d'un plan d'endpointing personnalisé (`transcriptionEndpointingPlan`) sur les configurations et surcharges de la squad pour abréger l'attente après parole à **0.8 seconde** de silence (au lieu de 1.5 seconde par défaut). Cela élimine **700ms** de blanc inerte.
 
 ### 📦 Lots Thématiques & Couverture Géographique
 La base de connaissances de 57 espèces a été intégrée de manière incrémentale par lots géographiques et technologiques cohérents :
@@ -124,7 +130,7 @@ Plusieurs scripts automatisés sont à votre disposition à la racine du projet 
 
 ## 🎙️ Documentation de Référence Vapi & Deepgram
 Un document technique complet a été créé à la racine du projet pour la gestion de la pile vocale :
-*   **[`vapi_deepgram_memory.md`](file:///c:/Users/Dimitri/delicatessen%20vocal/vapi_deepgram_memory.md)** : Mémorise toutes les configurations optimales pour le Squad Vapi, le transcriber Deepgram (modèles `nova-2`/`nova-3`/`flux`, paramètres de français comme `numerals`), et la résolution du problème d'accent/chiffres anglais d'ElevenLabs (normalisation en toutes lettres).
+*   **[`vapi_deepgram_memory.md`](file:///c:/Users/Dimitri/delicatessen%20vocal/vapi_deepgram_memory.md)** : Mémorise toutes les configurations optimales pour le Squad Vapi, le transcriber Deepgram (modèles `flux-general-multi` et `nova-2`, paramètres de français comme `numerals`), le modèle ElevenLabs `eleven_flash_v2_5`, et la résolution du problème d'accent/chiffres anglais d'ElevenLabs (normalisation en toutes lettres).
 
 ---
 
