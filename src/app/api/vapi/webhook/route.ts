@@ -77,6 +77,45 @@ function formatPriceFrench(price: number | string): string {
   return `${num.toFixed(2).replace('.', ',')} €`;
 }
 
+function parseSearchQuery(query: string): string[][] {
+  // Normalize accents, lowercase, remove punctuation, split by spaces
+  const normalized = query
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/['’\-,.()]/g, ' ');
+  
+  const words = normalized.split(/\s+/).filter(Boolean);
+  
+  // Filter out very common French stop words and generic terms
+  const stopWords = new Set([
+    'de', 'd', 'du', 'des', 'le', 'la', 'les', 'au', 'aux', 'en', 'pour', 'a', 'un', 'une', 'ce', 'cet', 'cette',
+    'frais', 'fraiche', 'congele', 'congelee', 'surgele', 'surgelee', 'bon', 'super', 'poisson', 'poissons',
+    'kilo', 'kilos', 'kg', 'gramme', 'grammes', 'gr', 'g', 'livre', 'livres', 'piece', 'pieces', 'unite', 'unites'
+  ]);
+  
+  const filteredWords = words.filter(w => !stopWords.has(w) && w.length >= 2);
+
+  // Map common French words to DB equivalents (synonym expansion)
+  return filteredWords.map(word => {
+    const mappings: Record<string, string[]> = {
+      'islande': ['islande', 'iceland'],
+      'norvege': ['norvege', 'norway'],
+      'ecosse': ['ecosse', 'scotland'],
+      'feroe': ['feroe', 'faroer', 'faroe'],
+      'faroer': ['feroe', 'faroer', 'faroe'],
+      'faroe': ['feroe', 'faroer', 'faroe'],
+      'sans': ['sans', 'deep'],
+      'peau': ['peau', 'skin'],
+      'artisanal': ['artisanal', 'handmade'],
+      'belge': ['belge', 'belgian'],
+      'danois': ['danois', 'dk', 'denmark'],
+      'anglais': ['anglais', 'uk', 'england']
+    };
+    return mappings[word] || [word];
+  });
+}
+
 export async function POST(req: Request) {
   try {
     // Verify Vapi webhook secret token
@@ -204,13 +243,25 @@ export async function POST(req: Request) {
           const validColumns = ['price_06', 'price_08', 'price_09', 'price_10'];
           const actualColumn = validColumns.includes(price_column) ? price_column : 'price_10';
 
-          // Search products (only active ones)
-          const { data: products, error: prodErr } = await supabaseAdmin
+          // Parse search query into keywords and synonyms
+          const keywordGroups = parseSearchQuery(search_query);
+
+          let dbQuery = supabaseAdmin
             .from('products')
             .select(`id, name, stock_quantity, ${actualColumn}`)
-            .ilike('name', `%${search_query}%`)
-            .eq('is_active', true)
-            .limit(3);
+            .eq('is_active', true);
+
+          // Construct AND-of-ORs keyword filters
+          for (const group of keywordGroups) {
+            if (group.length === 1) {
+              dbQuery = dbQuery.ilike('name', `%${group[0]}%`);
+            } else {
+              const orCondition = group.map(val => `name.ilike.%${val}%`).join(',');
+              dbQuery = dbQuery.or(orCondition);
+            }
+          }
+
+          const { data: products, error: prodErr } = await dbQuery.limit(5);
 
           if (prodErr || !products || products.length === 0) {
             toolResponses.push({

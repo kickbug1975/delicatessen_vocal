@@ -86,6 +86,12 @@ async function createSquad() {
         },
         waitSeconds: 0.4
       },
+      stopSpeakingPlan: {
+        numWords: 2,
+        voiceSeconds: 0.3,
+        backoffSeconds: 0.8
+      },
+      backgroundSound: 'office',
       model: {
         ...COMMON_MODEL,
         systemPrompt: `Tu es le meilleur agent commercial expert en produits de la mer de la Maison Fumesse, spécialisé dans l'acquisition. 
@@ -215,6 +221,12 @@ Si une question technique ou de préparation culinaire dépasse tes connaissance
         },
         waitSeconds: 0.4
       },
+      stopSpeakingPlan: {
+        numWords: 2,
+        voiceSeconds: 0.3,
+        backoffSeconds: 0.8
+      },
+      backgroundSound: 'office',
       model: {
         ...COMMON_MODEL,
         systemPrompt: `Tu es l'agent des ventes "Fast Lane" de la Maison Fumesse. Tu parles à des poissonniers et restaurateurs qui sont DÉJÀ clients.
@@ -391,6 +403,12 @@ RÈGLES STRICTES :
         },
         waitSeconds: 0.4
       },
+      stopSpeakingPlan: {
+        numWords: 2,
+        voiceSeconds: 0.3,
+        backoffSeconds: 0.8
+      },
+      backgroundSound: 'office',
       clientMessages: [],
       model: {
         ...COMMON_MODEL,
@@ -446,7 +464,13 @@ RÈGLES STRICTES :
                 onNumberSeconds: 0.4
               },
               waitSeconds: 0.4
-            }
+            },
+            stopSpeakingPlan: {
+              numWords: 2,
+              voiceSeconds: 0.3,
+              backoffSeconds: 0.8
+            },
+            backgroundSound: 'office'
           }
         },
         {
@@ -466,7 +490,13 @@ RÈGLES STRICTES :
                 onNumberSeconds: 0.4
               },
               waitSeconds: 0.4
-            }
+            },
+            stopSpeakingPlan: {
+              numWords: 2,
+              voiceSeconds: 0.3,
+              backoffSeconds: 0.8
+            },
+            backgroundSound: 'office'
           }
         },
         {
@@ -486,7 +516,13 @@ RÈGLES STRICTES :
                 onNumberSeconds: 0.4
               },
               waitSeconds: 0.4
-            }
+            },
+            stopSpeakingPlan: {
+              numWords: 2,
+              voiceSeconds: 0.3,
+              backoffSeconds: 0.8
+            },
+            backgroundSound: 'office'
           }
         }
       ]
