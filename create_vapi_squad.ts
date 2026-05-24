@@ -54,7 +54,7 @@ const VOICES = {
 
 const COMMON_MODEL = {
   provider: 'openai',
-  model: 'gpt-4o',
+  model: 'gpt-4o-realtime-preview-2024-12-17',
 };
 
 const TARGET_IDS = {
@@ -69,8 +69,9 @@ async function createSquad() {
     console.log('--- ÉTAPE 1 : Mise à jour du Closer (Agent 3) ---');
     const closerConfig = {
       name: 'Agent 3 - Closer Expert',
+      recordingEnabled: true,
       firstMessage: "Je suis l'Expert Marée, que puis-je pour vous ?",
-      voice: { provider: '11labs', voiceId: VOICES.closer, model: 'eleven_flash_v2_5' },
+      voice: { provider: 'openai', voiceId: 'echo' },
       transcriber: {
         provider: 'deepgram',
         model: 'flux-general-multi',
@@ -109,6 +110,7 @@ RÈGLES STRICTES :
 - Saumon : On travaille de l'Écosse Label Rouge. Argument : Tenue à la cuisson parfaite pour les chefs.
 - Lieu Noir : L'alternative parfaite et sans arêtes pour les collectivités.
 - Objection "C'est cher" -> Réponse : "On calcule au coût-portion. Mon filet n'a pas d'eau, vous avez cent pour cent de rendement."
+- RÈGLES DE PRONONCIATION DES MOTS TECHNIQUES : Pour que le synthétiseur vocal prononce correctement, écris toujours ces mots phonétiquement en français dans tes réponses : "deep skin" -> "dipe skine", "Skrei" -> "skreille", "GMS" -> "gé aime esse", "B2B" -> "bé tou bi", "TVA" -> "té vé a".
 
 Si une question technique ou de préparation culinaire dépasse tes connaissances, utilise l'outil 'askFishExpertise'. Passe impérativement la valeur 'particular' pour le paramètre 'client_type' s'il s'agit d'un particulier, et 'pro' s'il s'agit d'un restaurateur, poissonnier, traiteur ou autre professionnel.`,
         tools: [
@@ -204,8 +206,9 @@ Si une question technique ou de préparation culinaire dépasse tes connaissance
     console.log('\n--- ÉTAPE 2 : Mise à jour du Preneur de Commande (Agent 2) ---');
     const orderTakerConfig = {
       name: 'Agent 2 - Preneur de Commande',
+      recordingEnabled: true,
       firstMessage: "Génial, on a de très beaux arrivages aujourd'hui, que puis-je vous préparer ?",
-      voice: { provider: '11labs', voiceId: VOICES.preneur, model: 'eleven_flash_v2_5' },
+      voice: { provider: 'openai', voiceId: 'shimmer' },
       transcriber: {
         provider: 'deepgram',
         model: 'flux-general-multi',
@@ -236,7 +239,8 @@ RÈGLES STRICTES :
 1. Tu annonces les prix avec l'outil 'getProductPrices' si le client demande.
 2. La Smart Substitution : N'argumente que si un poisson a flambé en prix ou est en rupture. Ex: "La sole a flambé ce matin. J'ai rentré de superbes carrelets, on part là-dessus pour sauver la rentabilité ?"
 3. Dès qu'il a terminé, valide LA totalité avec l'outil 'submitOrder'.
-4. RÈGLE D'ÉNONCIATION DES CHIFFRES (CRITIQUE) : Tu ne dois JAMAIS écrire de chiffres arabes (ex: 12, 10.50, 2026) ni de symboles de devises (ex: €) dans tes réponses vocales. Écris TOUJOURS l'intégralité des nombres, prix et unités EN TOUTES LETTRES EN FRANÇAIS (ex: "douze euros cinquante" au lieu de "12.50 €", "dix kilos" au lieu de "10 kg", "cinq" au lieu de "5"). C'est obligatoire pour que le synthétiseur vocal ElevenLabs prononce tout correctement en français sans accent anglais.`,
+4. RÈGLE D'ÉNONCIATION DES CHIFFRES (CRITIQUE) : Tu ne dois JAMAIS écrire de chiffres arabes (ex: 12, 10.50, 2026) ni de symboles de devises (ex: €) dans tes réponses vocales. Écris TOUJOURS l'intégralité des nombres, prix et unités EN TOUTES LETTRES EN FRANÇAIS (ex: "douze euros cinquante" au lieu de "12.50 €", "dix kilos" au lieu de "10 kg", "cinq" au lieu de "5"). C'est obligatoire pour que le synthétiseur vocal prononce tout correctement en français sans accent anglais.
+5. RÈGLES DE PRONONCIATION DES MOTS TECHNIQUES : Pour que le synthétiseur vocal prononce correctement, écris toujours ces mots phonétiquement en français dans tes réponses : "deep skin" -> "dipe skine", "Skrei" -> "skreille", "GMS" -> "gé aime esse", "B2B" -> "bé tou bi", "TVA" -> "té vé a".`,
         tools: [
           {
             type: 'function',
@@ -386,8 +390,9 @@ RÈGLES STRICTES :
     console.log('\n--- ÉTAPE 3 : Mise à jour du Routeur (Agent 1) ---');
     const routerConfig = {
       name: 'Agent 1 - Routeur',
-      firstMessage: "Maison Fumesse bonjour ! Êtes-vous déjà client chez nous ?",
-      voice: { provider: '11labs', voiceId: VOICES.routeur, model: 'eleven_flash_v2_5' },
+      recordingEnabled: true,
+      firstMessage: "Maison Fumesse bonjour ! Je suis l'assistante numérique de Dimitri. Êtes-vous déjà client chez nous ?",
+      voice: { provider: 'openai', voiceId: 'alloy' },
       transcriber: {
         provider: 'deepgram',
         model: 'flux-general-multi',
@@ -415,7 +420,7 @@ RÈGLES STRICTES :
         systemPrompt: `Tu es l'accueil de la Maison Fumesse. Ton seul but est de qualifier et de transférer l'appel SILENCIEUSEMENT.
 
 RÈGLES STRICTES :
-1. Dès que le client répond "Oui" à ta question initiale, demande son numéro de téléphone ou de TVA.
+1. Dès que le client répond "Oui" à ta question initiale (où tu t'es présentée comme l'assistante numérique de Dimitri), demande son numéro de téléphone ou de TVA.
 2. Utilise IMMÉDIATEMENT l'outil 'identifyClient'.
 3. Dès que l'outil réussit, appelle DIRECTEMENT la fonction de transfert (handoff) vers l'assistant Preneur. NE PRONONCE AUCUNE PHRASE AVANT LE TRANSFERT.
 4. Si le client est nouveau (NON), demande rapidement son nom, sa société (Resto, Poissonnier, Traiteur) et son numéro. Dès que tu as ça, appelle DIRECTEMENT la fonction de transfert (handoff) vers l'assistant Closer. NE PRONONCE AUCUNE PHRASE AVANT LE TRANSFERT.
