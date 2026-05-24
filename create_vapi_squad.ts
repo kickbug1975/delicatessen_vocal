@@ -54,7 +54,7 @@ const VOICES = {
 
 const COMMON_MODEL = {
   provider: 'openai',
-  model: 'gpt-4o-realtime-preview-2024-12-17',
+  model: 'gpt-4o',
 };
 
 const TARGET_IDS = {
@@ -71,7 +71,7 @@ async function createSquad() {
       name: 'Agent 3 - Closer Expert',
       recordingEnabled: true,
       firstMessage: "Je suis l'Expert Marée, que puis-je pour vous ?",
-      voice: { provider: 'openai', voiceId: 'echo' },
+      voice: { provider: '11labs', voiceId: VOICES.closer, model: 'eleven_flash_v2_5' },
       transcriber: {
         provider: 'deepgram',
         model: 'flux-general-multi',
@@ -208,7 +208,7 @@ Si une question technique ou de préparation culinaire dépasse tes connaissance
       name: 'Agent 2 - Preneur de Commande',
       recordingEnabled: true,
       firstMessage: "Génial, on a de très beaux arrivages aujourd'hui, que puis-je vous préparer ?",
-      voice: { provider: 'openai', voiceId: 'shimmer' },
+      voice: { provider: '11labs', voiceId: VOICES.preneur, model: 'eleven_flash_v2_5' },
       transcriber: {
         provider: 'deepgram',
         model: 'flux-general-multi',
@@ -392,7 +392,7 @@ RÈGLES STRICTES :
       name: 'Agent 1 - Routeur',
       recordingEnabled: true,
       firstMessage: "Maison Fumesse bonjour ! Je suis l'assistante numérique de Dimitri. Êtes-vous déjà client chez nous ?",
-      voice: { provider: 'openai', voiceId: 'alloy' },
+      voice: { provider: '11labs', voiceId: VOICES.routeur, model: 'eleven_flash_v2_5' },
       transcriber: {
         provider: 'deepgram',
         model: 'flux-general-multi',
